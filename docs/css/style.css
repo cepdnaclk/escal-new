@@ -95,6 +95,11 @@ body {
   transform: scale(0.7);
 }
 
+.goto-link {
+  font-size: 15px;
+  vertical-align: middle;
+}
+
 [tabindex="-1"]:focus {
   outline: 0 !important;
 }
