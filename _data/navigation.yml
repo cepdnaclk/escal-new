@@ -1,0 +1,21 @@
+-title: Home
+  url: /
+-title: About
+  url: about.html
+-title: Projects
+  url: #
+-title: Research
+  url: #
+  sublinks:
+	-title: ESCAL Bio-Medical
+	  url: #
+	-title: ESCAL Robotics
+	  url: #
+	-title: ESCAL GPU
+	  url: #
+-title: Resources
+  url: #
+-title: Events
+  url: events.html
+-title: People
+  url: people.html

@@ -4,7 +4,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-:root {
+ :root {
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -93,6 +93,11 @@ body {
 #logo-img.awake {
   content: url("../images/logo_purple.png");
   transform: scale(0.7);
+}
+
+.goto-link {
+  font-size: 15px;
+  vertical-align: middle;
 }
 
 [tabindex="-1"]:focus {

@@ -8,5 +8,6 @@ Gemfile.lock
 node_modules
 .jekyll-metadata
 .idea
+.DS_Store
 
-docs/uncategorized/*
+docs/

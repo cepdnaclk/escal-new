@@ -8,27 +8,37 @@
 
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Research
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end animate slideIn"
-                                aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" id="devices-link" href="#">ESCAL Bio-Medical</a>
-                                <a class="dropdown-item" id="ui-link" href="#">ESCAL Robotics</a>
-                                <a class="dropdown-item" id="ui-link" href="#">ESCAL GPU</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
-                <li class="nav-item"><a href="people.html" class="nav-link">People</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                {% assign links = site.data.navigation %}
+                {% for link in links %}
+                    {% assign class = nil %}
+                    {% if page.url contains link.url %}
+                        {% assign class = 'active' %}
+                    {% endif %}
+                    {% if link.sublinks %}
+                        <div class="collapse navbar-collapse">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="{{ site.url }}{{ site.baseurl }}{{ link.url }}" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        {{ link.title }}
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-end animate slideIn"
+                                        aria-labelledby="navbarDropdown">
+                                        {% for sublink in link.sublinks %}
+                                            {% if sublink.title == 'separator' %}
+                                                <div class="dropdown-divider"></div>
+                                            {% else %}
+                                                <a class="dropdown-item {{ class }}" id="devices-link" href="{{ site.url }}{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    {% else %}
+                        <li class="nav-item {{ class }}"><a href="{{ site.url }}{{ site.baseurl }}{{ link.url }}" class="nav-link">{{ link.title }}</a></li>
+                    {% endif %}
+                {% endfor %}
             </ul>
         </div>
     </div>
