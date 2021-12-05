@@ -18,7 +18,7 @@
                         <div class="collapse navbar-collapse">
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="{{ link.url }}" id="navbarDropdown" role="button"
+                                    <a class="nav-link dropdown-toggle" href="{{ site.url }}{{ site.baseurl }}{{ link.url }}" id="navbarDropdown" role="button"
                                         data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         {{ link.title }}
                                     </a>
@@ -28,7 +28,7 @@
                                             {% if sublink.title == 'separator' %}
                                                 <div class="dropdown-divider"></div>
                                             {% else %}
-                                                <a class="dropdown-item {{ class }}" id="devices-link" href="{{ sublink.url }}">{{ sublink.title }}</a>
+                                                <a class="dropdown-item {{ class }}" id="devices-link" href="{{ site.url }}{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
                                             {% endif %}
                                         {% endfor %}
                                     </div>
@@ -36,7 +36,7 @@
                             </ul>
                         </div>
                     {% else %}
-                        <li class="nav-item {{ class }}"><a href="{{ link.url }}" class="nav-link">{{ link.title }}</a></li>
+                        <li class="nav-item {{ class }}"><a href="{{ site.url }}{{ site.baseurl }}{{ link.url }}" class="nav-link">{{ link.title }}</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
