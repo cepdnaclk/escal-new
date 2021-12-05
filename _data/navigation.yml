@@ -1,21 +1,21 @@
--title: Home
+- title: Home
   url: /
--title: About
+- title: About
   url: about.html
--title: Projects
+- title: Projects
   url: #
--title: Research
+- title: Research
   url: #
   sublinks:
-    -title: ESCAL Bio-Medical
-      url: #
-    -title: ESCAL Robotics
-      url: #
-    -title: ESCAL GPU
-      url: #
--title: Resources
+  - title: ESCAL Bio-Medical
+    url: #
+  - title: ESCAL Robotics
+    url: #
+  - title: ESCAL GPU
+    url: #
+- title: Resources
   url: #
--title: Events
+- title: Events
   url: events.html
--title: People
+- title: People
   url: people.html
