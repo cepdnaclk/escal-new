@@ -5,7 +5,7 @@
 - [x] Template for main site.
 - [x] Dynamic navigation bar.
 - [ ] Template for projects page.
-- [ ] Template for people page.
+- [x] Template for people page.
 - [ ] Template for ESCAL Bio-med site.
 - [ ] Template for ESCAL Robotics site.
 - [ ] Template for ESCAL GPU site.
