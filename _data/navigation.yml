@@ -1,7 +1,7 @@
 - title: Home
-  url: index.html
+  url: /
 - title: About
-  url: about.html
+  url: /about
 - title: Projects
   url: #
 - title: Research
@@ -16,6 +16,6 @@
 - title: Resources
   url: #
 - title: Events
-  url: events.html
+  url: /events
 - title: People
-  url: people.html
+  url: /people
