@@ -18,4 +18,8 @@
 - [ ] Add pagination to the projects page.
 - [ ] Pages for all project categories.
 - [ ] Implement projects search.
+<<<<<<< Updated upstream
 - [ ] Project thumbnails.
+=======
+- [ ] Project thumbnails.
+>>>>>>> Stashed changes
