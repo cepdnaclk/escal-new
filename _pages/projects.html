@@ -5,7 +5,7 @@ permalink: /projects
 ---
 
 <section class="home-slider owl-carousel">
-    <div class="slider-item bread-item" style="background-image: url('assets/images//img4.jpg');"
+    <div class="slider-item bread-item" style="background-image: url('assets/images/img4.jpg');"
         data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container" data-scrollax-parent="true">
@@ -37,7 +37,7 @@ permalink: /projects
                         <div class="col-lg-6 ftco-animate">
                             <div class="blog-entry">
                                 <a href="{{ project[1].page_url }}" class="block-20"
-                                    style="background-image: url('assets/images//img1.jpg'); border-radius: 10px;">
+                                    style="background-image: url('assets/images/thumb_{{ project[1].category.code }}.jpg'); border-radius: 10px;">
                                 </a>
                                 <div class="text d-flex py-4">
                                     <div class="">
@@ -91,7 +91,7 @@ permalink: /projects
                         <h3>Categories</h3>
                         {% assign categories = site.data.categories | sort %}
                         {% for category in categories %}
-                            <li><a href="#">{{ category[0] | truncate:35 }} <span>({{ category[1].size }})</span></a></li>
+                            <li><a href="#">{{ category[0] | truncate:35 }} <span>({{ category[1].count }})</span></a></li>
                         {% endfor %}
                     </div>
                 </div>
