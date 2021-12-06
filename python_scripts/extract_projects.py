@@ -101,10 +101,21 @@ def extract_categories(url, filename, projects_filename):
             batchwise_projects = requests.get(_projects['batches'][batch]['api_url']).json()
             for project in batchwise_projects.keys():
                 if project in projects:
-                    if f'{title} ({category.upper()})' not in categorized_projects: categorized_projects[f'{title} ({category.upper()})'] = []
-                    if f'{batch} Batch' not in categorized_projects: categorized_projects[f'{batch} Batch'] = []
-                    categorized_projects[f'{title} ({category.upper()})'].append(project)
-                    categorized_projects[f'{batch} Batch'].append(project)
+                    if not categorized_projects.get(f'{title} ({category.upper()})'): categorized_projects[f'{title} ({category.upper()})'] = {}
+                    if not categorized_projects.get(f'{batch} Batch'): categorized_projects[f'{batch} Batch'] = {}
+
+                    if not categorized_projects[f'{title} ({category.upper()})'].get('count'): categorized_projects[f'{title} ({category.upper()})']['count'] = 0
+                    categorized_projects[f'{title} ({category.upper()})']['count'] += 1
+                    if not categorized_projects[f'{batch} Batch'].get('count'): categorized_projects[f'{batch} Batch']['count'] = 0
+                    categorized_projects[f'{batch} Batch']['count'] += 1
+
+                    categorized_projects[f'{title} ({category.upper()})']['code'] = categories[category]['code']
+                    categorized_projects[f'{batch} Batch']['code'] = categories[category]['code']
+
+                    if not categorized_projects[f'{title} ({category.upper()})'].get('projects'): categorized_projects[f'{title} ({category.upper()})']['projects'] = []
+                    if not categorized_projects[f'{batch} Batch'].get('projects'): categorized_projects[f'{batch} Batch']['projects'] = []
+                    categorized_projects[f'{title} ({category.upper()})']['projects'].append(project)
+                    categorized_projects[f'{batch} Batch']['projects'].append(project)
 
     with open(filename, 'w') as f:
         json.dump(categorized_projects, f)
