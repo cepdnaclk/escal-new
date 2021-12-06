@@ -58,6 +58,15 @@ html {
   width: device-width;
 }
 
+.zoom {
+  background-size: cover;
+  transition: background-size 0.5s ease-in-out;
+}
+
+.zoom:hover {
+  background-size: 250%;
+}
+
 article,
 aside,
 dialog,
