@@ -1,0 +1,17 @@
+<div class="col-lg-4 mb-sm-4 ftco-animate">
+    <div class="staff">
+        <div class="d-flex mb-4">
+            <div class="img" style="background-image: url('{{ person.img | prepend: "/assets/images/" | relative_url }}');"></div>
+            <div class="info ml-4">
+                <h3><a href="teacher-single.html">{{ person.name }}</a></h3>
+                <p class="ftco-social d-flex">
+                    <a href="{{person.linkedin}}" class="d-flex justify-content-center align-items-center"><span class="icon-linkedin"></span></a>
+                    <a href="{{person.email}}" class="d-flex justify-content-center align-items-center"><span class="icon-contact_mail"></span></a>
+                </p>
+            </div>
+        </div>
+        <div class="text">
+            <p>{{person.description}}</p>
+        </div>
+    </div>
+</div>

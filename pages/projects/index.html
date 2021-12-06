@@ -1,11 +1,11 @@
 ---
 layout: default
 title: "Projects"
-permalink: /projects
+permalink: /projects/
 ---
 
 <section class="home-slider owl-carousel">
-    <div class="slider-item bread-item" style="background-image: url('assets/images/img4.jpg');"
+    <div class="slider-item bread-item" style="background-image: url('{{ 'assets/images/img4.jpg' | relative_url }}');"
         data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container" data-scrollax-parent="true">
@@ -36,8 +36,9 @@ permalink: /projects
                     {% for project in projects %}
                         <div class="col-lg-6 ftco-animate">
                             <div class="blog-entry">
+                                {% assign proj_img = project[1].category.code | prepend: "assets/images/thumb_" | append: ".jpg" %}
                                 <a href="{{ project[1].page_url }}" class="block-20"
-                                    style="background-image: url('assets/images/thumb_{{ project[1].category.code }}.jpg'); border-radius: 10px;">
+                                    style="background-image: url('{{ proj_img | relative_url }}'); border-radius: 10px;">
                                 </a>
                                 <div class="text d-flex py-4">
                                     <div class="">
@@ -99,7 +100,7 @@ permalink: /projects
                 <div class="sidebar-box ftco-animate">
                     <h3>Recent Projects</h3>
                     <div class="block-21 mb-4 d-flex">
-                        <a class="blog-img mr-4" style="background-image: url(./assets/images/img1.jpg); border-radius: 5px;"></a>
+                        <a class="blog-img mr-4" style="background-image: url({{ '/assets/images/img1.jpg' | relative_url }}); border-radius: 5px;"></a>
                         <div class="text">
                             <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the
                                     blind texts</a></h3>
@@ -111,7 +112,7 @@ permalink: /projects
                         </div>
                     </div>
                     <div class="block-21 mb-4 d-flex">
-                        <a class="blog-img mr-4" style="background-image: url(./assets/images/img2.jpg); border-radius: 5px;"></a>
+                        <a class="blog-img mr-4" style="background-image: url({{ '/assets/images/img2.jpg' | relative_url }}); border-radius: 5px;"></a>
                         <div class="text">
                             <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the
                                     blind texts</a></h3>
@@ -123,7 +124,7 @@ permalink: /projects
                         </div>
                     </div>
                     <div class="block-21 mb-4 d-flex">
-                        <a class="blog-img mr-4" style="background-image: url(./assets/images/img3.jpg); border-radius: 5px;"></a>
+                        <a class="blog-img mr-4" style="background-image: url({{ '/assets/images/img3.jpg' | relative_url }}); border-radius: 5px;"></a>
                         <div class="text">
                             <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the
                                     blind texts</a></h3>
