@@ -4,7 +4,7 @@
 
 - [x] Template for main site.
 - [x] Dynamic navigation bar.
-- [ ] Template for projects page.
+- [x] Template for projects page.
 - [x] Template for people page.
 - [ ] Template for ESCAL Bio-med site.
 - [ ] Template for ESCAL Robotics site.
@@ -15,3 +15,7 @@
 - [ ] Extract information of ESCAL related people from the API.
 - [ ] Extract ESCAL related project information from the API.
 - [ ] Add details to 'About' page.
+- [ ] Add pagination to the projects page.
+- [ ] Pages for all project categories.
+- [ ] Implement projects search.
+- [ ] Project thumbnails.
