@@ -1,7 +1,9 @@
 ---
 layout: default
-title: "Projects"
-permalink: /projects/
+title: "Industrial Automation Projects (CO326)"
+cat_code: co326
+parent_name: projects
+permalink: /projects/co326
 ---
 
 <section class="home-slider owl-carousel">
@@ -12,7 +14,7 @@ permalink: /projects/
             <div class="row slider-text align-items-end">
                 <div class="col-md-7 col-sm-12 ftco-animate mb-5">
                     <p class="breadcrumbs" data-scrollax=" properties: { translateY: '70%', opacity: 1.6}"><span
-                            class="mr-2"><a href="{{ site.url }}{{ site.baseurl }}">Home</a></span>/ <span>Projects</span></p>
+                            class="mr-2"><a href="{{ site.url }}{{ site.baseurl }}">Home</a></span>/ <span><a href="{{ site.url }}{{ site.baseurl }}/{{ page.parent_name }}">{{ page.parent_name }}</a></span> / <span>{{ page.cat_code }}</span></p>
                     <h1 class="mb-3 font-weight-bold" data-scrollax=" properties: { translateY: '70%', opacity: .9}">
                         ESCAL Related Projects
                     </h1>
@@ -28,33 +30,35 @@ permalink: /projects/
             <div class="col-md-8">
                 <div class="row justify-content-center mb-5 pb-3">
                     <div class="col-md-7 heading-section ftco-animate text-center">
-                    <h2 class="mb-4">All Projects</h2>
+                    <h2 class="mb-4">{{ page.title }}</h2>
                     </div>
                 </div>
                 <div class="row">
                     {% assign projects = site.data.projects %}
-                    {% for project in projects %}
+                    {% assign category_projects = site.data.project_categories['Industrial Automation Projects (CO326)'].projects %}
+                    {% for _project in category_projects %}
+                        {% assign project = projects[_project] %}
                         <div class="col-lg-6 ftco-animate">
                             <div class="blog-entry">
-                                {% assign proj_img = project[1].category.code | prepend: "assets/images/thumb_" | append: ".jpg" %}
-                                <a href="{{ project[1].page_url }}" class="block-20"
+                                {% assign proj_img = project.category.code | prepend: "assets/images/thumb_" | append: ".jpg" %}
+                                <a href="{{ project.page_url }}" class="block-20"
                                     style="background-image: url('{{ proj_img | relative_url }}'); border-radius: 10px;">
                                 </a>
                                 <div class="text d-flex py-4">
                                     <div class="">
-                                        <h3 class="heading"><a href="{{ project[1].page_url }}">{{ project[1].title }}</a></h3>
-                                        {% assign size = project[1].team.size %}
+                                        <h3 class="heading"><a href="{{ project.page_url }}">{{ project.title }}</a></h3>
+                                        {% assign size = project.team.size %}
                                         {% if size > 0 %}
                                             <div class='d-flex flex-wrap' style="max-width: 350px;">
                                                 <span class="icon-person" style="line-height: 1.8;">{{ size }}</span>
-                                                {% for member in project[1].team %}
-                                                    {% assign names = member[1].name | split: ' ' %}
+                                                {% for member in project.team %}
+                                                    {% assign names = member.name | split: ' ' %}
                                                     <a href="#" class="px-2">{{ names[0] }}</a>
                                                 {% endfor %}
                                             </div>
                                         {% endif %}
-                                        <p>{{ project[1].description | truncatewords: 30 }}</p>
-                                        <p><a href="{{ project[1].project_url }}" class="btn btn-primary btn-outline-primary">Read
+                                        <p>{{ project.description | truncatewords: 30 }}</p>
+                                        <p><a href="{{ project.project_url }}" class="btn btn-primary btn-outline-primary">Read
                                                 more</a></p>
                                     </div>
                                 </div>
@@ -92,6 +96,9 @@ permalink: /projects/
                         <h3>Categories</h3>
                         {% assign categories = site.data.project_categories | sort %}
                         {% for category in categories %}
+                            {% if category[1].code == page.cat_code %}
+                                {% continue %}
+                            {% endif %}
                             <li><a href="{{ site.url }}{{ site.baseurl }}{{ category[1].parent }}/{{ category[1].code }}">{{ category[0] | truncate:35 }} <span>({{ category[1].count }})</span></a></li>
                         {% endfor %}
                     </div>
@@ -154,3 +161,4 @@ permalink: /projects/
         </div>
     </div>
 </section>
+        

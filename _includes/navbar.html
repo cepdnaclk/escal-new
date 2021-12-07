@@ -11,7 +11,8 @@
                 {% assign links = site.data.navigation %}
                 {% for link in links %}
                     {% assign class = nil %}
-                    {% if page.title == link.title %}
+                    {% assign tree = link.url | split: '/' %}
+                    {% if page.permalink contains tree[1] or (link.url == '/' and page.permalink == link.url) %}
                         {% assign class = 'active' %}
                     {% endif %}
                     {% if link.sublinks %}

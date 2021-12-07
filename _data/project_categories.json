@@ -9,26 +9,29 @@
             "e15-4yp-Accelerating-Adaptive-Banded-Event-Alignment-Algorithm-with-OpenCL-on-FPGA",
             "e15-4yp-Mixed-Reality-based-Simulation-Platform-for-Swarm-Robotics",
             "e15-4yp-nearIR-spectroscopy"
-        ]
+        ],
+        "parent": "/projects"
     },
-    "E10 Batch": {
+    "E10 Batch Projects": {
         "count": 2,
-        "code": "4yp",
+        "code": "e10",
         "projects": [
             "e10-4yp-CUDA_Fast_ICA",
             "e10-4yp-building-a-testbed-for-power-analysis-attacks"
-        ]
+        ],
+        "parent": "/projects"
     },
-    "E11 Batch": {
+    "E11 Batch Projects": {
         "count": 1,
-        "code": "4yp",
+        "code": "e11",
         "projects": [
             "e11-4yp-HBFT"
-        ]
+        ],
+        "parent": "/projects"
     },
-    "E15 Batch": {
+    "E15 Batch Projects": {
         "count": 27,
-        "code": "co543",
+        "code": "e15",
         "projects": [
             "e15-4yp-Accelerating-Adaptive-Banded-Event-Alignment-Algorithm-with-OpenCL-on-FPGA",
             "e15-4yp-Mixed-Reality-based-Simulation-Platform-for-Swarm-Robotics",
@@ -57,7 +60,8 @@
             "e15-co543-Swarm-Robot-Monitoring-System-group-A",
             "e15-co543-Swarm-Robot-Monitoring-System-group-B",
             "e15-co543-Swarm-Robot-Monitoring-System-group-C"
-        ]
+        ],
+        "parent": "/projects"
     },
     "Cyber-Physical Systems Projects (3YP)": {
         "count": 80,
@@ -143,11 +147,12 @@
             "e17-3yp-smart-garbage-collection",
             "e17-3yp-smart-home",
             "e17-3yp-smart-shopping-cart"
-        ]
+        ],
+        "parent": "/projects"
     },
-    "E14 Batch": {
+    "E14 Batch Projects": {
         "count": 20,
-        "code": "3yp",
+        "code": "e14",
         "projects": [
             "e14-3yp-Air-Quality-Monitoring-system",
             "e14-3yp-Automated-Attendance-system",
@@ -169,11 +174,12 @@
             "e14-3yp-Telepresence-Robot",
             "e14-3yp-Train-Movement-Tracking-and-Level-Crossing-Safety-Control",
             "e14-3yp-sleep-apnea-detection"
-        ]
+        ],
+        "parent": "/projects"
     },
-    "E16 Batch": {
+    "E16 Batch Projects": {
         "count": 26,
-        "code": "co502",
+        "code": "e16",
         "projects": [
             "e16-3yp-agribot",
             "e16-3yp-automated-railway-ticketing-system",
@@ -201,11 +207,12 @@
             "e16-co502-RV32IM-NoC-implementation",
             "e16-co502-RV32IM-pipeline-implementation-group1",
             "e16-co502-RV32IM-pipeline-implementation-group3"
-        ]
+        ],
+        "parent": "/projects"
     },
-    "E17 Batch": {
+    "E17 Batch Projects": {
         "count": 20,
-        "code": "3yp",
+        "code": "e17",
         "projects": [
             "e17-3yp-Covid-Tracer",
             "e17-3yp-E-Parking-System",
@@ -227,7 +234,8 @@
             "e17-3yp-smart-garbage-collection",
             "e17-3yp-smart-home",
             "e17-3yp-smart-shopping-cart"
-        ]
+        ],
+        "parent": "/projects"
     },
     "Industrial Automation Projects (CO326)": {
         "count": 2,
@@ -235,7 +243,8 @@
         "projects": [
             "e15-co326-Remotely-Controlled-CNC-Robot",
             "e16-co326-Agriculture-Monitoring-and-Control-System"
-        ]
+        ],
+        "parent": "/projects"
     },
     "Image Processing Projects (CO543)": {
         "count": 3,
@@ -244,7 +253,8 @@
             "e15-co543-Swarm-Robot-Monitoring-System-group-A",
             "e15-co543-Swarm-Robot-Monitoring-System-group-B",
             "e15-co543-Swarm-Robot-Monitoring-System-group-C"
-        ]
+        ],
+        "parent": "/projects"
     },
     "Advanced Computer Architecture (CO502)": {
         "count": 5,
@@ -255,6 +265,7 @@
             "e16-co502-RV32IM-NoC-implementation",
             "e16-co502-RV32IM-pipeline-implementation-group1",
             "e16-co502-RV32IM-pipeline-implementation-group3"
-        ]
+        ],
+        "parent": "/projects"
     }
 }

@@ -16,6 +16,6 @@
 - [x] Python script to extract and save ESCAL related project information from the API.
 - [ ] Add details to 'About' page.
 - [ ] Add pagination to the projects page.
-- [ ] Pages for all project categories.
+- [x] Pages for all project categories.
 - [ ] Implement projects search.
-- [ ] Project thumbnails.
+- [x] Project thumbnails (For now: placeholders).

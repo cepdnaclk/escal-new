@@ -88,6 +88,7 @@ def save_excluded_projects(all_projects_filename, extracted_filename, excluded_f
 
     print(f"{excluded_filename.split('/')[-1]}: {l} projects excluded")
 
+# Use to extract categorized project data.
 def extract_categories(url, filename, projects_filename):
     with open(projects_filename, 'r') as f:
         projects = json.load(f)
@@ -99,23 +100,28 @@ def extract_categories(url, filename, projects_filename):
         title = categories[category]['title'].split('(')[0].strip()
         for batch in _projects['batches']:
             batchwise_projects = requests.get(_projects['batches'][batch]['api_url']).json()
+            cat_key = f'{title} ({category.upper()})'
+            batch_key = f'{batch} Batch Projects'
             for project in batchwise_projects.keys():
                 if project in projects:
-                    if not categorized_projects.get(f'{title} ({category.upper()})'): categorized_projects[f'{title} ({category.upper()})'] = {}
-                    if not categorized_projects.get(f'{batch} Batch'): categorized_projects[f'{batch} Batch'] = {}
+                    if not categorized_projects.get(cat_key): categorized_projects[cat_key] = {}
+                    if not categorized_projects.get(batch_key): categorized_projects[batch_key] = {}
 
-                    if not categorized_projects[f'{title} ({category.upper()})'].get('count'): categorized_projects[f'{title} ({category.upper()})']['count'] = 0
-                    categorized_projects[f'{title} ({category.upper()})']['count'] += 1
-                    if not categorized_projects[f'{batch} Batch'].get('count'): categorized_projects[f'{batch} Batch']['count'] = 0
-                    categorized_projects[f'{batch} Batch']['count'] += 1
+                    if not categorized_projects[cat_key].get('count'): categorized_projects[cat_key]['count'] = 0
+                    categorized_projects[cat_key]['count'] += 1
+                    if not categorized_projects[batch_key].get('count'): categorized_projects[batch_key]['count'] = 0
+                    categorized_projects[batch_key]['count'] += 1
 
-                    categorized_projects[f'{title} ({category.upper()})']['code'] = categories[category]['code']
-                    categorized_projects[f'{batch} Batch']['code'] = categories[category]['code']
+                    categorized_projects[cat_key]['code'] = categories[category]['code']
+                    categorized_projects[batch_key]['code'] = batch.lower()
 
-                    if not categorized_projects[f'{title} ({category.upper()})'].get('projects'): categorized_projects[f'{title} ({category.upper()})']['projects'] = []
-                    if not categorized_projects[f'{batch} Batch'].get('projects'): categorized_projects[f'{batch} Batch']['projects'] = []
-                    categorized_projects[f'{title} ({category.upper()})']['projects'].append(project)
-                    categorized_projects[f'{batch} Batch']['projects'].append(project)
+                    if not categorized_projects[cat_key].get('projects'): categorized_projects[cat_key]['projects'] = []
+                    if not categorized_projects[batch_key].get('projects'): categorized_projects[batch_key]['projects'] = []
+                    categorized_projects[cat_key]['projects'].append(project)
+                    categorized_projects[batch_key]['projects'].append(project)
+
+                    categorized_projects[cat_key]['parent'] = '/projects'
+                    categorized_projects[batch_key]['parent'] = '/projects'
 
     with open(filename, 'w') as f:
         json.dump(categorized_projects, f)
@@ -140,4 +146,4 @@ if __name__ == '__main__':
     #                 f'{PATH}/excluded_projects.json', 
     #                 filters,
     #                 key_tags)
-    extract_categories('https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/', f'{PATH}/categories.json', f'{PATH}/projects.json')
+    extract_categories('https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/', f'{PATH}/project_categories.json', f'{PATH}/projects.json')
