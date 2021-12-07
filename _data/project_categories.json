@@ -1,4 +1,25 @@
 {
+    "Industrial Automation Projects (CO326)": {
+        "count": 2,
+        "code": "co326",
+        "projects": [
+            "e15-co326-Remotely-Controlled-CNC-Robot",
+            "e16-co326-Agriculture-Monitoring-and-Control-System"
+        ],
+        "parent": "/projects"
+    },
+    "Advanced Computer Architecture (CO502)": {
+        "count": 5,
+        "code": "co502",
+        "projects": [
+            "e16-co502-RISCV-Pipeline-CPU-Implimentation-Group2",
+            "e16-co502-RISCV-pipeline-cpu-implementation-group04",
+            "e16-co502-RV32IM-NoC-implementation",
+            "e16-co502-RV32IM-pipeline-implementation-group1",
+            "e16-co502-RV32IM-pipeline-implementation-group3"
+        ],
+        "parent": "/projects"
+    },
     "Undergraduate Research Projects (4YP)": {
         "count": 6,
         "code": "4yp",
@@ -9,57 +30,6 @@
             "e15-4yp-Accelerating-Adaptive-Banded-Event-Alignment-Algorithm-with-OpenCL-on-FPGA",
             "e15-4yp-Mixed-Reality-based-Simulation-Platform-for-Swarm-Robotics",
             "e15-4yp-nearIR-spectroscopy"
-        ],
-        "parent": "/projects"
-    },
-    "E10 Batch Projects": {
-        "count": 2,
-        "code": "e10",
-        "projects": [
-            "e10-4yp-CUDA_Fast_ICA",
-            "e10-4yp-building-a-testbed-for-power-analysis-attacks"
-        ],
-        "parent": "/projects"
-    },
-    "E11 Batch Projects": {
-        "count": 1,
-        "code": "e11",
-        "projects": [
-            "e11-4yp-HBFT"
-        ],
-        "parent": "/projects"
-    },
-    "E15 Batch Projects": {
-        "count": 27,
-        "code": "e15",
-        "projects": [
-            "e15-4yp-Accelerating-Adaptive-Banded-Event-Alignment-Algorithm-with-OpenCL-on-FPGA",
-            "e15-4yp-Mixed-Reality-based-Simulation-Platform-for-Swarm-Robotics",
-            "e15-4yp-nearIR-spectroscopy",
-            "e15-3yp-A-GUI-for-controlling-and-supervising-multiple-robots-remotely",
-            "e15-3yp-An-Efficient-System-For-Waste-Collection",
-            "e15-3yp-An-automated-system-for-monitoring-and-controlling-the-water-supply-to-a-large-farmland",
-            "e15-3yp-Automated-Bike-Sharing-System",
-            "e15-3yp-Automated-Book-Management-System-Automated-Book-Carrying-Robot",
-            "e15-3yp-Automated-Vehicle-Parking-System",
-            "e15-3yp-Automated-Water-Quality-Monitoring-System",
-            "e15-3yp-Automatic-Door-Lock-System",
-            "e15-3yp-E-Checkup",
-            "e15-3yp-Embedded-system-for-detecting-adverse-gases",
-            "e15-3yp-Fire-Detection-and-Alert-System",
-            "e15-3yp-Health-Watch",
-            "e15-3yp-Hydroponics-Automation-System",
-            "e15-3yp-Intelligent-Road-Traffic-Control-System",
-            "e15-3yp-Monitoring-and-Tracking-System-for-Transportation-of-Pharmaceuticals",
-            "e15-3yp-Personal-Physical-Trainer-PPT",
-            "e15-3yp-Safer-Travel-Utility-SaVy",
-            "e15-3yp-Smart-Educational-Management-System",
-            "e15-3yp-Smart-Mirror",
-            "e15-3yp-Smart-Monitoring-and-Automated-Controlling-System-for-an-Aquarium",
-            "e15-co326-Remotely-Controlled-CNC-Robot",
-            "e15-co543-Swarm-Robot-Monitoring-System-group-A",
-            "e15-co543-Swarm-Robot-Monitoring-System-group-B",
-            "e15-co543-Swarm-Robot-Monitoring-System-group-C"
         ],
         "parent": "/projects"
     },
@@ -150,6 +120,67 @@
         ],
         "parent": "/projects"
     },
+    "Image Processing Projects (CO543)": {
+        "count": 3,
+        "code": "co543",
+        "projects": [
+            "e15-co543-Swarm-Robot-Monitoring-System-group-A",
+            "e15-co543-Swarm-Robot-Monitoring-System-group-B",
+            "e15-co543-Swarm-Robot-Monitoring-System-group-C"
+        ],
+        "parent": "/projects"
+    },
+    "E10 Batch Projects": {
+        "count": 2,
+        "code": "e10",
+        "projects": [
+            "e10-4yp-CUDA_Fast_ICA",
+            "e10-4yp-building-a-testbed-for-power-analysis-attacks"
+        ],
+        "parent": "/projects"
+    },
+    "E11 Batch Projects": {
+        "count": 1,
+        "code": "e11",
+        "projects": [
+            "e11-4yp-HBFT"
+        ],
+        "parent": "/projects"
+    },
+    "E15 Batch Projects": {
+        "count": 27,
+        "code": "e15",
+        "projects": [
+            "e15-4yp-Accelerating-Adaptive-Banded-Event-Alignment-Algorithm-with-OpenCL-on-FPGA",
+            "e15-4yp-Mixed-Reality-based-Simulation-Platform-for-Swarm-Robotics",
+            "e15-4yp-nearIR-spectroscopy",
+            "e15-3yp-A-GUI-for-controlling-and-supervising-multiple-robots-remotely",
+            "e15-3yp-An-Efficient-System-For-Waste-Collection",
+            "e15-3yp-An-automated-system-for-monitoring-and-controlling-the-water-supply-to-a-large-farmland",
+            "e15-3yp-Automated-Bike-Sharing-System",
+            "e15-3yp-Automated-Book-Management-System-Automated-Book-Carrying-Robot",
+            "e15-3yp-Automated-Vehicle-Parking-System",
+            "e15-3yp-Automated-Water-Quality-Monitoring-System",
+            "e15-3yp-Automatic-Door-Lock-System",
+            "e15-3yp-E-Checkup",
+            "e15-3yp-Embedded-system-for-detecting-adverse-gases",
+            "e15-3yp-Fire-Detection-and-Alert-System",
+            "e15-3yp-Health-Watch",
+            "e15-3yp-Hydroponics-Automation-System",
+            "e15-3yp-Intelligent-Road-Traffic-Control-System",
+            "e15-3yp-Monitoring-and-Tracking-System-for-Transportation-of-Pharmaceuticals",
+            "e15-3yp-Personal-Physical-Trainer-PPT",
+            "e15-3yp-Safer-Travel-Utility-SaVy",
+            "e15-3yp-Smart-Educational-Management-System",
+            "e15-3yp-Smart-Mirror",
+            "e15-3yp-Smart-Monitoring-and-Automated-Controlling-System-for-an-Aquarium",
+            "e15-co326-Remotely-Controlled-CNC-Robot",
+            "e15-co543-Swarm-Robot-Monitoring-System-group-A",
+            "e15-co543-Swarm-Robot-Monitoring-System-group-B",
+            "e15-co543-Swarm-Robot-Monitoring-System-group-C"
+        ],
+        "parent": "/projects"
+    },
     "E14 Batch Projects": {
         "count": 20,
         "code": "e14",
@@ -234,37 +265,6 @@
             "e17-3yp-smart-garbage-collection",
             "e17-3yp-smart-home",
             "e17-3yp-smart-shopping-cart"
-        ],
-        "parent": "/projects"
-    },
-    "Industrial Automation Projects (CO326)": {
-        "count": 2,
-        "code": "co326",
-        "projects": [
-            "e15-co326-Remotely-Controlled-CNC-Robot",
-            "e16-co326-Agriculture-Monitoring-and-Control-System"
-        ],
-        "parent": "/projects"
-    },
-    "Image Processing Projects (CO543)": {
-        "count": 3,
-        "code": "co543",
-        "projects": [
-            "e15-co543-Swarm-Robot-Monitoring-System-group-A",
-            "e15-co543-Swarm-Robot-Monitoring-System-group-B",
-            "e15-co543-Swarm-Robot-Monitoring-System-group-C"
-        ],
-        "parent": "/projects"
-    },
-    "Advanced Computer Architecture (CO502)": {
-        "count": 5,
-        "code": "co502",
-        "projects": [
-            "e16-co502-RISCV-Pipeline-CPU-Implimentation-Group2",
-            "e16-co502-RISCV-pipeline-cpu-implementation-group04",
-            "e16-co502-RV32IM-NoC-implementation",
-            "e16-co502-RV32IM-pipeline-implementation-group1",
-            "e16-co502-RV32IM-pipeline-implementation-group3"
         ],
         "parent": "/projects"
     }

@@ -107,8 +107,7 @@ permalink: {parent}/{code}
                 <div class="sidebar-box ftco-animate">
                     <div class="categories">
                         <h3>Categories</h3>
-                        {{% assign categories = site.data.project_categories | sort %}}
-                        {{% for category in categories %}}
+                        {{% for category in site.data.project_categories %}}
                             {{% if category[1].code == page.cat_code %}}
                                 {{% continue %}}
                             {{% endif %}}
@@ -169,6 +168,10 @@ permalink: {parent}/{code}
                         <a href="#" class="tag-cloud-link">Research-Project</a>
                         <a href="#" class="tag-cloud-link">CUDA</a>
                     </div>
+                </div>
+
+                <div class="sidebar-box ftco-animate">
+                    <span>Last Updated: {{{{ site.time | date: '%B %d, %Y' }}}}</span>
                 </div>
             </div>
         </div>

@@ -123,8 +123,12 @@ def extract_categories(url, filename, projects_filename):
                     categorized_projects[cat_key]['parent'] = '/projects'
                     categorized_projects[batch_key]['parent'] = '/projects'
 
+    sorted_projects = {}
+    for k in sorted(categorized_projects, key=len, reverse=True):
+        sorted_projects[k] = categorized_projects[k]
+
     with open(filename, 'w') as f:
-        json.dump(categorized_projects, f)
+        json.dump(sorted_projects, f)
 
     print(f"{filename.split('/')[-1]}: {len(categories)} categories extracted")
 
