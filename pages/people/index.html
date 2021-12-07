@@ -1,0 +1,38 @@
+---
+layout: default
+title: "People"
+permalink: /people/
+---
+
+<section class="home-slider owl-carousel">
+	<div class="slider-item bread-item" style="background-image: url('{{ 'assets/images/img4.jpg' | relative_url }}');"
+	data-stellar-background-ratio="0.5">
+	<div class="overlay"></div>
+	<div class="container" data-scrollax-parent="true">
+		<div class="row slider-text align-items-end">
+			<div class="col-md-7 col-sm-12 ftco-animate mb-5">
+				<p class="breadcrumbs" data-scrollax=" properties: { translateY: '70%', opacity: 1.6}"><span
+					class="mr-2"><a href="{{ site.url }}{{ site.baseurl }}">Home</a></span>/ <span>People</span></p>
+					<h1 class="mb-3 font-weight-bold" data-scrollax=" properties: { translateY: '70%', opacity: .9}">Faculty and Staff Profiles
+					</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="ftco-section bg-light">
+	<div class="container">
+		<div class="row justify-content-center mb-5 pb-3">
+			<div class="col-md-7 heading-section ftco-animate text-center">
+				<h2 class="mb-4">Our Team</h2>
+			</div>
+		</div>
+		<div class="row">
+			{% assign people = site.data.people %}
+			{% for person in people %}
+			{% include card_people.html person=person %}
+			{% endfor %}
+		</div>
+	</div>
+</section>
