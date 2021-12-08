@@ -11,6 +11,8 @@
         "repo_url": "https://github.com/cepdnaclk/e10-4yp-CUDA_Fast_ICA",
         "page_url": "#",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/4yp/E10/CUDA_Fast_ICA/",
+        "stars": 0,
+        "updated_at": "2020-10-20T05:54:23Z",
         "team": {}
     },
     "e10-4yp-building-a-testbed-for-power-analysis-attacks": {
@@ -25,6 +27,8 @@
         "repo_url": "https://github.com/cepdnaclk/e10-4yp-building-a-testbed-for-power-analysis-attacks",
         "page_url": "#",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/4yp/E10/building-a-testbed-for-power-analysis-attacks/",
+        "stars": 0,
+        "updated_at": "2020-10-25T05:36:05Z",
         "team": {}
     },
     "e11-4yp-HBFT": {
@@ -39,6 +43,8 @@
         "repo_url": "https://github.com/cepdnaclk/e11-4yp-HBFT",
         "page_url": "#",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/4yp/E11/HBFT/",
+        "stars": 0,
+        "updated_at": "2020-10-20T05:55:08Z",
         "team": {}
     },
     "e15-4yp-Accelerating-Adaptive-Banded-Event-Alignment-Algorithm-with-OpenCL-on-FPGA": {
@@ -53,6 +59,8 @@
         "repo_url": "https://github.com/cepdnaclk/e15-4yp-Accelerating-Adaptive-Banded-Event-Alignment-Algorithm-with-OpenCL-on-FPGA",
         "page_url": "https://cepdnaclk.github.io/e15-4yp-Accelerating-Adaptive-Banded-Event-Alignment-Algorithm-with-OpenCL-on-FPGA",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/4yp/E15/Accelerating-Adaptive-Banded-Event-Alignment-Algorithm-with-OpenCL-on-FPGA/",
+        "stars": 0,
+        "updated_at": "2021-11-15T17:38:43Z",
         "team": {
             "E/15/123": {
                 "name": "Wishma Herath",
@@ -80,6 +88,8 @@
         "repo_url": "https://github.com/cepdnaclk/e15-4yp-Mixed-Reality-based-Simulation-Platform-for-Swarm-Robotics",
         "page_url": "https://cepdnaclk.github.io/e15-4yp-Mixed-Reality-based-Simulation-Platform-for-Swarm-Robotics",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/4yp/E15/Mixed-Reality-based-Simulation-Platform-for-Swarm-Robotics/",
+        "stars": 1,
+        "updated_at": "2021-08-01T16:04:53Z",
         "team": {
             "E/15/140": {
                 "name": "Jaliyagoda A.J.N.M.",
@@ -107,6 +117,8 @@
         "repo_url": "https://github.com/cepdnaclk/e15-4yp-nearIR-spectroscopy",
         "page_url": "https://cepdnaclk.github.io/e15-4yp-nearIR-spectroscopy",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/4yp/E15/nearIR-spectroscopy/",
+        "stars": 0,
+        "updated_at": "2021-11-15T17:39:14Z",
         "team": {
             "E/15/383": {
                 "name": "Keshara Weerasinghe",
@@ -134,6 +146,8 @@
         "repo_url": "https://github.com/cepdnaclk/e14-3yp-Air-Quality-Monitoring-system",
         "page_url": "https://cepdnaclk.github.io/e14-3yp-Air-Quality-Monitoring-system",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E14/Air-Quality-Monitoring-system/",
+        "stars": 0,
+        "updated_at": "2021-11-15T14:24:41Z",
         "team": {
             "E/14/049": {
                 "name": "KASUN VIMUKTHI",
@@ -157,6 +171,8 @@
         "repo_url": "https://github.com/cepdnaclk/e14-3yp-Automated-Attendance-system",
         "page_url": "https://cepdnaclk.github.io/e14-3yp-Automated-Attendance-system",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E14/Automated-Attendance-system/",
+        "stars": 0,
+        "updated_at": "2021-11-15T14:24:22Z",
         "team": {
             "E/14/018": {
                 "name": "ANURADHA WIJEWICKRAMA",
@@ -184,6 +200,8 @@
         "repo_url": "https://github.com/cepdnaclk/e14-3yp-Automated-Bike-Sharing-System",
         "page_url": "https://cepdnaclk.github.io/e14-3yp-Automated-Bike-Sharing-System",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E14/Automated-Bike-Sharing-System/",
+        "stars": 0,
+        "updated_at": "2021-11-15T14:23:56Z",
         "team": {
             "E/14/154": {
                 "name": "JAYASUNDARA J.M.S.M.",
@@ -211,6 +229,8 @@
         "repo_url": "https://github.com/cepdnaclk/e14-3yp-Automated-Electricity-Billing-System",
         "page_url": "https://cepdnaclk.github.io/e14-3yp-Automated-Electricity-Billing-System",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E14/Automated-Electricity-Billing-System/",
+        "stars": 0,
+        "updated_at": "2021-11-15T14:24:36Z",
         "team": {
             "E/14/018": {
                 "name": "ANURADHA WIJEWICKRAMA",
@@ -238,6 +258,8 @@
         "repo_url": "https://github.com/cepdnaclk/e14-3yp-Automated-Fishing-Bot",
         "page_url": "https://cepdnaclk.github.io/e14-3yp-Automated-Fishing-Bot",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E14/Automated-Fishing-Bot/",
+        "stars": 0,
+        "updated_at": "2021-11-15T14:24:17Z",
         "team": {
             "E/14/222": {
                 "name": "MEDAWATTE R.C.",
@@ -265,6 +287,8 @@
         "repo_url": "https://github.com/cepdnaclk/e14-3yp-Automated-Greenhouse-Fertilizing-System",
         "page_url": "https://cepdnaclk.github.io/e14-3yp-Automated-Greenhouse-Fertilizing-System",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E14/Automated-Greenhouse-Fertilizing-System/",
+        "stars": 0,
+        "updated_at": "2021-11-15T14:24:12Z",
         "team": {
             "E/14/287": {
                 "name": "R.M.K.D Rathnayake",
@@ -292,6 +316,8 @@
         "repo_url": "https://github.com/cepdnaclk/e14-3yp-Automated-Monitoring-of-Hospital-Patients",
         "page_url": "https://cepdnaclk.github.io/e14-3yp-Automated-Monitoring-of-Hospital-Patients",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E14/Automated-Monitoring-of-Hospital-Patients/",
+        "stars": 0,
+        "updated_at": "2021-11-15T14:23:24Z",
         "team": {
             "E/14/054": {
                 "name": "CHATHURANGI E.",
@@ -319,6 +345,8 @@
         "repo_url": "https://github.com/cepdnaclk/e14-3yp-Automatic-Speed-Trap",
         "page_url": "https://cepdnaclk.github.io/e14-3yp-Automatic-Speed-Trap",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E14/Automatic-Speed-Trap/",
+        "stars": 0,
+        "updated_at": "2021-11-15T14:23:42Z",
         "team": {
             "E/14/349": {
                 "name": "THILAKARATHNA B.R.M.",
@@ -346,6 +374,8 @@
         "repo_url": "https://github.com/cepdnaclk/e14-3yp-Bus-tracking-system",
         "page_url": "https://cepdnaclk.github.io/e14-3yp-Bus-tracking-system",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E14/Bus-tracking-system/",
+        "stars": 0,
+        "updated_at": "2021-11-15T14:24:01Z",
         "team": {
             "E/14/181": {
                 "name": "KAVINDAT.B.D.H.",
@@ -373,6 +403,8 @@
         "repo_url": "https://github.com/cepdnaclk/e14-3yp-Control-System-for-Heliostat-Solar-Power-Plants",
         "page_url": "https://cepdnaclk.github.io/e14-3yp-Control-System-for-Heliostat-Solar-Power-Plants",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E14/Control-System-for-Heliostat-Solar-Power-Plants/",
+        "stars": 0,
+        "updated_at": "2021-11-15T14:24:27Z",
         "team": {
             "E/14/233": {
                 "name": "NIROSHANA T.M.T.",
@@ -400,6 +432,8 @@
         "repo_url": "https://github.com/cepdnaclk/e14-3yp-Networked-and-Automated-Weather-Monitoring-and-Alerting-System",
         "page_url": "https://cepdnaclk.github.io/e14-3yp-Networked-and-Automated-Weather-Monitoring-and-Alerting-System",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E14/Networked-and-Automated-Weather-Monitoring-and-Alerting-System/",
+        "stars": 0,
+        "updated_at": "2021-11-15T14:23:39Z",
         "team": {
             "E/14/009": {
                 "name": "ADIKARI A.M.H.I.",
@@ -427,6 +461,8 @@
         "repo_url": "https://github.com/cepdnaclk/e14-3yp-Real-Time-Water-Qualtiy-Measurement-System",
         "page_url": "https://cepdnaclk.github.io/e14-3yp-Real-Time-Water-Qualtiy-Measurement-System",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E14/Real-Time-Water-Qualtiy-Measurement-System/",
+        "stars": 0,
+        "updated_at": "2021-11-15T14:23:33Z",
         "team": {
             "E/14/142": {
                 "name": "INDIKA J.A.A.",
@@ -454,6 +490,8 @@
         "repo_url": "https://github.com/cepdnaclk/e14-3yp-River-water-level-and-speed-monitoring-and-alert-system",
         "page_url": "https://cepdnaclk.github.io/e14-3yp-River-water-level-and-speed-monitoring-and-alert-system",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E14/River-water-level-and-speed-monitoring-and-alert-system/",
+        "stars": 0,
+        "updated_at": "2021-11-15T14:23:46Z",
         "team": {
             "E/14/080": {
                 "name": "DILSHANI T.H.K.",
@@ -481,6 +519,8 @@
         "repo_url": "https://github.com/cepdnaclk/e14-3yp-Smart-Breathalyzer-Test",
         "page_url": "https://cepdnaclk.github.io/e14-3yp-Smart-Breathalyzer-Test",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E14/Smart-Breathalyzer-Test/",
+        "stars": 0,
+        "updated_at": "2021-11-15T14:23:52Z",
         "team": {
             "E/14/010": {
                 "name": "ADIKARI A.M.N.P.",
@@ -508,6 +548,8 @@
         "repo_url": "https://github.com/cepdnaclk/e14-3yp-Smart-Shopping-Cart",
         "page_url": "https://cepdnaclk.github.io/e14-3yp-Smart-Shopping-Cart",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E14/Smart-Shopping-Cart/",
+        "stars": 0,
+        "updated_at": "2021-11-15T14:24:07Z",
         "team": {
             "E/14/017": {
                 "name": "ANOJAN S.",
@@ -535,6 +577,8 @@
         "repo_url": "https://github.com/cepdnaclk/e14-3yp-Smart-Warehouse-Monitoring-for-Paddy-Storage",
         "page_url": "https://cepdnaclk.github.io/e14-3yp-Smart-Warehouse-Monitoring-for-Paddy-Storage",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E14/Smart-Warehouse-Monitoring-for-Paddy-Storage/",
+        "stars": 0,
+        "updated_at": "2021-11-15T14:24:32Z",
         "team": {
             "E/14/336": {
                 "name": "SUCHINTHANA A.P.N.",
@@ -558,6 +602,8 @@
         "repo_url": "https://github.com/cepdnaclk/e14-3yp-Smart-Waste-Disposal-Monitoring-System",
         "page_url": "https://cepdnaclk.github.io/e14-3yp-Smart-Waste-Disposal-Monitoring-System",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E14/Smart-Waste-Disposal-Monitoring-System/",
+        "stars": 1,
+        "updated_at": "2021-11-15T14:24:50Z",
         "team": {
             "E/14/122": {
                 "name": "Ahmedh J.R.",
@@ -585,6 +631,8 @@
         "repo_url": "https://github.com/cepdnaclk/e14-3yp-Telepresence-Robot",
         "page_url": "https://cepdnaclk.github.io/e14-3yp-Telepresence-Robot",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E14/Telepresence-Robot/",
+        "stars": 0,
+        "updated_at": "2021-11-15T14:24:45Z",
         "team": {
             "E/14/262": {
                 "name": "Sanoj Punchihewa",
@@ -612,6 +660,8 @@
         "repo_url": "https://github.com/cepdnaclk/e14-3yp-Train-Movement-Tracking-and-Level-Crossing-Safety-Control",
         "page_url": "https://cepdnaclk.github.io/e14-3yp-Train-Movement-Tracking-and-Level-Crossing-Safety-Control",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E14/Train-Movement-Tracking-and-Level-Crossing-Safety-Control/",
+        "stars": 0,
+        "updated_at": "2021-11-15T14:23:28Z",
         "team": {
             "E/14/213": {
                 "name": "MAHALIYANA R.K.",
@@ -639,6 +689,8 @@
         "repo_url": "https://github.com/cepdnaclk/e14-3yp-sleep-apnea-detection",
         "page_url": "https://cepdnaclk.github.io/e14-3yp-sleep-apnea-detection",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E14/sleep-apnea-detection/",
+        "stars": 0,
+        "updated_at": "2021-01-26T15:12:13Z",
         "team": {}
     },
     "e15-3yp-A-GUI-for-controlling-and-supervising-multiple-robots-remotely": {
@@ -653,6 +705,8 @@
         "repo_url": "https://github.com/cepdnaclk/e15-3yp-A-GUI-for-controlling-and-supervising-multiple-robots-remotely",
         "page_url": "https://cepdnaclk.github.io/e15-3yp-A-GUI-for-controlling-and-supervising-multiple-robots-remotely",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E15/A-GUI-for-controlling-and-supervising-multiple-robots-remotely/",
+        "stars": 0,
+        "updated_at": "2021-11-15T04:01:22Z",
         "team": {
             "E/15/140": {
                 "name": "Jaliyagoda A.J.N.M.",
@@ -680,6 +734,8 @@
         "repo_url": "https://github.com/cepdnaclk/e15-3yp-An-Efficient-System-For-Waste-Collection",
         "page_url": "https://cepdnaclk.github.io/e15-3yp-An-Efficient-System-For-Waste-Collection",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E15/An-Efficient-System-For-Waste-Collection/",
+        "stars": 0,
+        "updated_at": "2021-11-15T04:14:19Z",
         "team": {
             "E/15/347": {
                 "name": "I.U. Sudasinghe",
@@ -707,6 +763,8 @@
         "repo_url": "https://github.com/cepdnaclk/e15-3yp-An-automated-system-for-monitoring-and-controlling-the-water-supply-to-a-large-farmland",
         "page_url": "https://cepdnaclk.github.io/e15-3yp-An-automated-system-for-monitoring-and-controlling-the-water-supply-to-a-large-farmland",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E15/An-automated-system-for-monitoring-and-controlling-the-water-supply-to-a-large-farmland/",
+        "stars": 0,
+        "updated_at": "2021-11-15T04:14:16Z",
         "team": {
             "E/15/138": {
                 "name": "M.M.M. Irfan",
@@ -734,6 +792,8 @@
         "repo_url": "https://github.com/cepdnaclk/e15-3yp-Automated-Bike-Sharing-System",
         "page_url": "https://cepdnaclk.github.io/e15-3yp-Automated-Bike-Sharing-System",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E15/Automated-Bike-Sharing-System/",
+        "stars": 0,
+        "updated_at": "2021-11-15T04:14:13Z",
         "team": {
             "E/15/179": {
                 "name": "KARUNARATNE S.M.A.K.",
@@ -761,6 +821,8 @@
         "repo_url": "https://github.com/cepdnaclk/e15-3yp-Automated-Book-Management-System-Automated-Book-Carrying-Robot",
         "page_url": "https://cepdnaclk.github.io/e15-3yp-Automated-Book-Management-System-Automated-Book-Carrying-Robot",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E15/Automated-Book-Management-System-Automated-Book-Carrying-Robot/",
+        "stars": 0,
+        "updated_at": "2021-05-20T05:33:10Z",
         "team": {
             "E/15/016": {
                 "name": "ANOJAN S.",
@@ -788,6 +850,8 @@
         "repo_url": "https://github.com/cepdnaclk/e15-3yp-Automated-Vehicle-Parking-System",
         "page_url": "https://cepdnaclk.github.io/e15-3yp-Automated-Vehicle-Parking-System",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E15/Automated-Vehicle-Parking-System/",
+        "stars": 0,
+        "updated_at": "2021-11-15T04:09:13Z",
         "team": {
             "E/15/076": {
                 "name": "DILEKA J.H.S.",
@@ -815,6 +879,8 @@
         "repo_url": "https://github.com/cepdnaclk/e15-3yp-Automated-Water-Quality-Monitoring-System",
         "page_url": "https://cepdnaclk.github.io/e15-3yp-Automated-Water-Quality-Monitoring-System",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E15/Automated-Water-Quality-Monitoring-System/",
+        "stars": 0,
+        "updated_at": "2021-11-15T04:14:31Z",
         "team": {
             "E/15/077": {
                 "name": "K.P.W.A.K.K. Dilhani",
@@ -842,6 +908,8 @@
         "repo_url": "https://github.com/cepdnaclk/e15-3yp-Automatic-Door-Lock-System",
         "page_url": "https://cepdnaclk.github.io/e15-3yp-Automatic-Door-Lock-System",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E15/Automatic-Door-Lock-System/",
+        "stars": 0,
+        "updated_at": "2021-11-15T04:14:38Z",
         "team": {
             "E/15/119": {
                 "name": "D.L. D. Hasanika,",
@@ -869,6 +937,8 @@
         "repo_url": "https://github.com/cepdnaclk/e15-3yp-E-Checkup",
         "page_url": "https://cepdnaclk.github.io/e15-3yp-E-Checkup",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E15/E-Checkup/",
+        "stars": 0,
+        "updated_at": "2021-11-15T04:13:57Z",
         "team": {
             "E/15/366": {
                 "name": "THINESH S.",
@@ -896,6 +966,8 @@
         "repo_url": "https://github.com/cepdnaclk/e15-3yp-Embedded-system-for-detecting-adverse-gases",
         "page_url": "https://cepdnaclk.github.io/e15-3yp-Embedded-system-for-detecting-adverse-gases",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E15/Embedded-system-for-detecting-adverse-gases/",
+        "stars": 0,
+        "updated_at": "2021-11-15T04:14:10Z",
         "team": {
             "E/15/243": {
                 "name": "NISANSALA R.M.B.S.",
@@ -923,6 +995,8 @@
         "repo_url": "https://github.com/cepdnaclk/e15-3yp-Fire-Detection-and-Alert-System",
         "page_url": "https://cepdnaclk.github.io/e15-3yp-Fire-Detection-and-Alert-System",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E15/Fire-Detection-and-Alert-System/",
+        "stars": 0,
+        "updated_at": "2021-05-20T14:32:37Z",
         "team": {
             "E/15/154": {
                 "name": "JAYASOORIYA J.K.C.N.",
@@ -950,6 +1024,8 @@
         "repo_url": "https://github.com/cepdnaclk/e15-3yp-Health-Watch",
         "page_url": "https://cepdnaclk.github.io/e15-3yp-Health-Watch",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E15/Health-Watch/",
+        "stars": 0,
+        "updated_at": "2021-05-21T20:48:04Z",
         "team": {
             "E/15/188": {
                 "name": "K.N.U. Kularatne",
@@ -977,6 +1053,8 @@
         "repo_url": "https://github.com/cepdnaclk/e15-3yp-Hydroponics-Automation-System",
         "page_url": "https://cepdnaclk.github.io/e15-3yp-Hydroponics-Automation-System",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E15/Hydroponics-Automation-System/",
+        "stars": 0,
+        "updated_at": "2021-11-15T04:14:22Z",
         "team": {
             "E/15/299": {
                 "name": "L.M. Ranushka ",
@@ -1004,6 +1082,8 @@
         "repo_url": "https://github.com/cepdnaclk/e15-3yp-Intelligent-Road-Traffic-Control-System",
         "page_url": "https://cepdnaclk.github.io/e15-3yp-Intelligent-Road-Traffic-Control-System",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E15/Intelligent-Road-Traffic-Control-System/",
+        "stars": 0,
+        "updated_at": "2021-11-15T04:14:01Z",
         "team": {
             "E/15/280": {
                 "name": "PREMATHILAKA M.P.U.",
@@ -1031,6 +1111,8 @@
         "repo_url": "https://github.com/cepdnaclk/e15-3yp-Monitoring-and-Tracking-System-for-Transportation-of-Pharmaceuticals",
         "page_url": "https://cepdnaclk.github.io/e15-3yp-Monitoring-and-Tracking-System-for-Transportation-of-Pharmaceuticals",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E15/Monitoring-and-Tracking-System-for-Transportation-of-Pharmaceuticals/",
+        "stars": 0,
+        "updated_at": "2021-11-15T04:14:35Z",
         "team": {
             "E/15/021": {
                 "name": "M.M.M. Aslam",
@@ -1058,6 +1140,8 @@
         "repo_url": "https://github.com/cepdnaclk/e15-3yp-Personal-Physical-Trainer-PPT",
         "page_url": "https://cepdnaclk.github.io/e15-3yp-Personal-Physical-Trainer-PPT",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E15/Personal-Physical-Trainer-PPT/",
+        "stars": 0,
+        "updated_at": "2021-05-20T21:16:37Z",
         "team": {
             "E/15/059": {
                 "name": "DASSANAYAKE P.S.B.",
@@ -1085,6 +1169,8 @@
         "repo_url": "https://github.com/cepdnaclk/e15-3yp-Safer-Travel-Utility-SaVy",
         "page_url": "https://cepdnaclk.github.io/e15-3yp-Safer-Travel-Utility-SaVy",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E15/Safer-Travel-Utility-SaVy/",
+        "stars": 0,
+        "updated_at": "2021-05-20T13:02:40Z",
         "team": {
             "E/15/363": {
                 "name": "THILAKARATHNE E.R.R.I.",
@@ -1112,6 +1198,8 @@
         "repo_url": "https://github.com/cepdnaclk/e15-3yp-Smart-Educational-Management-System",
         "page_url": "https://cepdnaclk.github.io/e15-3yp-Smart-Educational-Management-System",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E15/Smart-Educational-Management-System/",
+        "stars": 0,
+        "updated_at": "2021-11-15T04:14:25Z",
         "team": {
             "E/15/246": {
                 "name": "R.L. Opanayaka",
@@ -1139,6 +1227,8 @@
         "repo_url": "https://github.com/cepdnaclk/e15-3yp-Smart-Mirror",
         "page_url": "https://cepdnaclk.github.io/e15-3yp-Smart-Mirror",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E15/Smart-Mirror/",
+        "stars": 0,
+        "updated_at": "2021-05-20T18:56:57Z",
         "team": {
             "E/15/261": {
                 "name": "PERERA M.S.V.",
@@ -1166,6 +1256,8 @@
         "repo_url": "https://github.com/cepdnaclk/e15-3yp-Smart-Monitoring-and-Automated-Controlling-System-for-an-Aquarium",
         "page_url": "https://cepdnaclk.github.io/e15-3yp-Smart-Monitoring-and-Automated-Controlling-System-for-an-Aquarium",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E15/Smart-Monitoring-and-Automated-Controlling-System-for-an-Aquarium/",
+        "stars": 0,
+        "updated_at": "2021-11-15T04:14:28Z",
         "team": {
             "E/15/362": {
                 "name": "K.A.H.P. Thilakarathna",
@@ -1193,6 +1285,8 @@
         "repo_url": "https://github.com/cepdnaclk/e16-3yp-agribot",
         "page_url": "https://cepdnaclk.github.io/e16-3yp-agribot",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E16/agribot/",
+        "stars": 3,
+        "updated_at": "2021-09-04T07:22:47Z",
         "team": {}
     },
     "e16-3yp-automated-railway-ticketing-system": {
@@ -1207,6 +1301,8 @@
         "repo_url": "https://github.com/cepdnaclk/e16-3yp-automated-railway-ticketing-system",
         "page_url": "https://cepdnaclk.github.io/e16-3yp-automated-railway-ticketing-system",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E16/automated-railway-ticketing-system/",
+        "stars": 1,
+        "updated_at": "2021-06-07T03:28:28Z",
         "team": {}
     },
     "e16-3yp-automatic-fish-tank-control-system": {
@@ -1221,6 +1317,8 @@
         "repo_url": "https://github.com/cepdnaclk/e16-3yp-automatic-fish-tank-control-system",
         "page_url": "https://cepdnaclk.github.io/e16-3yp-automatic-fish-tank-control-system",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E16/automatic-fish-tank-control-system/",
+        "stars": 0,
+        "updated_at": "2021-06-04T15:38:49Z",
         "team": {
             "E/16/377": {
                 "name": "Supun Vindula",
@@ -1248,6 +1346,8 @@
         "repo_url": "https://github.com/cepdnaclk/e16-3yp-chessMATE",
         "page_url": "https://cepdnaclk.github.io/e16-3yp-chessMATE",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E16/chessMATE/",
+        "stars": 2,
+        "updated_at": "2021-09-30T18:06:54Z",
         "team": {
             "E/16/012": {
                 "name": "Isurika De Silva",
@@ -1275,6 +1375,8 @@
         "repo_url": "https://github.com/cepdnaclk/e16-3yp-computerized-timetabling-and-attendance-marking-system",
         "page_url": "https://cepdnaclk.github.io/e16-3yp-computerized-timetabling-and-attendance-marking-system",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E16/computerized-timetabling-and-attendance-marking-system/",
+        "stars": 0,
+        "updated_at": "2021-06-04T11:06:15Z",
         "team": {
             "E/16/242": {
                 "name": "Saubagya Munasingha",
@@ -1302,6 +1404,8 @@
         "repo_url": "https://github.com/cepdnaclk/e16-3yp-digital-signage-based-user-targeted-advertising",
         "page_url": "https://cepdnaclk.github.io/e16-3yp-digital-signage-based-user-targeted-advertising",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E16/digital-signage-based-user-targeted-advertising/",
+        "stars": 4,
+        "updated_at": "2021-10-30T04:00:13Z",
         "team": {
             "E/16/083": {
                 "name": "Dhanushka S.M.V.",
@@ -1329,6 +1433,8 @@
         "repo_url": "https://github.com/cepdnaclk/e16-3yp-full-body-motion-tracking-system",
         "page_url": "https://cepdnaclk.github.io/e16-3yp-full-body-motion-tracking-system",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E16/full-body-motion-tracking-system/",
+        "stars": 0,
+        "updated_at": "2021-06-05T16:32:41Z",
         "team": {
             "E/16/173": {
                 "name": "Karunarthna D A D T",
@@ -1356,6 +1462,8 @@
         "repo_url": "https://github.com/cepdnaclk/e16-3yp-gas-level-indicator-and-leakage-detector",
         "page_url": "https://cepdnaclk.github.io/e16-3yp-gas-level-indicator-and-leakage-detector",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E16/gas-level-indicator-and-leakage-detector/",
+        "stars": 0,
+        "updated_at": "2021-06-04T16:49:20Z",
         "team": {
             "E/16/078": {
                 "name": "Thilini Deshika",
@@ -1383,6 +1491,8 @@
         "repo_url": "https://github.com/cepdnaclk/e16-3yp-obstacle-bots-for-swarm-robots",
         "page_url": "https://cepdnaclk.github.io/e16-3yp-obstacle-bots-for-swarm-robots",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E16/obstacle-bots-for-swarm-robots/",
+        "stars": 2,
+        "updated_at": "2021-06-05T07:24:36Z",
         "team": {
             "E/16/366": {
                 "name": "Thilarakathna W M D U",
@@ -1410,6 +1520,8 @@
         "repo_url": "https://github.com/cepdnaclk/e16-3yp-qurantine-tracker",
         "page_url": "https://cepdnaclk.github.io/e16-3yp-qurantine-tracker",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E16/qurantine-tracker/",
+        "stars": 1,
+        "updated_at": "2021-09-07T14:43:14Z",
         "team": {}
     },
     "e16-3yp-smart-door-lock": {
@@ -1424,6 +1536,8 @@
         "repo_url": "https://github.com/cepdnaclk/e16-3yp-smart-door-lock",
         "page_url": "https://cepdnaclk.github.io/e16-3yp-smart-door-lock",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E16/smart-door-lock/",
+        "stars": 0,
+        "updated_at": "2021-06-11T16:06:55Z",
         "team": {
             "E/16/086": {
                 "name": "Dharmathilaka A.L.V.H.",
@@ -1451,6 +1565,8 @@
         "repo_url": "https://github.com/cepdnaclk/e16-3yp-smart-infared-shooting-sport",
         "page_url": "https://cepdnaclk.github.io/e16-3yp-smart-infared-shooting-sport",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E16/smart-infared-shooting-sport/",
+        "stars": 2,
+        "updated_at": "2021-11-30T14:50:19Z",
         "team": {}
     },
     "e16-3yp-smart-meeting-automaton": {
@@ -1465,6 +1581,8 @@
         "repo_url": "https://github.com/cepdnaclk/e16-3yp-smart-meeting-automaton",
         "page_url": "https://cepdnaclk.github.io/e16-3yp-smart-meeting-automaton",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E16/smart-meeting-automaton/",
+        "stars": 1,
+        "updated_at": "2021-11-07T02:13:42Z",
         "team": {
             "E/16/022": {
                 "name": "Amarasinghe D.L.C.",
@@ -1492,6 +1610,8 @@
         "repo_url": "https://github.com/cepdnaclk/e16-3yp-smart-payment-system",
         "page_url": "https://cepdnaclk.github.io/e16-3yp-smart-payment-system",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E16/smart-payment-system/",
+        "stars": 1,
+        "updated_at": "2021-09-28T17:27:43Z",
         "team": {
             "E/16/054": {
                 "name": "Sathira Shamuditha",
@@ -1519,6 +1639,8 @@
         "repo_url": "https://github.com/cepdnaclk/e16-3yp-smart-pharmaceutical-warehousing",
         "page_url": "https://cepdnaclk.github.io/e16-3yp-smart-pharmaceutical-warehousing",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E16/smart-pharmaceutical-warehousing/",
+        "stars": 4,
+        "updated_at": "2021-11-15T05:50:58Z",
         "team": {}
     },
     "e16-3yp-smart-pill-manager": {
@@ -1533,6 +1655,8 @@
         "repo_url": "https://github.com/cepdnaclk/e16-3yp-smart-pill-manager",
         "page_url": "https://cepdnaclk.github.io/e16-3yp-smart-pill-manager",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E16/smart-pill-manager/",
+        "stars": 2,
+        "updated_at": "2021-11-12T15:21:54Z",
         "team": {
             "E/16/061": {
                 "name": "Chandula J.P.D.M.",
@@ -1560,6 +1684,8 @@
         "repo_url": "https://github.com/cepdnaclk/e16-3yp-smart-shopping-cart-with-automatic-bill-system",
         "page_url": "https://cepdnaclk.github.io/e16-3yp-smart-shopping-cart-with-automatic-bill-system",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E16/smart-shopping-cart-with-automatic-bill-system/",
+        "stars": 1,
+        "updated_at": "2021-06-25T20:06:36Z",
         "team": {}
     },
     "e16-3yp-smart-vending-machine": {
@@ -1574,6 +1700,8 @@
         "repo_url": "https://github.com/cepdnaclk/e16-3yp-smart-vending-machine",
         "page_url": "https://cepdnaclk.github.io/e16-3yp-smart-vending-machine",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E16/smart-vending-machine/",
+        "stars": 0,
+        "updated_at": "2021-06-03T08:14:21Z",
         "team": {}
     },
     "e16-3yp-waiterbot-system": {
@@ -1588,6 +1716,8 @@
         "repo_url": "https://github.com/cepdnaclk/e16-3yp-waiterbot-system",
         "page_url": "https://cepdnaclk.github.io/e16-3yp-waiterbot-system",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E16/waiterbot-system/",
+        "stars": 0,
+        "updated_at": "2021-06-05T15:30:16Z",
         "team": {
             "E/16/094": {
                 "name": "Shiry Ekanayake",
@@ -1615,6 +1745,8 @@
         "repo_url": "https://github.com/cepdnaclk/e16-3yp-water-quality-monitoring-and-usage-monitoring-system",
         "page_url": "https://cepdnaclk.github.io/e16-3yp-water-quality-monitoring-and-usage-monitoring-system",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E16/water-quality-monitoring-and-usage-monitoring-system/",
+        "stars": 0,
+        "updated_at": "2021-06-04T16:33:45Z",
         "team": {
             "E/16/388": {
                 "name": "Weerasundara W.M.T.M.P.B.",
@@ -1638,6 +1770,8 @@
         "repo_url": "https://github.com/cepdnaclk/e17-3yp-Covid-Tracer",
         "page_url": "https://cepdnaclk.github.io/e17-3yp-Covid-Tracer",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E17/Covid-Tracer/",
+        "stars": 1,
+        "updated_at": "2021-10-24T21:30:26Z",
         "team": {
             "E/17/044": {
                 "name": "Deanna Coralage",
@@ -1665,6 +1799,8 @@
         "repo_url": "https://github.com/cepdnaclk/e17-3yp-E-Parking-System",
         "page_url": "https://cepdnaclk.github.io/e17-3yp-E-Parking-System",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E17/E-Parking-System/",
+        "stars": 3,
+        "updated_at": "2021-11-05T02:07:22Z",
         "team": {
             "E/17/018": {
                 "name": "Imesh Balasuriya",
@@ -1692,6 +1828,8 @@
         "repo_url": "https://github.com/cepdnaclk/e17-3yp-Landmine-Detector",
         "page_url": "https://cepdnaclk.github.io/e17-3yp-Landmine-Detector",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E17/Landmine-Detector/",
+        "stars": 0,
+        "updated_at": "2021-12-07T13:56:29Z",
         "team": {
             "E/17/154": {
                 "name": "KARUNANAYAKE A.I.",
@@ -1719,6 +1857,8 @@
         "repo_url": "https://github.com/cepdnaclk/e17-3yp-Milk-Testing-and-Collecting-System",
         "page_url": "https://cepdnaclk.github.io/e17-3yp-Milk-Testing-and-Collecting-System",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E17/Milk-Testing-and-Collecting-System/",
+        "stars": 0,
+        "updated_at": "2021-10-29T05:43:13Z",
         "team": {
             "E/17/012": {
                 "name": "Amarasinghe R.A.A.U.",
@@ -1746,6 +1886,8 @@
         "repo_url": "https://github.com/cepdnaclk/e17-3yp-Remote-Gatekeeping-System",
         "page_url": "https://cepdnaclk.github.io/e17-3yp-Remote-Gatekeeping-System",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E17/Remote-Gatekeeping-System/",
+        "stars": 0,
+        "updated_at": "2021-10-27T13:59:35Z",
         "team": {
             "E/17/090": {
                 "name": "Achintha Harshamal",
@@ -1773,6 +1915,8 @@
         "repo_url": "https://github.com/cepdnaclk/e17-3yp-Secure-Food-Delivery",
         "page_url": "https://cepdnaclk.github.io/e17-3yp-Secure-Food-Delivery",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E17/Secure-Food-Delivery/",
+        "stars": 0,
+        "updated_at": "2021-10-26T06:59:57Z",
         "team": {
             "E/17/240": {
                 "name": "Pathum T.N.D.",
@@ -1800,6 +1944,8 @@
         "repo_url": "https://github.com/cepdnaclk/e17-3yp-Smart-Cradle",
         "page_url": "https://cepdnaclk.github.io/e17-3yp-Smart-Cradle",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E17/Smart-Cradle/",
+        "stars": 0,
+        "updated_at": "2021-10-26T06:57:26Z",
         "team": {
             "E/17/040": {
                 "name": "Madush Chandrasena",
@@ -1827,6 +1973,8 @@
         "repo_url": "https://github.com/cepdnaclk/e17-3yp-Smart-Locker",
         "page_url": "https://cepdnaclk.github.io/e17-3yp-Smart-Locker",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E17/Smart-Locker/",
+        "stars": 1,
+        "updated_at": "2021-10-27T07:45:30Z",
         "team": {}
     },
     "e17-3yp-Smart-Pet-Feeder": {
@@ -1841,6 +1989,8 @@
         "repo_url": "https://github.com/cepdnaclk/e17-3yp-Smart-Pet-Feeder",
         "page_url": "https://cepdnaclk.github.io/e17-3yp-Smart-Pet-Feeder",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E17/Smart-Pet-Feeder/",
+        "stars": 1,
+        "updated_at": "2021-10-27T12:16:49Z",
         "team": {
             "E/17/100": {
                 "name": "Gunathilaka R.M.S.M",
@@ -1868,6 +2018,8 @@
         "repo_url": "https://github.com/cepdnaclk/e17-3yp-Smart-Pour",
         "page_url": "https://cepdnaclk.github.io/e17-3yp-Smart-Pour",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E17/Smart-Pour/",
+        "stars": 0,
+        "updated_at": "2021-10-29T11:54:36Z",
         "team": {
             "E/17/122": {
                 "name": "Shazna Isthikar",
@@ -1895,6 +2047,8 @@
         "repo_url": "https://github.com/cepdnaclk/e17-3yp-Wild-Life-Tracker",
         "page_url": "https://cepdnaclk.github.io/e17-3yp-Wild-Life-Tracker",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E17/Wild-Life-Tracker/",
+        "stars": 0,
+        "updated_at": "2021-10-26T11:11:50Z",
         "team": {
             "E/17/006": {
                 "name": "Alahakoon A.M.H.H",
@@ -1922,6 +2076,8 @@
         "repo_url": "https://github.com/cepdnaclk/e17-3yp-maker-mate",
         "page_url": "https://cepdnaclk.github.io/e17-3yp-maker-mate",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E17/maker-mate/",
+        "stars": 3,
+        "updated_at": "2021-10-26T12:29:39Z",
         "team": {
             "E/17/201": {
                 "name": "Madushani W.T",
@@ -1949,6 +2105,8 @@
         "repo_url": "https://github.com/cepdnaclk/e17-3yp-remote-billiard",
         "page_url": "https://cepdnaclk.github.io/e17-3yp-remote-billiard",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E17/remote-billiard/",
+        "stars": 1,
+        "updated_at": "2021-10-29T08:59:29Z",
         "team": {
             "E/17/005": {
                 "name": "Ahamed M.I.R",
@@ -1976,6 +2134,8 @@
         "repo_url": "https://github.com/cepdnaclk/e17-3yp-remote-keyboard-tutoring-system",
         "page_url": "https://cepdnaclk.github.io/e17-3yp-remote-keyboard-tutoring-system",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E17/remote-keyboard-tutoring-system/",
+        "stars": 3,
+        "updated_at": "2021-10-25T06:00:45Z",
         "team": {
             "E/17/380": {
                 "name": "Shamal Weerasooriya",
@@ -2003,6 +2163,8 @@
         "repo_url": "https://github.com/cepdnaclk/e17-3yp-remote-medical-diagnostics",
         "page_url": "https://cepdnaclk.github.io/e17-3yp-remote-medical-diagnostics",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E17/remote-medical-diagnostics/",
+        "stars": 3,
+        "updated_at": "2021-10-29T10:07:34Z",
         "team": {
             "E/17/134": {
                 "name": "Kavindu Jayasooriya",
@@ -2030,6 +2192,8 @@
         "repo_url": "https://github.com/cepdnaclk/e17-3yp-remote-proctoring-system",
         "page_url": "https://cepdnaclk.github.io/e17-3yp-remote-proctoring-system",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E17/remote-proctoring-system/",
+        "stars": 0,
+        "updated_at": "2021-10-25T08:03:28Z",
         "team": {
             "E/17/058": {
                 "name": "DEVINDI G.A.I",
@@ -2057,6 +2221,8 @@
         "repo_url": "https://github.com/cepdnaclk/e17-3yp-smart-apartment-security-system",
         "page_url": "https://cepdnaclk.github.io/e17-3yp-smart-apartment-security-system",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E17/smart-apartment-security-system/",
+        "stars": 1,
+        "updated_at": "2021-10-29T06:47:43Z",
         "team": {
             "E/17/065": {
                 "name": "Kanishka Dilhan",
@@ -2084,6 +2250,8 @@
         "repo_url": "https://github.com/cepdnaclk/e17-3yp-smart-garbage-collection",
         "page_url": "https://cepdnaclk.github.io/e17-3yp-smart-garbage-collection",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E17/smart-garbage-collection/",
+        "stars": 0,
+        "updated_at": "2021-10-25T17:17:47Z",
         "team": {}
     },
     "e17-3yp-smart-home": {
@@ -2098,6 +2266,8 @@
         "repo_url": "https://github.com/cepdnaclk/e17-3yp-smart-home",
         "page_url": "https://cepdnaclk.github.io/e17-3yp-smart-home",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E17/smart-home/",
+        "stars": 2,
+        "updated_at": "2021-10-26T12:49:20Z",
         "team": {
             "E/17/230": {
                 "name": "Arshad M.R.M.",
@@ -2121,6 +2291,8 @@
         "repo_url": "https://github.com/cepdnaclk/e17-3yp-smart-shopping-cart",
         "page_url": "https://cepdnaclk.github.io/e17-3yp-smart-shopping-cart",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/3yp/E17/smart-shopping-cart/",
+        "stars": 0,
+        "updated_at": "2021-10-27T12:45:13Z",
         "team": {
             "E/17/159": {
                 "name": "Kavinaya Y",
@@ -2148,6 +2320,8 @@
         "repo_url": "https://github.com/cepdnaclk/e15-co326-Remotely-Controlled-CNC-Robot",
         "page_url": "https://cepdnaclk.github.io/e15-co326-Remotely-Controlled-CNC-Robot",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/co326/E15/Remotely-Controlled-CNC-Robot/",
+        "stars": 0,
+        "updated_at": "2021-06-26T06:04:38Z",
         "team": {
             "E/15/140": {
                 "name": "Jaliyagoda A.J.N.M.",
@@ -2175,6 +2349,8 @@
         "repo_url": "https://github.com/cepdnaclk/e16-co326-Agriculture-Monitoring-and-Control-System",
         "page_url": "#",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/co326/E16/Agriculture-Monitoring-and-Control-System/",
+        "stars": 0,
+        "updated_at": "2021-10-29T11:02:56Z",
         "team": {}
     },
     "e15-co543-Swarm-Robot-Monitoring-System-group-A": {
@@ -2189,6 +2365,8 @@
         "repo_url": "https://github.com/cepdnaclk/e15-co543-Swarm-Robot-Monitoring-System-group-A",
         "page_url": "#",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/co543/E15/Swarm-Robot-Monitoring-System-group-A/",
+        "stars": 0,
+        "updated_at": "2021-02-07T14:33:08Z",
         "team": {}
     },
     "e15-co543-Swarm-Robot-Monitoring-System-group-B": {
@@ -2203,6 +2381,8 @@
         "repo_url": "https://github.com/cepdnaclk/e15-co543-Swarm-Robot-Monitoring-System-group-B",
         "page_url": "#",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/co543/E15/Swarm-Robot-Monitoring-System-group-B/",
+        "stars": 0,
+        "updated_at": "2021-02-07T14:34:24Z",
         "team": {}
     },
     "e15-co543-Swarm-Robot-Monitoring-System-group-C": {
@@ -2217,6 +2397,8 @@
         "repo_url": "https://github.com/cepdnaclk/e15-co543-Swarm-Robot-Monitoring-System-group-C",
         "page_url": "#",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/co543/E15/Swarm-Robot-Monitoring-System-group-C/",
+        "stars": 0,
+        "updated_at": "2021-02-07T14:34:14Z",
         "team": {}
     },
     "e16-co502-RISCV-Pipeline-CPU-Implimentation-Group2": {
@@ -2231,6 +2413,8 @@
         "repo_url": "https://github.com/cepdnaclk/e16-co502-RISCV-Pipeline-CPU-Implimentation-Group2",
         "page_url": "https://cepdnaclk.github.io/e16-co502-RISCV-Pipeline-CPU-Implimentation-Group2",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/co502/E16/RISCV-Pipeline-CPU-Implimentation-Group2/",
+        "stars": 1,
+        "updated_at": "2021-10-13T05:08:41Z",
         "team": {
             "E/16/203": {
                 "name": "Isur Lakshan",
@@ -2254,6 +2438,8 @@
         "repo_url": "https://github.com/cepdnaclk/e16-co502-RISCV-pipeline-cpu-implementation-group04",
         "page_url": "https://cepdnaclk.github.io/e16-co502-RISCV-pipeline-cpu-implementation-group04",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/co502/E16/RISCV-pipeline-cpu-implementation-group04/",
+        "stars": 1,
+        "updated_at": "2021-09-23T04:37:30Z",
         "team": {
             "E/16/319": {
                 "name": "Vindula Rathnayake",
@@ -2277,6 +2463,8 @@
         "repo_url": "https://github.com/cepdnaclk/e16-co502-RV32IM-NoC-implementation",
         "page_url": "https://cepdnaclk.github.io/e16-co502-RV32IM-NoC-implementation",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/co502/E16/RV32IM-NoC-implementation/",
+        "stars": 0,
+        "updated_at": "2021-10-31T17:54:41Z",
         "team": {}
     },
     "e16-co502-RV32IM-pipeline-implementation-group1": {
@@ -2291,6 +2479,8 @@
         "repo_url": "https://github.com/cepdnaclk/e16-co502-RV32IM-pipeline-implementation-group1",
         "page_url": "https://cepdnaclk.github.io/e16-co502-RV32IM-pipeline-implementation-group1",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/co502/E16/RV32IM-pipeline-implementation-group1/",
+        "stars": 1,
+        "updated_at": "2021-10-31T14:43:48Z",
         "team": {
             "E/16/276": {
                 "name": "Buddhi Perera",
@@ -2318,6 +2508,8 @@
         "repo_url": "https://github.com/cepdnaclk/e16-co502-RV32IM-pipeline-implementation-group3",
         "page_url": "https://cepdnaclk.github.io/e16-co502-RV32IM-pipeline-implementation-group3",
         "api_url": "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/co502/E16/RV32IM-pipeline-implementation-group3/",
+        "stars": 2,
+        "updated_at": "2021-10-31T19:36:41Z",
         "team": {
             "E/16/366": {
                 "name": "Thilarakathna W M D U",

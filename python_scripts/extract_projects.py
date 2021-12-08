@@ -16,6 +16,20 @@ def extract_projects(url, filename, excluded_filename=None, filters=[], key_tags
     except:
         excluded_projects = {}
 
+    org_repos = {}
+    if not key_only:
+        org_url = 'https://api.github.com/orgs/cepdnaclk/repos?page='
+        page = 1
+        print('Extracting organization repos...')
+        repos = requests.get(org_url + str(page)).json()
+        while repos:
+            for repo in repos:
+                org_repos[repo['name']] = {}
+                org_repos[repo['name']]['stars'] = repo['stargazers_count']
+                org_repos[repo['name']]['updated_at'] = repo['updated_at']
+            page += 1
+            repos = requests.get(org_url + str(page)).json()
+
     categories = requests.get(url).json()
     changed = False
     l = 0
@@ -34,6 +48,8 @@ def extract_projects(url, filename, excluded_filename=None, filters=[], key_tags
                 else:
                     all_projects[key] = project
                     data = requests.get(project['api_url']).json()
+                    all_projects[key]['stars'] = org_repos[key]['stars']
+                    all_projects[key]['updated_at'] = org_repos[key]['updated_at']
                     all_projects[key]['team'] = {}
                     if 'team' in data:
                         for member in data['team']:
@@ -44,8 +60,13 @@ def extract_projects(url, filename, excluded_filename=None, filters=[], key_tags
                 changed = True
 
     if changed:
+        sorted_projects = all_projects
+        if not key_only:
+            for k, v in sorted(all_projects.items(), key=lambda d: d[1]['title'].lower(), reverse=True):
+                sorted_projects[k] = v
+
         with open(filename, 'w') as f:
-            json.dump(all_projects, f)
+            json.dump(sorted_projects, f)
 
     print(f"{filename.split('/')[-1]}: {l} projects extracted")
 
@@ -145,9 +166,9 @@ if __name__ == '__main__':
 
     # extract_projects('https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/', f'{PATH}/all_projects.json', key_only=True)
     # save_excluded_projects(f'{PATH}/all_projects.json', f'{PATH}/projects.json', f'{PATH}/excluded_projects.json')
-    # extract_projects('https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/', 
-    #                 f'{PATH}/projects.json', 
-    #                 f'{PATH}/excluded_projects.json', 
-    #                 filters,
-    #                 key_tags)
-    extract_categories('https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/', f'{PATH}/project_categories.json', f'{PATH}/projects.json')
+    extract_projects('https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/', 
+                    f'{PATH}/projects.json', 
+                    f'{PATH}/excluded_projects.json', 
+                    filters,
+                    key_tags)
+    # extract_categories('https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/', f'{PATH}/project_categories.json', f'{PATH}/projects.json')

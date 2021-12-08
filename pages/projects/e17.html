@@ -33,12 +33,12 @@ permalink: /projects/e17
                     <h2 class="mb-4">{{ page.title }}</h2>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" id='projects-layout' data-current-page='1'>
                     {% assign projects = site.data.projects %}
                     {% assign category_projects = site.data.project_categories['E17 Batch Projects'].projects %}
                     {% for _project in category_projects %}
                         {% assign project = projects[_project] %}
-                        <div class="col-lg-6 ftco-animate">
+                        <div class="col-lg-6 ftco-animate project-card">
                             <div class="blog-entry">
                                 {% assign proj_img = project.category.code | prepend: "assets/images/thumb_" | append: ".jpg" %}
                                 <a href="{{ project.page_url }}" class="block-20"
@@ -52,11 +52,12 @@ permalink: /projects/e17
                                             <div class='d-flex flex-wrap' style="max-width: 350px;">
                                                 <span class="icon-person" style="line-height: 1.8;">{{ size }}</span>
                                                 {% for member in project.team %}
-                                                    {% assign names = member.name | split: ' ' %}
+                                                    {% assign names = member[1].name | split: ' ' %}
                                                     <a href="#" class="px-2">{{ names[0] }}</a>
                                                 {% endfor %}
                                             </div>
                                         {% endif %}
+                                        <span class="icon-calendar" style="line-height: 1.8;"> {{ project.updated_at | date: '%b %d, %Y' }}</span>
                                         <p>{{ project.description | truncatewords: 30 }}</p>
                                         <p><a href="{{ project.project_url }}" class="btn btn-primary btn-outline-primary">Read
                                                 more</a></p>
@@ -68,15 +69,15 @@ permalink: /projects/e17
                 </div>
                 <div class="row mt-5">
                     <div class="col">
-                        <div class="block-27">
+                        <div class="block-27 d-flex justify-content-center">
                             <ul>
-                                <li><a href="#">&lt;</a></li>
-                                <li class="active"><span>1</span></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li><a href="#">&gt;</a></li>
+                                {% assign pages = category_projects.size | divided_by: 10.0 | ceil %}
+                                <li><a id='prev-button' href="#">&lt;</a></li>
+                                <li><a class="page-button" data-page='1' href="#">1</a></li>
+                                {% for i in (2..pages) %}
+                                    <li><a class="page-button" data-page='{{ i }}' href="#">{{ i }}</a></li>
+                                {% endfor %}
+                                <li><a id='next-button' href="#">&gt;</a></li>
                             </ul>
                         </div>
                     </div>
@@ -105,42 +106,86 @@ permalink: /projects/e17
 
                 <div class="sidebar-box ftco-animate">
                     <h3>Recent Projects</h3>
-                    <div class="block-21 mb-4 d-flex">
-                        <a class="blog-img mr-4" style="background-image: url('{{ '/assets/images/img1.jpg' | relative_url }}'); border-radius: 5px;"></a>
-                        <div class="text">
-                            <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the
-                                    blind texts</a></h3>
-                            <div class="meta">
-                                <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
-                                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                    {% assign first_proj = nil %}
+                    {% assign first_recent = '0000-0-0T00:00:00Z' %}
+                    {% for _project in category_projects %}
+                        {% assign project = projects[_project] %}
+                        {% if project.updated_at > first_recent %}
+                            {% assign first_recent = project.updated_at %}
+                            {% assign first_proj = project %}
+                        {% endif %}
+                    {% endfor %}
+                    {% assign proj_img = first_proj.category.code | prepend: "assets/images/thumb_" | append: ".jpg" %}
+                    {% if first_proj %}
+                        <div class="block-21 mb-4 d-flex">
+                            <a class="blog-img mr-4" style="background-image: url('{{ proj_img | relative_url }}'); border-radius: 5px;"></a>
+                            <div class="text">
+                                <h3 class="heading"><a href="{{ first_proj.project_url }}">{{ first_proj.title }}</a></h3>
+                                <div class="meta">
+                                    <div><span class="icon-calendar"></span> {{ first_proj.updated_at | date: '%B %d, %Y' }}</div>
+                                    {% if first_proj.team.size > 0 %}
+                                        <div><span class="icon-person"></span> {{first_proj.team.size}}</div>
+                                    {% endif %}
+                                    <div><span class="icon-star"></span> {{first_proj.stars}}</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="block-21 mb-4 d-flex">
-                        <a class="blog-img mr-4" style="background-image: url('{{ '/assets/images/img2.jpg' | relative_url }}'); border-radius: 5px;"></a>
-                        <div class="text">
-                            <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the
-                                    blind texts</a></h3>
-                            <div class="meta">
-                                <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
-                                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                    {% endif %}
+
+                    {% assign second_proj = nil %}
+                    {% assign second_recent = '0000-0-0T00:00:00Z' %}
+                    {% if first_proj %}
+                        {% for _project in category_projects %}
+                            {% assign project = projects[_project] %}
+                            {% if first_recent > project.updated_at > second_recent %}
+                                {% assign second_recent = project.updated_at %}
+                                {% assign second_proj = project %}
+                            {% endif %}
+                        {% endfor %}
+                        {% assign proj_img = second_proj.category.code | prepend: "assets/images/thumb_" | append: ".jpg" %}
+                    {% endif %}
+
+                    {% assign third_proj = nil %}
+                    {% assign third_recent = '0000-0-0T00:00:00Z' %}
+                    {% if second_proj %}
+                        <div class="block-21 mb-4 d-flex">
+                            <a class="blog-img mr-4" style="background-image: url('{{ proj_img | relative_url }}'); border-radius: 5px;"></a>
+                            <div class="text">
+                                <h3 class="heading"><a href="{{ second_proj.project_url }}">{{ second_proj.title }}</a></h3>
+                                <div class="meta">
+                                    <div><span class="icon-calendar"></span> {{ second_proj.updated_at | date: '%B %d, %Y' }}</div>
+                                    {% if second_proj.team.size > 0 %}
+                                        <div><span class="icon-person"></span> {{second_proj.team.size}}</div>
+                                    {% endif %}
+                                    <div><span class="icon-star"></span> {{second_proj.stars}}</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="block-21 mb-4 d-flex">
-                        <a class="blog-img mr-4" style="background-image: url('{{ '/assets/images/img3.jpg' | relative_url }}'); border-radius: 5px;"></a>
-                        <div class="text">
-                            <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the
-                                    blind texts</a></h3>
-                            <div class="meta">
-                                <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
-                                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                        {% for _project in category_projects %}
+                            {% assign project = projects[_project] %}
+                            {% if second_recent > project.updated_at > third_recent %}
+                                {% assign third_recent = project.updated_at %}
+                                {% assign third_proj = project %}
+                            {% endif %}
+                        {% endfor %}
+                        {% assign proj_img = third_proj.category.code | prepend: "assets/images/thumb_" | append: ".jpg" %}
+                    {% endif %}
+
+                    {% if third_proj %}
+                        <div class="block-21 mb-4 d-flex">
+                            <a class="blog-img mr-4" style="background-image: url('{{ proj_img | relative_url }}'); border-radius: 5px;"></a>
+                            <div class="text">
+                                <h3 class="heading"><a href="{{ third_proj.project_url }}">{{ third_proj.title }}</a></h3>
+                                <div class="meta">
+                                    <div><span class="icon-calendar"></span> {{ third_proj.updated_at | date: '%B %d, %Y' }}</div>
+                                    {% if third_proj.team.size > 0 %}
+                                        <div><span class="icon-person"></span> {{third_proj.team.size}}</div>
+                                    {% endif %}
+                                    <div><span class="icon-star"></span> {{third_proj.stars}}</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    {% endif %}
                 </div>
 
                 <div class="sidebar-box ftco-animate">
