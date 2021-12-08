@@ -17,5 +17,5 @@
 - [ ] Add details to 'About' page.
 - [x] Add pagination to the projects page.
 - [x] Pages for all project categories.
-- [ ] Implement projects search.
+- [x] Implement projects search.
 - [x] Project thumbnails (For now: placeholders).
