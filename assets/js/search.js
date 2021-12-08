@@ -4,6 +4,7 @@ var search = function() {
     var input = document.getElementById('search-input');
 
     var whatIsDisplayed = document.getElementById('whatIsDisplayed');
+    var whatIsDisplayedOriginal = whatIsDisplayed.innerHTML;
 
     var nothingToDisplay = document.getElementById('nothingToDisplay');
     nothingToDisplay.style.display = 'none';
@@ -30,7 +31,7 @@ var search = function() {
                 }
             }
 
-            whatIsDisplayed.innerHTML = searchString.length > 0 ? 'Displaying results for: ' + searchString : 'All projects';
+            whatIsDisplayed.innerHTML = searchString.length > 0 ? 'Displaying results for: ' + searchString : whatIsDisplayedOriginal;
 
             if(titleMatch || descriptionMatch || projectUrlMatch || urlMatch) {
                 project.style.display = 'block';
