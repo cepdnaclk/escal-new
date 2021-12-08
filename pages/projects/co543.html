@@ -30,15 +30,18 @@ permalink: /projects/co543
             <div class="col-md-8">
                 <div class="row justify-content-center mb-5 pb-3">
                     <div class="col-md-7 heading-section ftco-animate text-center">
-                    <h2 class="mb-4">{{ page.title }}</h2>
+                    <h2 class="mb-4" id="whatIsDisplayed">{{ page.title }}</h2>
                     </div>
+                </div>
+                <div class="row justify-content-center" id="nothingToDisplay">
+                    <p>Try broadening your search string</p>
                 </div>
                 <div class="row" id='projects-layout' data-current-page='1'>
                     {% assign projects = site.data.projects %}
                     {% assign category_projects = site.data.project_categories['Image Processing Projects (CO543)'].projects %}
                     {% for _project in category_projects %}
                         {% assign project = projects[_project] %}
-                        <div class="col-lg-6 ftco-animate project-card">
+                        <div class="col-lg-6 ftco-animate project-card" data-project-url='{ project[1].project_url } '>
                             <div class="blog-entry">
                                 {% assign proj_img = project.category.code | prepend: "assets/images/thumb_" | append: ".jpg" %}
                                 <a href="{{ project.page_url }}" class="block-20"
@@ -58,7 +61,7 @@ permalink: /projects/co543
                                             </div>
                                         {% endif %}
                                         <span class="icon-calendar" style="line-height: 1.8;"> {{ project.updated_at | date: '%b %d, %Y' }}</span>
-                                        <p>{{ project.description | truncatewords: 30 }}</p>
+                                        <p class="project-description">{{ project.description | truncatewords: 30 }}</p>
                                         <p><a href="{{ project.project_url }}" class="btn btn-primary btn-outline-primary">Read
                                                 more</a></p>
                                     </div>
@@ -88,7 +91,7 @@ permalink: /projects/co543
                     <form action="#" class="search-form">
                         <div class="form-group">
                             <span class="icon fa fa-search"></span>
-                            <input type="text" class="form-control" placeholder="Type a keyword and hit enter">
+                            <input type="text" class="form-control" placeholder="Type a keyword and hit enter" id="search-input">
                         </div>
                     </form>
                 </div>
