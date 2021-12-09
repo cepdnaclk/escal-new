@@ -24,3 +24,5 @@ Gemfile.lock
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+__pycache__/

@@ -41,7 +41,7 @@ permalink: /projects/e11
                     {% assign category_projects = site.data.project_categories['E11 Batch Projects'].projects %}
                     {% for _project in category_projects %}
                         {% assign project = projects[_project] %}
-                        <div class="col-lg-6 ftco-animate project-card" data-project-url='{ project[1].project_url } '>
+                        <div class="col-lg-6 ftco-animate project-card" data-project-url='{{ project[1].project_url }} '>
                             <div class="blog-entry">
                                 {% assign proj_img = project.category.code | prepend: "assets/images/thumb_" | append: ".jpg" %}
                                 <a href="{{ project.page_url }}" class="block-20"
