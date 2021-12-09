@@ -138,8 +138,8 @@ var search = function() {
             for(var i = 0; i < projects.length; i++) {
                 var project = projects[i];
                 var projectUrl = project.getAttribute('data-project-key');
-                var description = project.getAttribute('data-description');
-                var title = project.getAttribute('data-title');
+                var description = project.getAttribute('data-description').toLowerCase();
+                var title = project.getAttribute('data-title').toLowerCase();
                 var projectUrlMatch = projectUrl == searchString;
                 var titleMatch = title.match(regex);
                 var descriptionMatch = description.match(regex);
