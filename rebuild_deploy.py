@@ -19,6 +19,3 @@ extract_categories('https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/', f'{
 
 # Generate subpages.
 generate_category_pages(f'{DATA_PATH}/project_categories.json', f'{PAGES_PATH}/projects')
-
-# Copy /_data/projects.json to /data/projects.json
-os.system(f'cp {DATA_PATH}/projects.json ./data/projects.json')

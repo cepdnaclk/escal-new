@@ -38,7 +38,8 @@ permalink: /projects/
                 <div class="row" id='projects-layout' data-current-page='1'>
                     {% assign projects = site.data.projects %}
                     {% for project in projects %}
-                        <div class="col-lg-6 ftco-animate project-card" data-project-key='{{ project[0] }}'>
+                        <div class="col-lg-6 ftco-animate project-card" data-project-key='{{ project[0] }}' 
+                                data-description='{{ project[1].description }}' data-title='{{ project[1].title }}'>
                             <div class="blog-entry">
                                 {% assign proj_img = project[1].category.code | prepend: "assets/images/thumb_" | append: ".jpg" %}
                                 <a href="{{ project[1].page_url }}" class="block-20 project-cover"

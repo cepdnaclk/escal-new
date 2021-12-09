@@ -55,7 +55,8 @@ permalink: {parent}/{code}
                     {{% assign category_projects = site.data.project_categories['{category}'].projects %}}
                     {{% for _project in category_projects %}}
                         {{% assign project = projects[_project] %}}
-                        <div class="col-lg-6 ftco-animate project-card" data-project-key='{{{{ _project }}}}'>
+                        <div class="col-lg-6 ftco-animate project-card" data-project-key='{{{{ _project }}}}' 
+                                data-description='{{{{ project.description }}}}' data-title='{{{{ project.title }}}}'>
                             <div class="blog-entry">
                                 {{% assign proj_img = project.category.code | prepend: "assets/images/thumb_" | append: ".jpg" %}}
                                 <a href="{{{{ project.page_url }}}}" class="block-20"
@@ -154,7 +155,7 @@ permalink: {parent}/{code}
                     {{% if first_proj %}}
                         {{% for _project in category_projects %}}
                             {{% assign project = projects[_project] %}}
-                            {{% if first_recent > project.updated_at > second_recent %}}
+                            {{% if first_recent > project.updated_at and project.updated_at > second_recent %}}
                                 {{% assign second_recent = project.updated_at %}}
                                 {{% assign second_proj = project %}}
                             {{% endif %}}
@@ -180,7 +181,7 @@ permalink: {parent}/{code}
                         </div>
                         {{% for _project in category_projects %}}
                             {{% assign project = projects[_project] %}}
-                            {{% if second_recent > project.updated_at > third_recent %}}
+                            {{% if second_recent > project.updated_at and project.updated_at > third_recent %}}
                                 {{% assign third_recent = project.updated_at %}}
                                 {{% assign third_proj = project %}}
                             {{% endif %}}
