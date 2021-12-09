@@ -108,3 +108,82 @@ var initLayout = function() {
     });
 }
 initLayout();
+
+var search = function() {
+    var input = document.getElementById('search-input');
+
+    var whatIsDisplayed = document.getElementById('whatIsDisplayed');
+    var whatIsDisplayedOriginal = whatIsDisplayed.innerHTML;
+
+    var searchStatus = document.getElementById('search-status');
+    searchStatus.style.display = 'none';
+
+    var noResults = document.getElementById('no-results');
+    noResults.style.display = 'none';
+
+    fetch('../../data/projects.json')
+    .then(response => response.json())
+    .then(projectsData => {
+        // Search function regex match
+        input.addEventListener('keyup', function() {
+            var searchString = input.value.toLowerCase();
+            var paginationControls = document.getElementById('pagination-controls');
+            var projects = document.getElementsByClassName('project-card');
+            var projectsLayout = document.getElementById('projects-layout');
+            var regex = new RegExp(searchString, 'g');
+
+            if (searchString.length > 0) {
+                paginationControls.style.display = 'none';
+                searchStatus.style.display = 'block';
+                var matchedProjects = [];
+                var foundMatches = false;
+
+                for(var i = 0; i < projects.length; i++) {
+                    var project = projects[i];
+                    var projectUrl = project.getAttribute('data-project-key');
+                    var projectData = projectsData[projectUrl];
+
+                    var description = projectData.description.toLowerCase();
+                    var title = projectData.title.toLowerCase();
+                    var projectUrlMatch = projectUrl == searchString;
+                    var titleMatch = title.match(regex);
+                    var descriptionMatch = description.match(regex);
+                    var urlSplit = projectUrl.split('-');
+                    var urlMatch = false;
+                    for (var j = 0; j < urlSplit.length; j++) {
+                        var urlPart = urlSplit[j].toLowerCase();
+                        if (urlPart.match(regex)) {
+                            urlMatch = true;
+                        }
+                    }
+
+                    whatIsDisplayed.innerHTML = searchString.length > 0 ? 'Displaying results for: ' + searchString : whatIsDisplayedOriginal;
+
+                    if(titleMatch || descriptionMatch || projectUrlMatch || urlMatch) {
+                        matchedProjects.push(i);
+                        foundMatches = true;
+                    } 
+
+                    project.style.display = 'none';
+                }
+
+                searchStatus.innerHTML = foundMatches ? '(Found ' + matchedProjects.length + ' projects)' : '';
+                noResults.style.display = !foundMatches ? 'block' : 'none';
+
+                for(var i = 0; i < projects.length; i++) if (matchedProjects.indexOf(i) > -1) projects[i].style.display = 'block';
+            }
+            else {
+                paginationControls.style.display = 'flex';
+                whatIsDisplayed.innerHTML = whatIsDisplayedOriginal;
+                searchStatus.innerHTML = '';
+                searchStatus.style.display = 'none';
+                noResults.style.display = 'none';
+
+                var currentPage = parseInt(projectsLayout.getAttribute('data-current-page'));
+                for (var i = 0; i < projects.length; i++) projects[i].style.display = 'none';
+                for (var i = (currentPage - 1) * 10; i < Math.min(projects.length, currentPage * 10); i++) projects[i].style.display = 'block';
+            }
+        })
+    })
+}
+search();

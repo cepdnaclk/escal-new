@@ -30,18 +30,19 @@ permalink: /projects/3yp
             <div class="col-md-8">
                 <div class="row justify-content-center mb-5 pb-3">
                     <div class="col-md-7 heading-section ftco-animate text-center">
-                    <h2 class="mb-4" id="whatIsDisplayed">{{ page.title }}</h2>
+                        <h2 class="mb-4" id="whatIsDisplayed">{{ page.title }}</h2>
+                        <h6 id="search-status"></h6>
                     </div>
                 </div>
-                <div class="row justify-content-center" id="nothingToDisplay">
-                    <p>Try broadening your search string</p>
+                <div class="row">
+                    <img id="no-results" src="{{ 'assets/images/no_result.gif' | relative_url }}" alt="" style="display: none;" />
                 </div>
                 <div class="row" id='projects-layout' data-current-page='1'>
                     {% assign projects = site.data.projects %}
                     {% assign category_projects = site.data.project_categories['Cyber-Physical Systems Projects (3YP)'].projects %}
                     {% for _project in category_projects %}
                         {% assign project = projects[_project] %}
-                        <div class="col-lg-6 ftco-animate project-card" data-project-url='{{ project[1].project_url }} '>
+                        <div class="col-lg-6 ftco-animate project-card" data-project-key='{{ _project }}'>
                             <div class="blog-entry">
                                 {% assign proj_img = project.category.code | prepend: "assets/images/thumb_" | append: ".jpg" %}
                                 <a href="{{ project.page_url }}" class="block-20"
@@ -70,7 +71,7 @@ permalink: /projects/3yp
                         </div>
                     {% endfor %}
                 </div>
-                <div class="row mt-5">
+                <div class="row mt-5" id="pagination-controls">
                     <div class="col">
                         <div class="block-27 d-flex justify-content-center">
                             <ul>
@@ -102,7 +103,7 @@ permalink: /projects/3yp
                             {% if category[1].code == page.cat_code %}
                                 {% continue %}
                             {% endif %}
-                            <li><a href="{{ site.url }}{{ site.baseurl }}{{ category[1].parent }}/{{ category[1].code }}">{{ category[0] | truncate:35 }} <span>({{ category[1].count }})</span></a></li>
+                            <li><a href="{{ site.url }}{{ site.baseurl }}{{ category[1].parent }}/{{ category[1].code }}">{{ category[0] | truncate:37 }} <span>({{ category[1].count }})</span></a></li>
                         {% endfor %}
                     </div>
                 </div>
