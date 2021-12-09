@@ -28,7 +28,7 @@ permalink: /projects/e10
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <div class="row justify-content-center mb-5 pb-3">
+                <div class="row justify-content-center mb-5 pb-3" id="heading">
                     <div class="col-md-7 heading-section ftco-animate text-center">
                         <h2 class="mb-4" id="whatIsDisplayed">{{ page.title }}</h2>
                         <h6 id="search-status"></h6>
@@ -42,7 +42,7 @@ permalink: /projects/e10
                     {% assign category_projects = site.data.project_categories['E10 Batch Projects'].projects %}
                     {% for _project in category_projects %}
                         {% assign project = projects[_project] %}
-                        <div class="col-lg-6 ftco-animate project-card" data-project-key='{{ _project }}' 
+                        <div class="col-lg-6 ftco-animate project-card" data-id='{{ _project }}' data-category='{ project[1].category.title }'
                                 data-description='{{ project.description }}' data-title='{{ project.title }}'>
                             <div class="blog-entry">
                                 {% assign proj_img = project.category.code | prepend: "assets/images/thumb_" | append: ".jpg" %}
@@ -93,7 +93,7 @@ permalink: /projects/e10
                     <form action="#" class="search-form">
                         <div class="form-group">
                             <span class="icon fa fa-search"></span>
-                            <input type="text" class="form-control" placeholder="Type a keyword and hit enter" id="search-input">
+                            <input type="text" class="form-control" placeholder="Search projects" id="search-input">
                         </div>
                     </form>
                 </div>

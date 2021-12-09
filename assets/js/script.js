@@ -111,6 +111,7 @@ initLayout();
 
 var search = function() {
     var input = document.getElementById('search-input');
+    var heading = document.getElementById('heading');
 
     var whatIsDisplayed = document.getElementById('whatIsDisplayed');
     var whatIsDisplayedOriginal = whatIsDisplayed.innerHTML;
@@ -121,54 +122,108 @@ var search = function() {
     var noResults = document.getElementById('no-results');
     noResults.style.display = 'none';
 
+    var projects = document.getElementsByClassName('project-card');
+    var projIds = {}, projIdReverse = {};
+    for (var i = 0; i < projects.length; i++) projIds[projects[i].getAttribute('data-id')] = i;
+
+    var index = elasticlunr(function() {
+        this.addField('title');
+        this.addField('description');
+        this.addField('repo_url');
+        this.addField('category');
+        this.setRef('id');
+    });
+
+    for (var i = 0; i < projects.length; i++) 
+        index.addDoc({
+            id: projects[i].getAttribute('data-id'),
+            title: projects[i].getAttribute('data-title'),
+            description: projects[i].getAttribute('data-description'),
+            repo_url: projects[i].getAttribute('data-id'),
+            category: projects[i].getAttribute('data-category')
+        });
+
     // Search function regex match
     input.addEventListener('keyup', function() {
         var searchString = input.value.toLowerCase();
+
         var paginationControls = document.getElementById('pagination-controls');
-        var projects = document.getElementsByClassName('project-card');
         var projectsLayout = document.getElementById('projects-layout');
         var regex = new RegExp(searchString, 'g');
+        var foundMatches = false;
+        var matchedProjects = [];
 
         if (searchString.length > 0) {
-            paginationControls.style.display = 'none';
-            searchStatus.style.display = 'block';
-            var matchedProjects = [];
-            var foundMatches = false;
+            for (var i = 0; i < projects.length; i++) projects[i].style.display = 'none';
 
-            for(var i = 0; i < projects.length; i++) {
-                var project = projects[i];
-                var projectUrl = project.getAttribute('data-project-key');
-                var description = project.getAttribute('data-description').toLowerCase();
-                var title = project.getAttribute('data-title').toLowerCase();
-                var projectUrlMatch = projectUrl == searchString;
-                var titleMatch = title.match(regex);
-                var descriptionMatch = description.match(regex);
-                var urlSplit = projectUrl.split('-');
-                var urlMatch = false;
-                for (var j = 0; j < urlSplit.length; j++) {
-                    var urlPart = urlSplit[j].toLowerCase();
-                    if (urlPart.match(regex)) {
-                        urlMatch = true;
+            if (searchString.split(' ').length == 1) {
+                paginationControls.style.display = 'none';
+                searchStatus.style.display = 'block';
+
+                for(var i = 0; i < projects.length; i++) {
+                    var project = projects[i];
+                    var repoUrl = project.getAttribute('data-id');
+                    var description = project.getAttribute('data-description').toLowerCase();
+                    var title = project.getAttribute('data-title').toLowerCase();
+                    var category = project.getAttribute('data-category').toLowerCase();
+                    var repoUrlMatch = repoUrl == searchString;
+                    var titleMatch = title.match(regex);
+                    var descriptionMatch = description.match(regex);
+                    var categoryMatch = category.match(regex);
+                    var urlSplit = repoUrl.split('-');
+                    var urlMatch = false;
+                    for (var j = 0; j < urlSplit.length; j++) {
+                        var urlPart = urlSplit[j].toLowerCase();
+                        if (urlPart.match(regex)) {
+                            urlMatch = true;
+                        }
+                    }
+
+                    if(titleMatch || descriptionMatch || repoUrlMatch || urlMatch || categoryMatch) {
+                        matchedProjects.push(i);
+                        foundMatches = true;
                     }
                 }
 
-                whatIsDisplayed.innerHTML = searchString.length > 0 ? 'Displaying results for: ' + searchString : whatIsDisplayedOriginal;
+                if (!foundMatches) {
+                    var results = index.search(searchString);
 
-                if(titleMatch || descriptionMatch || projectUrlMatch || urlMatch) {
-                    matchedProjects.push(i);
+                    if (results.length > 0) {
+                        foundMatches = true;
+
+                        for(var i = 0; i < results.length; i++)
+                            matchedProjects.push(projIds[results[i].ref]);
+                    }
+                }
+            }
+            else {
+                var results = index.search(searchString);
+
+                if (results.length > 0) {
                     foundMatches = true;
-                } 
 
-                project.style.display = 'none';
+                    for(var i = 0; i < results.length; i++)
+                        matchedProjects.push(projIds[results[i].ref]);
+                }
             }
 
-            searchStatus.innerHTML = foundMatches ? '(Found ' + matchedProjects.length + ' projects)' : '';
-            noResults.style.display = !foundMatches ? 'block' : 'none';
+            if (foundMatches) {
+                whatIsDisplayed.innerHTML = searchString.length > 0 ? 'Displaying results for: ' + searchString : whatIsDisplayedOriginal;
+                searchStatus.innerHTML = '(Found ' + matchedProjects.length + ' results)';
+                noResults.style.display = 'none';
+                heading.style.display = 'flex';
+            }
+            else {
+                searchStatus.innerHTML = '';
+                noResults.style.display = 'block';
+                heading.style.display = 'none';
+            }
 
-            for(var i = 0; i < projects.length; i++) if (matchedProjects.indexOf(i) > -1) projects[i].style.display = 'block';
+            for(var i = 0; i < matchedProjects.length; i++) projects[matchedProjects[i]].style.display = 'block';
         }
         else {
             paginationControls.style.display = 'flex';
+            heading.style.display = 'flex';
             whatIsDisplayed.innerHTML = whatIsDisplayedOriginal;
             searchStatus.innerHTML = '';
             searchStatus.style.display = 'none';
