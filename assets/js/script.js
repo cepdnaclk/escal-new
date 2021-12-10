@@ -139,7 +139,7 @@ var search = function() {
             id: projects[i].getAttribute('data-id'),
             title: projects[i].getAttribute('data-title'),
             description: projects[i].getAttribute('data-description'),
-            repo_url: projects[i].getAttribute('data-id'),
+            repo_url: projects[i].getAttribute('data-id').replace('-', ' '),
             category: projects[i].getAttribute('data-category')
         });
 
@@ -190,9 +190,19 @@ var search = function() {
 
                     if (results.length > 0) {
                         foundMatches = true;
-
-                        for(var i = 0; i < results.length; i++)
-                            matchedProjects.push(projIds[results[i].ref]);
+    
+                        var maxScore = results[0].score;
+                        var maxDiff = 0.1;
+    
+                        for(var i = 0; i < results.length; i++) {
+                            if (i != 0 && results[i - 1].score - results[i].score > maxDiff) {
+                                maxDiff = results[i - 1].score - results[i].score;
+                                if (maxDiff > 5) break;
+                            }
+                            if (results[i].score > 0.25 && (i == 0 || maxScore - results[i].score < 6))
+                                matchedProjects.push(projIds[results[i].ref]);
+                            else break;
+                        }
                     }
                 }
             }
@@ -202,13 +212,23 @@ var search = function() {
                 if (results.length > 0) {
                     foundMatches = true;
 
-                    for(var i = 0; i < results.length; i++)
-                        matchedProjects.push(projIds[results[i].ref]);
+                    var maxScore = results[0].score;
+                    var maxDiff = 0.1;
+
+                    for(var i = 0; i < results.length; i++) {
+                        if (i != 0 && results[i - 1].score - results[i].score > maxDiff) {
+                            maxDiff = results[i - 1].score - results[i].score;
+                            if (maxDiff > 5) break;
+                        }
+                        if (results[i].score > 0.25 && (i == 0 || maxScore - results[i].score < 6))
+                            matchedProjects.push(projIds[results[i].ref]);
+                        else break;
+                    }
                 }
             }
 
             if (foundMatches) {
-                whatIsDisplayed.innerHTML = searchString.length > 0 ? 'Displaying results for: ' + searchString : whatIsDisplayedOriginal;
+                whatIsDisplayed.innerHTML = searchString.length > 0 ? 'Displaying top results for: ' + searchString : whatIsDisplayedOriginal;
                 searchStatus.innerHTML = '(Found ' + matchedProjects.length + ' results)';
                 noResults.style.display = 'none';
                 heading.style.display = 'flex';
