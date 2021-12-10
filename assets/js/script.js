@@ -3,6 +3,7 @@ var selected = function(ele) {
     ele.style.background = '#add0fe';
     ele.style.color = '#2f89fc';
     ele.style.border = '1px solid transparent';
+    if (ele.classList.contains('disabled')) ele.classList.remove('disabled');
 }
 
 var disabled = function(ele) {
@@ -11,6 +12,8 @@ var disabled = function(ele) {
     ele.style.borderRadius = '50%';
     ele.style.color = '#a0a0a0';
     ele.style.border = '1px solid transparent';
+    ele.parentElement.style.cursor = 'not-allowed';
+    ele.classList.add('disabled');
 }
 
 var enabled = function(ele) {
@@ -19,6 +22,7 @@ var enabled = function(ele) {
     ele.style.borderRadius = '50%';
     ele.style.border = '1px solid #add0fe';
     ele.style.color = '#2f89fc';
+    if (ele.classList.contains('disabled')) ele.classList.remove('disabled');
 }
 
 var initLayout = function() {

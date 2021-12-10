@@ -73,12 +73,12 @@ permalink: /projects/
                         <div class="block-27 d-flex justify-content-center">
                             <ul>
                                 {% assign pages = projects.size | divided_by: 10.0 | ceil %}
-                                <li><a id='prev-button' href="#">&lt;</a></li>
-                                <li><a class="page-button" data-page='1' href="#">1</a></li>
+                                <li><span id='prev-button'>&lt;</span></li>
+                                <li><span class="page-button" data-page='1'>1</span></li>
                                 {% for i in (2..pages) %}
-                                    <li><a class="page-button" data-page='{{ i }}' href="#">{{ i }}</a></li>
+                                    <li><span class="page-button" data-page='{{ i }}'>{{ i }}</span></li>
                                 {% endfor %}
-                                <li><a id='next-button' href="#">&gt;</a></li>
+                                <li><span id='next-button'>&gt;</span></li>
                             </ul>
                         </div>
                     </div>
