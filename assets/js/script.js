@@ -130,22 +130,17 @@ var search = function() {
     var projIds = {}, projIdReverse = {};
     for (var i = 0; i < projects.length; i++) projIds[projects[i].getAttribute('data-id')] = i;
 
-    var index = elasticlunr(function() {
-        this.addField('title');
-        this.addField('description');
-        this.addField('repo_url');
-        this.addField('category');
-        this.setRef('id');
+    var index = FlexSearch.Index({
+        tokenize: 'forward',
+        cache: true,
+        context: true,
+        language: 'en',
     });
 
-    for (var i = 0; i < projects.length; i++) 
-        index.addDoc({
-            id: projects[i].getAttribute('data-id'),
-            title: projects[i].getAttribute('data-title'),
-            description: projects[i].getAttribute('data-description'),
-            repo_url: projects[i].getAttribute('data-id').replace('-', ' '),
-            category: projects[i].getAttribute('data-category')
-        });
+    for (var i = 0; i < projects.length; i++) {
+        var combinedDoc = projects[i].getAttribute('data-title') + ' ' + projects[i].getAttribute('data-description') + ' ' + projects[i].getAttribute('data-id').replace('-', ' ') + ' ' + projects[i].getAttribute('data-category');
+        index.add(i, combinedDoc);
+    }
 
     // Search function regex match
     input.addEventListener('keyup', function() {
@@ -190,45 +185,13 @@ var search = function() {
                 }
 
                 if (!foundMatches) {
-                    var results = index.search(searchString);
-
-                    if (results.length > 0) {
-                        foundMatches = true;
-    
-                        var maxScore = results[0].score;
-                        var maxDiff = 0.1;
-    
-                        for(var i = 0; i < results.length; i++) {
-                            if (i != 0 && results[i - 1].score - results[i].score > maxDiff) {
-                                maxDiff = results[i - 1].score - results[i].score;
-                                if (maxDiff > 5) break;
-                            }
-                            if (results[i].score > 0.25 && (i == 0 || maxScore - results[i].score < 6))
-                                matchedProjects.push(projIds[results[i].ref]);
-                            else break;
-                        }
-                    }
+                    matchedProjects = index.search(searchString);
+                    foundMatches = matchedProjects.length > 0;
                 }
             }
             else {
-                var results = index.search(searchString);
-
-                if (results.length > 0) {
-                    foundMatches = true;
-
-                    var maxScore = results[0].score;
-                    var maxDiff = 0.1;
-
-                    for(var i = 0; i < results.length; i++) {
-                        if (i != 0 && results[i - 1].score - results[i].score > maxDiff) {
-                            maxDiff = results[i - 1].score - results[i].score;
-                            if (maxDiff > 5) break;
-                        }
-                        if (results[i].score > 0.25 && (i == 0 || maxScore - results[i].score < 6))
-                            matchedProjects.push(projIds[results[i].ref]);
-                        else break;
-                    }
-                }
+                matchedProjects = index.search(searchString);
+                foundMatches = matchedProjects.length > 0;
             }
 
             if (foundMatches) {
