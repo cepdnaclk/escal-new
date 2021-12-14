@@ -11693,12 +11693,18 @@ textarea.form-control {
   line-height: 40px;
   border-radius: 50%;
   border: 1px solid #add0fe;
+  cursor: pointer;
 }
 .block-27 ul li.active a,
 .block-27 ul li.active span {
   background: #add0fe;
   color: #2f89fc;
   border: 1px solid transparent;
+  cursor: none;
+}
+
+.disabled {
+  cursor: not-allowed;
 }
 
 .block-8 .accordion-item .heading {

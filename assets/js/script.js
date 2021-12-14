@@ -3,6 +3,7 @@ var selected = function(ele) {
     ele.style.background = '#add0fe';
     ele.style.color = '#2f89fc';
     ele.style.border = '1px solid transparent';
+    if (ele.classList.contains('disabled')) ele.classList.remove('disabled');
 }
 
 var disabled = function(ele) {
@@ -11,6 +12,8 @@ var disabled = function(ele) {
     ele.style.borderRadius = '50%';
     ele.style.color = '#a0a0a0';
     ele.style.border = '1px solid transparent';
+    ele.parentElement.style.cursor = 'not-allowed';
+    ele.classList.add('disabled');
 }
 
 var enabled = function(ele) {
@@ -19,6 +22,7 @@ var enabled = function(ele) {
     ele.style.borderRadius = '50%';
     ele.style.border = '1px solid #add0fe';
     ele.style.color = '#2f89fc';
+    if (ele.classList.contains('disabled')) ele.classList.remove('disabled');
 }
 
 var initLayout = function() {
@@ -126,22 +130,17 @@ var search = function() {
     var projIds = {}, projIdReverse = {};
     for (var i = 0; i < projects.length; i++) projIds[projects[i].getAttribute('data-id')] = i;
 
-    var index = elasticlunr(function() {
-        this.addField('title');
-        this.addField('description');
-        this.addField('repo_url');
-        this.addField('category');
-        this.setRef('id');
+    var index = FlexSearch.Index({
+        tokenize: 'forward',
+        cache: true,
+        context: true,
+        language: 'en',
     });
 
-    for (var i = 0; i < projects.length; i++) 
-        index.addDoc({
-            id: projects[i].getAttribute('data-id'),
-            title: projects[i].getAttribute('data-title'),
-            description: projects[i].getAttribute('data-description'),
-            repo_url: projects[i].getAttribute('data-id'),
-            category: projects[i].getAttribute('data-category')
-        });
+    for (var i = 0; i < projects.length; i++) {
+        var combinedDoc = projects[i].getAttribute('data-title') + ' ' + projects[i].getAttribute('data-description') + ' ' + projects[i].getAttribute('data-id').replace('-', ' ') + ' ' + projects[i].getAttribute('data-category');
+        index.add(i, combinedDoc);
+    }
 
     // Search function regex match
     input.addEventListener('keyup', function() {
@@ -186,29 +185,17 @@ var search = function() {
                 }
 
                 if (!foundMatches) {
-                    var results = index.search(searchString);
-
-                    if (results.length > 0) {
-                        foundMatches = true;
-
-                        for(var i = 0; i < results.length; i++)
-                            matchedProjects.push(projIds[results[i].ref]);
-                    }
+                    matchedProjects = index.search(searchString);
+                    foundMatches = matchedProjects.length > 0;
                 }
             }
             else {
-                var results = index.search(searchString);
-
-                if (results.length > 0) {
-                    foundMatches = true;
-
-                    for(var i = 0; i < results.length; i++)
-                        matchedProjects.push(projIds[results[i].ref]);
-                }
+                matchedProjects = index.search(searchString);
+                foundMatches = matchedProjects.length > 0;
             }
 
             if (foundMatches) {
-                whatIsDisplayed.innerHTML = searchString.length > 0 ? 'Displaying results for: ' + searchString : whatIsDisplayedOriginal;
+                whatIsDisplayed.innerHTML = searchString.length > 0 ? 'Displaying top results for: ' + searchString : whatIsDisplayedOriginal;
                 searchStatus.innerHTML = '(Found ' + matchedProjects.length + ' results)';
                 noResults.style.display = 'none';
                 heading.style.display = 'flex';
