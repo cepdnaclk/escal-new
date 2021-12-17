@@ -99,13 +99,41 @@ permalink: /projects/e10
                 </div>
                 <div class="sidebar-box ftco-animate">
                     <div class="categories">
-                        <h3>Categories</h3>
-                        {% for category in site.data.project_categories %}
-                            {% if category[1].code == page.cat_code %}
-                                {% continue %}
-                            {% endif %}
-                            <li><a href="{{ site.url }}{{ site.baseurl }}{{ category[1].parent }}/{{ category[1].code }}">{{ category[0] | truncate:37 }} <span>({{ category[1].count }})</span></a></li>
-                        {% endfor %}
+                        <div id="accordion">
+                            <div class="card">
+                              <div class="card-header" id="headingOne" onmouseover="this.style.cursor='pointer'">
+                                  <a  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <h5 class="headingOne">
+                                            Categories
+                                        </h5>
+                                  </a>
+                              </div>
+                          
+                              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    {% for category in site.data.project_categories limit: 5 %}
+                                    <li><a href="{{ site.url }}{{ site.baseurl }}{{ category[1].parent }}/{{ category[1].code }}">{{ category[0] | truncate:30 }} <span>({{ category[1].count }})</span></a></li>
+                                    {% endfor %}
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingTwo" onmouseover="this.style.cursor='pointer'">
+                                <a  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    <h5 class="card-title">
+                                        Batchwise Projects
+                                    </h5>
+                                </a>
+                              </div>
+                              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                    {% for category in site.data.project_categories offset: 5 %}
+                                    <li><a href="{{ site.url }}{{ site.baseurl }}{{ category[1].parent }}/{{ category[1].code }}">{{ category[0] | truncate:37 }} <span>({{ category[1].count }})</span></a></li>
+                                    {% endfor %}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                     </div>
                 </div>
 
