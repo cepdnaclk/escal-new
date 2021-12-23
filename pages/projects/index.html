@@ -108,7 +108,7 @@ permalink: /projects/
                               <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                                 <div class="card-body">
                                     {% for category in site.data.project_categories limit: 5 %}
-                                    <li><a href="{{ site.url }}{{ site.baseurl }}{{ category[1].parent }}/{{ category[1].code }}">{{ category[0] | truncate:30 }} <span>({{ category[1].count }})</span></a></li>
+                                    <li><a href="{{ site.url }}{{ site.baseurl }}{{ category[1].parent }}/{{ category[1].code }}" data-toggle="tooltip" data-placement="bottom" title="{{ category[0] }}">{{ category[0] | truncate:30 }} <span>({{ category[1].count }})</span></a></li>
                                     {% endfor %}
                                 </div>
                               </div>
@@ -124,7 +124,7 @@ permalink: /projects/
                               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                                 <div class="card-body">
                                     {% for category in site.data.project_categories offset: 5 %}
-                                    <li><a href="{{ site.url }}{{ site.baseurl }}{{ category[1].parent }}/{{ category[1].code }}">{{ category[0] | truncate:34 }} <span>({{ category[1].count }})</span></a></li>
+                                    <li><a href="{{ site.url }}{{ site.baseurl }}{{ category[1].parent }}/{{ category[1].code }}" data-toggle="tooltip" data-placement="bottom" title="{{ category[0] }}">{{ category[0] | truncate:34 }} <span>({{ category[1].count }})</span></a></li>
                                     {% endfor %}
                                 </div>
                               </div>
