@@ -66,7 +66,7 @@ permalink: /projects/co326
                                                     {% assign people_page_url = "https://cepdnaclk.github.io/people.ce.pdn.ac.lk" %}
                                                     {% assign member_url = member[1].api_url | split: '/' | slice: -3, 3 %}
                                                     <a href="{{ people_page_url }}/{{ member_url[0] }}/{{ member_url[1] | downcase }}/{{ member_url[2] }}" 
-                                                        class="px-2" target="_blank">{{ names[0] }}</a>
+                                                        class="px-2" target="_blank" data-toggle="tooltip" data-placement="bottom" title="{{ member[1].name }}">{{ names[0] }}</a>
                                                 {% endfor %}
                                             </div>
                                         {% endif %}
