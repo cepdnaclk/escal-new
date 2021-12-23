@@ -42,19 +42,27 @@ permalink: /projects/
                                 data-description='{{ project[1].description }}' data-title='{{ project[1].title }}'>
                             <div class="blog-entry">
                                 {% assign proj_img = project[1].category.code | prepend: "assets/images/thumb_" | append: ".jpg" %}
-                                <a href="{{ project[1].page_url }}" class="block-20 project-cover"
+                                <a href="{{ project[1].page_url }}" class="block-20 project-cover" target="_blank"
                                     style="background-image: url('{{ proj_img | relative_url }}'); border-radius: 10px;">
                                 </a>
                                 <div class="text d-flex py-4">
                                     <div class="">
-                                        <h3 class="heading"><a href="{{ project[1].page_url }}">{{ project[1].title }}</a></h3>
+                                        <h3 class="heading"><a href="{{ project[1].page_url }}" target="_blank">{{ project[1].title }}</a></h3>
                                         {% assign size = project[1].team.size %}
                                         {% if size > 0 %}
                                             <div class='d-flex flex-wrap' style="max-width: 350px;">
                                                 <span class="icon-person" style="line-height: 1.8;">{{ size }}</span>
                                                 {% for member in project[1].team %}
                                                     {% assign names = member[1].name | split: ' ' %}
-                                                    <a href="#" class="px-2 team-list">{{ names[0] }}</a>
+                                                    {% comment %}
+                                                    *
+                                                    *    Change the following URL if the domain is changed.
+                                                    *
+                                                    {% endcomment %}
+                                                    {% assign people_page_url = "https://cepdnaclk.github.io/people.ce.pdn.ac.lk" %}
+                                                    {% assign member_url = member[1].api_url | split: '/' | slice: -3, 3 %}
+                                                    <a href="{{ people_page_url }}/{{ member_url[0] }}/{{ member_url[1] | downcase }}/{{ member_url[2] }}"
+                                                        class="px-2 team-list" target="_blank">{{ names[0] }}</a>
                                                 {% endfor %}
                                             </div>
                                         {% endif %}
@@ -108,7 +116,7 @@ permalink: /projects/
                               <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                                 <div class="card-body">
                                     {% for category in site.data.project_categories limit: 5 %}
-                                    <li><a href="{{ site.url }}{{ site.baseurl }}{{ category[1].parent }}/{{ category[1].code }}" data-toggle="tooltip" data-placement="bottom" title="{{ category[0] }}">{{ category[0] | truncate:30 }} <span>({{ category[1].count }})</span></a></li>
+                                    <li><a href="{{ site.url }}{{ site.baseurl }}{{ category[1].parent }}/{{ category[1].code }}" data-toggle="tooltip" data-placement="bottom" title="{{ category[0] }}">{{ category[0] | truncate:37 }} <span>({{ category[1].count }})</span></a></li>
                                     {% endfor %}
                                 </div>
                               </div>
