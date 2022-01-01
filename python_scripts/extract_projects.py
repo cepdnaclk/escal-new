@@ -62,7 +62,7 @@ def extract_projects(url, filename, excluded_filename=None, filters=[], key_tags
     if changed:
         sorted_projects = all_projects
         if not key_only:
-            for k, v in sorted(all_projects.items(), key=lambda d: d[1]['title'].lower(), reverse=True):
+            for k, v in sorted(all_projects.items(), key=lambda d: d[1]['updated_at'], reverse=True):
                 sorted_projects[k] = v
 
         with open(filename, 'w') as f:
