@@ -2,7 +2,7 @@ import json, requests
 from requests import api
 
 FILE_NAME = 'people.json'
-API = "https://cepdnaclk.github.io/api.ce.pdn.ac.lk/people/"
+API = "https://api.ce.pdn.ac.lk/people/v1/"
 data = ["honorific", "preferred_long_name", "emails", "profile_image", "urls"]
 
 # clear the file

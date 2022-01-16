@@ -8,14 +8,14 @@ DATA_PATH = './_data'
 PAGES_PATH = './pages'
 
 # Extract and generate data.
-extract_projects('https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/', f'{DATA_PATH}/all_projects.json', key_only=True)
+extract_projects('https://api.ce.pdn.ac.lk/projects/v1/', f'{DATA_PATH}/all_projects.json', key_only=True)
 save_excluded_projects(f'{DATA_PATH}/all_projects.json', f'{DATA_PATH}/projects.json', f'{DATA_PATH}/excluded_projects.json')
-extract_projects('https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/', 
+extract_projects('https://api.ce.pdn.ac.lk/projects/v1/', 
                 f'{DATA_PATH}/projects.json', 
                 f'{DATA_PATH}/excluded_projects.json', 
                 filters,
                 key_tags)
-extract_categories('https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/', f'{DATA_PATH}/project_categories.json', f'{DATA_PATH}/projects.json')
+extract_categories('https://api.ce.pdn.ac.lk/projects/v1/', f'{DATA_PATH}/project_categories.json', f'{DATA_PATH}/projects.json')
 
 # Generate subpages.
 generate_category_pages(f'{DATA_PATH}/project_categories.json', f'{PAGES_PATH}/projects')

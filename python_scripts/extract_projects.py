@@ -164,11 +164,11 @@ if __name__ == '__main__':
     key_tags = ['embedded', 'embedded-systems', 'robot', 'robotics', 'gpu', 'bio-medical', 'swarm', 'nvidia']
     PATH = '../_data'
 
-    # extract_projects('https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/', f'{PATH}/all_projects.json', key_only=True)
+    # extract_projects('https://api.ce.pdn.ac.lk/projects/v1/', f'{PATH}/all_projects.json', key_only=True)
     # save_excluded_projects(f'{PATH}/all_projects.json', f'{PATH}/projects.json', f'{PATH}/excluded_projects.json')
-    extract_projects('https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/', 
+    extract_projects('https://api.ce.pdn.ac.lk/projects/v1/', 
                     f'{PATH}/projects.json', 
                     f'{PATH}/excluded_projects.json', 
                     filters,
                     key_tags)
-    # extract_categories('https://cepdnaclk.github.io/api.ce.pdn.ac.lk/projects/', f'{PATH}/project_categories.json', f'{PATH}/projects.json')
+    # extract_categories('https://api.ce.pdn.ac.lk/projects/v1/', f'{PATH}/project_categories.json', f'{PATH}/projects.json')
