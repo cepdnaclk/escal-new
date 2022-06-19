@@ -1,74 +1,32 @@
 [
   {
-    "honorific": "Prof.",
+    "honorific" : "Prof.",
     "preferred_long_name": "Roshan G. Ragel",
-    "emails": {
-        "name": "roshanr",
-        "domain": "eng.pdn.ac.lk"
-    },
-    "profile_image": "roshanr.png",
-    "linkedin": null,
-    "website": null,
-    "description": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name"
+    "peoples_link":  "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/"
   },
   {
     "honorific": "Dr.",
     "preferred_long_name": "Isuru Nawinne",
-    "emails": {
-        "name": "isurunawinne",
-        "domain": "eng.pdn.ac.lk"
-    },
-    "profile_image": "Dr_Isuru.jpg",
-    "linkedin": null,
-    "website": null,
-    "description": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name"
+    "peoples_link":  "https://people.ce.pdn.ac.lk/staff/academic/isuru-nawinne/"
   },
   {
     "honorific": "Mr.",
     "preferred_long_name": "Nuwan Jaliaygoda",
-    "emails": {
-        "name": "nuwanjaliyagoda",
-        "domain": "eng.pdn.ac.lk"
-    },
-    "profile_image": "Nuwan_Jaliyagoda.jpeg",
-    "linkedin": null,
-    "website": null,
-    "description": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name"
+    "peoples_link":  "https://people.ce.pdn.ac.lk/students/e15/140/"
   },
   {
     "honorific": "Mr.",
     "preferred_long_name": "Sathira Silva",
-    "emails": {
-        "name": "e17331",
-        "domain": "eng.pdn.ac.lk"
-    },
-    "profile_image": "Sathira_Silva.jpg",
-    "linkedin": null,
-    "website": null,
-    "description": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name"
+    "link": "https://people.ce.pdn.ac.lk/students/e17/331/"
   },
   {
     "honorific": "Mr.",
     "preferred_long_name": "Dinura Dissanayake",
-    "emails": {
-        "name": "e17072",
-        "domain": "eng.pdn.ac.lk"
-    },
-    "profile_image": "Dinura_Dissanayake.jpg",
-    "linkedin": null,
-    "website": null,
-    "description": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name"
+    "peoples_link":  "https://people.ce.pdn.ac.lk/students/e17/072/"
   },
   {
     "honorific": "Mr.",
     "preferred_long_name": "Shamal Weerasooriya",
-    "emails": {
-        "name": "e17380",
-        "domain": "eng.pdn.ac.lk"
-    },
-    "profile_image": "Shamal_Weerasooriya.jpg",
-    "linkedin": null,
-    "website": null,
-    "description": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name"
+    "peoples_link":  "https://people.ce.pdn.ac.lk/students/e17/380/"
   }
 ]
