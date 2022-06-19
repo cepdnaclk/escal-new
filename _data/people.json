@@ -2,31 +2,37 @@
   {
     "honorific" : "Prof.",
     "preferred_long_name": "Roshan G. Ragel",
+    "profile_image": "roshanr.png",
     "peoples_link":  "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/"
   },
   {
     "honorific": "Dr.",
     "preferred_long_name": "Isuru Nawinne",
+    "profile_image": "Dr_Isuru.jpg",
     "peoples_link":  "https://people.ce.pdn.ac.lk/staff/academic/isuru-nawinne/"
   },
   {
     "honorific": "Mr.",
     "preferred_long_name": "Nuwan Jaliaygoda",
+    "profile_image": "Nuwan_Jaliyagoda.jpeg",
     "peoples_link":  "https://people.ce.pdn.ac.lk/students/e15/140/"
   },
   {
     "honorific": "Mr.",
     "preferred_long_name": "Sathira Silva",
+    "profile_image": "Sathira_Silva.jpg",
     "link": "https://people.ce.pdn.ac.lk/students/e17/331/"
   },
   {
     "honorific": "Mr.",
     "preferred_long_name": "Dinura Dissanayake",
+    "profile_image": "Dinura_Dissanayake.jpg",
     "peoples_link":  "https://people.ce.pdn.ac.lk/students/e17/072/"
   },
   {
     "honorific": "Mr.",
     "preferred_long_name": "Shamal Weerasooriya",
+    "profile_image": "Shamal_Weerasooriya.jpg",
     "":  "https://people.ce.pdn.ac.lk/students/e17/380/"
   }
 ]
