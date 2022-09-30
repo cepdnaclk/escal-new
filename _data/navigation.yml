@@ -1,21 +1,17 @@
 - title: Home
   url: /
-- title: About
-  url: /about/
 - title: Projects
   url: /projects/
 - title: Research
   url: #
   sublinks:
   - title: ESCAL Bio-Medical
-    url: /reaseach/biomedical/
+    url: /research/biomedical/
   - title: ESCAL Robotics
-    url: /reaseach/robotics/
+    url: /research/robotics/
   - title: ESCAL GPU
-    url: /reaseach/gpu/
+    url: /research/gpu/
 - title: Resources
   url: /resources/
-- title: Events
-  url: /events/
 - title: People
   url: /people/
