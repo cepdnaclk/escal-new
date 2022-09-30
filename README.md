@@ -23,7 +23,7 @@
 - [ ] Implement people page.
 - [ ] Implement Research home page.
 - [ ] Implement Resources page -> Create cards for ESCAL facilities (robotics, wearables, fpgas, etc.)
-- [ ] Improve footer.
+- [x] Improve footer.
 - [ ] Re-organize the home page layout -> Add latest project updates in the hero section, recent projects, recent works, etc.
 - [ ] Prepare a site plan (user navigation diagram kind of thing, with all the possible pages).
 - [ ] Improve pagination controls in the Projects page.
