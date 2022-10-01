@@ -12387,7 +12387,7 @@ textarea.form-control {
   top: 0 !important;
   width: 100%;
   z-index: 9999999;
-  background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.7)), url('/assets/images/warning.jpg');
+  background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.7)), url('../images/warning.jpg');
   background-size: cover;
   color: black;
   font-weight: 700;
