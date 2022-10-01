@@ -12380,3 +12380,43 @@ textarea.form-control {
   cursor: pointer;
 }
 
+.marquee-container {
+  height: 40px;
+  overflow: hidden;
+  line-height: 40px;
+  top: 0 !important;
+  width: 100%;
+  z-index: 9999999;
+  background-image: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.7)), url('/assets/images/warning.jpg');
+  background-size: cover;
+  color: black;
+  font-weight: 700;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.marquee {
+  top: 0;
+  left: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee span {
+  padding-left: 35px;
+}
+
+.marquee2 {
+  animation-delay: 15s;
+}
+
+@keyframes marquee {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%
+  }
+}
