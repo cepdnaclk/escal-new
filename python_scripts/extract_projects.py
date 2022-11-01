@@ -41,11 +41,10 @@ def extract_projects(url, filename, excluded_filename=None, filters=[], key_tags
             for project in batchwise_projects.values():
                 key = project['repo_url'].split('/')[-1]
                 if excluded_filename and key in excluded_projects[category['code']]: continue
-                if key in all_projects: continue
                 if key_only:
                     if category['code'] not in all_projects: all_projects[category['code']] = []
-                    all_projects[category['code']].append(key)
-                else:
+                    if key not in all_projects[category['code']]: all_projects[category['code']].append(key)
+                elif key in org_repos:
                     all_projects[key] = project
                     data = requests.get(project['api_url']).json()
                     all_projects[key]['stars'] = org_repos[key]['stars']
@@ -160,15 +159,15 @@ def extract_categories(url, filename, projects_filename):
 # - Industrial Automation Projects (CO326)
 # - Image Processing Projects (CO543)
 if __name__ == '__main__':
-    filters = ['co328', '2yp', 'co542', 'co226']
-    key_tags = ['embedded', 'embedded-systems', 'robot', 'robotics', 'gpu', 'bio-medical', 'swarm', 'nvidia']
+    filters = ['co328', '2yp', 'co542', 'co226', 'co227']
+    key_tags = ['embedded', '3yp', 'embedded-systems', 'embedded-system', 'iot', 'arduino', 'fpga', 'raspberry', 'robot', 'robotics', 'gpu', 'bio-medical', 'swarm', 'nvidia']
     PATH = '../_data'
 
     # extract_projects('https://api.ce.pdn.ac.lk/projects/v1/', f'{PATH}/all_projects.json', key_only=True)
+    # extract_projects('https://api.ce.pdn.ac.lk/projects/v1/', 
+    #                 f'{PATH}/projects.json', 
+    #                 f'{PATH}/excluded_projects.json', 
+    #                 filters,
+    #                 key_tags)
     # save_excluded_projects(f'{PATH}/all_projects.json', f'{PATH}/projects.json', f'{PATH}/excluded_projects.json')
-    extract_projects('https://api.ce.pdn.ac.lk/projects/v1/', 
-                    f'{PATH}/projects.json', 
-                    f'{PATH}/excluded_projects.json', 
-                    filters,
-                    key_tags)
     # extract_categories('https://api.ce.pdn.ac.lk/projects/v1/', f'{PATH}/project_categories.json', f'{PATH}/projects.json')
