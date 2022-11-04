@@ -86,7 +86,7 @@ We recommend using VSCode to build and run the site locally since it is very con
 
 ### How to contribute
 
-You must push your changes to the ```gh_pages_dev``` branch and create a pull request to the ```main``` branch. @NuwanJ, @Akilax0, @sathiiii, @shamalweerasooriya, or @dinuransika will review your pull request and merge it to the ```main``` branch. Please do test your changes locally before creating a pull request. Also, link the issue you're working on in the pull request.
+You must push your changes to the ```gh_pages_dev``` branch and create a pull request to the ```main``` branch. [@NuwanJ](https://github.com/NuwanJ), [@Akilax0](https://github.com/Akilax0), [@sathiiii](https://github.com/sathiiii), [@shamalweerasooriya](https://github.com/shamalweerasooriya), or [@dinuransika](https://github.com/dinuransika) will review your pull request and merge it to the ```main``` branch. Please do test your changes locally before creating a pull request. Also, link the issue you're working on in the pull request.
 
 ### Website structure
 
