@@ -138,7 +138,7 @@ This folder contains the python scripts used to pull data and generate HTML page
 - [x] Template for Projects page.
 - [x] Template for People page.
 - [ ] Template for ESCAL Bio-med page.
-- [ ] Template for ESCAL Robotics page.
+- [X] Template for ESCAL Robotics page.
 - [ ] Template for ESCAL GPU page.
 - [ ] Template for Resources page.
 
