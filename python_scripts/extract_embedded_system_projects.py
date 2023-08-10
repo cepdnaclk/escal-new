@@ -28,7 +28,7 @@ def fetch_and_append_data(category_id, batch_id, output_filename):
         print(f"An error occurred: {e}")
 
 if __name__ == '__main__':
-    category_id = input("Enter CategoryID: ")
+    category_id = "3yp"
     batch_ids = ["E17","E16", "E15", "E14"]
     output_filename = "output_data.json"
     for batch_id in batch_ids:
