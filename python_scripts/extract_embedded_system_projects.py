@@ -32,9 +32,9 @@ if __name__ == '__main__':
     category_id = "3yp"
     batch_ids = ["E17", "E16", "E15", "E14"]
     output_directory = "D:\ESCAL\escal-new\_data"
-    os.makedirs(output_directory, exist_ok=True)  # Create the output directory if it doesn't exist
+    os.makedirs(output_directory, exist_ok=True)  
     output_filename = os.path.join(output_directory, "output.json")
 
-    # Fetch and append data for each batch ID
+
     for batch_id in batch_ids:
         fetch_and_append_data(category_id, batch_id, output_filename)
