@@ -1,6 +1,7 @@
 import os
 from python_scripts.extract_projects import *
 from python_scripts.generate_subpages import *
+from python_scripts.extractStaff import *
 
 filters = ['co328', '2yp', 'co542', 'co226', 'co227']
 key_tags = ['embedded', '3yp', 'embedded-systems', 'embedded-system', 'iot', 'arduino', 'fpga', 'raspberry', 'robot', 'robotics', 'gpu', 'bio-medical', 'swarm', 'nvidia']
@@ -19,3 +20,7 @@ extract_categories('https://api.ce.pdn.ac.lk/projects/v1/', f'{DATA_PATH}/projec
 
 # Generate subpages.
 generate_category_pages(f'{DATA_PATH}/project_categories.json', f'{PAGES_PATH}/projects')
+
+#Create people.json file with staff Details
+staffTags = ["roshanr", "isurunawinne", "swarnar"]
+createStaffDictionary(staffTags)
