@@ -1046,5 +1046,161 @@
             "page_url": "https://cepdnaclk.github.io/e14-3yp-sleep-apnea-detection",
             "api_url": "https://api.ce.pdn.ac.lk/projects/v1/3yp/E14/sleep-apnea-detection/"
         }
+    },
+    {
+        "title": "ContactTracingApp",
+        "category": {
+            "code": "6sp",
+            "title": "Sixth Semester Projects",
+            "api_url": "https://api.ce.pdn.ac.lk/projects/v1/6sp/"
+        },
+        "project_url": "https://projects.ce.pdn.ac.lk/6sp/e17/ContactTracingApp/",
+        "repo_url": "https://github.com/cepdnaclk/e17-6sp-ContactTracingApp",
+        "page_url": "https://cepdnaclk.github.io/e17-6sp-ContactTracingApp",
+        "thumbnail_url": "https://projects.ce.pdn.ac.lk/data/categories/6sp/thumbnail.jpg",
+        "api_url": "https://api.ce.pdn.ac.lk/projects/v1/6sp/E17/ContactTracingApp/"
+    },
+    {
+        "title": "Greenhouse Monitoring System",
+        "category": {
+            "code": "6sp",
+            "title": "Sixth Semester Projects",
+            "api_url": "https://api.ce.pdn.ac.lk/projects/v1/6sp/"
+        },
+        "project_url": "https://projects.ce.pdn.ac.lk/6sp/e17/Greenhouse-Monitoring-System/",
+        "repo_url": "https://github.com/cepdnaclk/e17-6sp-Greenhouse-Monitoring-System",
+        "page_url": "https://cepdnaclk.github.io/e17-6sp-Greenhouse-Monitoring-System",
+        "thumbnail_url": "https://projects.ce.pdn.ac.lk/data/categories/6sp/thumbnail.jpg",
+        "api_url": "https://api.ce.pdn.ac.lk/projects/v1/6sp/E17/Greenhouse-Monitoring-System/"
+    },
+    {
+        "title": "Greenhouse monitoring and controlling based on IOT sensor data",
+        "category": {
+            "code": "6sp",
+            "title": "Sixth Semester Projects",
+            "api_url": "https://api.ce.pdn.ac.lk/projects/v1/6sp/"
+        },
+        "project_url": "https://projects.ce.pdn.ac.lk/6sp/e17/Greenhouse-monitoring-and-controlling-based-on-IOT-sensor-data/",
+        "repo_url": "https://github.com/cepdnaclk/e17-6sp-Greenhouse-monitoring-and-controlling-based-on-IOT-sensor-data",
+        "page_url": "https://cepdnaclk.github.io/e17-6sp-Greenhouse-monitoring-and-controlling-based-on-IOT-sensor-data",
+        "thumbnail_url": "https://projects.ce.pdn.ac.lk/data/categories/6sp/thumbnail.jpg",
+        "api_url": "https://api.ce.pdn.ac.lk/projects/v1/6sp/E17/Greenhouse-monitoring-and-controlling-based-on-IOT-sensor-data/"
+    },
+    {
+        "title": "Automated Smart Lighting System",
+        "category": {
+            "code": "co326",
+            "title": "Industrial Automation Projects (CO326)",
+            "api_url": "https://api.ce.pdn.ac.lk/projects/v1/co326/"
+        },
+        "project_url": "https://projects.ce.pdn.ac.lk/co326/e18/Automated-Smart-Lighting-System/",
+        "repo_url": "https://github.com/cepdnaclk/e18-co326-Automated-Smart-Lighting-System",
+        "page_url": "https://cepdnaclk.github.io/e18-co326-Automated-Smart-Lighting-System",
+        "thumbnail_url": "https://projects.ce.pdn.ac.lk/data/categories/co326/thumbnail.jpg",
+        "api_url": "https://api.ce.pdn.ac.lk/projects/v1/co326/E18/Automated-Smart-Lighting-System/"
+    },
+    {
+        "title": "Smart Traffic Light System",
+        "category": {
+            "code": "co326",
+            "title": "Industrial Automation Projects (CO326)",
+            "api_url": "https://api.ce.pdn.ac.lk/projects/v1/co326/"
+        },
+        "project_url": "https://projects.ce.pdn.ac.lk/co326/e18/Smart-Traffic-Light-System/",
+        "repo_url": "https://github.com/cepdnaclk/e18-co326-Smart-Traffic-Light-System",
+        "page_url": "https://cepdnaclk.github.io/e18-co326-Smart-Traffic-Light-System",
+        "thumbnail_url": "https://projects.ce.pdn.ac.lk/data/categories/co326/thumbnail.jpg",
+        "api_url": "https://api.ce.pdn.ac.lk/projects/v1/co326/E18/Smart-Traffic-Light-System/"
+    },
+    {
+        "title": "Remotely Controlled CNC Robot",
+        "category": {
+            "code": "co326",
+            "title": "Industrial Automation Projects (CO326)",
+            "api_url": "https://api.ce.pdn.ac.lk/projects/v1/co326/"
+        },
+        "project_url": "https://projects.ce.pdn.ac.lk/co326/e15/Remotely-Controlled-CNC-Robot/",
+        "repo_url": "https://github.com/cepdnaclk/e15-co326-Remotely-Controlled-CNC-Robot",
+        "page_url": "https://cepdnaclk.github.io/e15-co326-Remotely-Controlled-CNC-Robot",
+        "thumbnail_url": "https://projects.ce.pdn.ac.lk/data/categories/co326/thumbnail.jpg",
+        "api_url": "https://api.ce.pdn.ac.lk/projects/v1/co326/E15/Remotely-Controlled-CNC-Robot/"
+    },
+    {
+        "title": "Movie Review System",
+        "category": {
+            "code": "co328",
+            "title": "Software Engineering Projects (CO328)",
+            "api_url": "https://api.ce.pdn.ac.lk/projects/v1/co328/"
+        },
+        "project_url": "https://projects.ce.pdn.ac.lk/co328/e16/Movie-Review-System/",
+        "repo_url": "https://github.com/cepdnaclk/e16-co328-Movie-Review-System",
+        "page_url": "https://cepdnaclk.github.io/e16-co328-Movie-Review-System",
+        "thumbnail_url": "https://projects.ce.pdn.ac.lk/data/categories/co328/thumbnail.jpg",
+        "api_url": "https://api.ce.pdn.ac.lk/projects/v1/co328/E16/Movie-Review-System/"
+    },
+    {
+        "title": "Project Publication Platform",
+        "category": {
+            "code": "co328",
+            "title": "Software Engineering Projects (CO328)",
+            "api_url": "https://api.ce.pdn.ac.lk/projects/v1/co328/"
+        },
+        "project_url": "https://projects.ce.pdn.ac.lk/co328/e16/Project-Publication-Platform/",
+        "repo_url": "https://github.com/cepdnaclk/e16-co328-Project-Publication-Platform",
+        "page_url": "https://cepdnaclk.github.io/e16-co328-Project-Publication-Platform",
+        "thumbnail_url": "https://projects.ce.pdn.ac.lk/data/categories/co328/thumbnail.jpg",
+        "api_url": "https://api.ce.pdn.ac.lk/projects/v1/co328/E16/Project-Publication-Platform/"
+    },
+    {
+        "title": "Auto Marking and Student Performance Analyser System for Continuous Assessments Group A",
+        "category": {
+            "code": "co227",
+            "title": "Software Systems Projects",
+            "api_url": "https://api.ce.pdn.ac.lk/projects/v1/co227/"
+        },
+        "project_url": "https://projects.ce.pdn.ac.lk/co227/e18/Auto-Marking-and-Student-Performance-Analyser-System-for-Continuous-Assessments-Group-A/",
+        "repo_url": "https://github.com/cepdnaclk/e18-co227-Auto-Marking-and-Student-Performance-Analyser-System-for-Continuous-Assessments-Group-A",
+        "page_url": "https://cepdnaclk.github.io/e18-co227-Auto-Marking-and-Student-Performance-Analyser-System-for-Continuous-Assessments-Group-A",
+        "thumbnail_url": "https://projects.ce.pdn.ac.lk/data/categories/co227/thumbnail.jpg",
+        "api_url": "https://api.ce.pdn.ac.lk/projects/v1/co227/E18/Auto-Marking-and-Student-Performance-Analyser-System-for-Continuous-Assessments-Group-A/"
+    },
+    {
+        "title": "Development of an Image Capturing Unit for Remote Monitoring",
+        "category": {
+            "code": "co227",
+            "title": "Software Systems Projects",
+            "api_url": "https://api.ce.pdn.ac.lk/projects/v1/co227/"
+        },
+        "project_url": "https://projects.ce.pdn.ac.lk/co227/e18/Development-of-an-Image-Capturing-Unit-for-Remote-Monitoring/",
+        "repo_url": "https://github.com/cepdnaclk/e18-co227-Development-of-an-Image-Capturing-Unit-for-Remote-Monitoring",
+        "page_url": "https://cepdnaclk.github.io/e18-co227-Development-of-an-Image-Capturing-Unit-for-Remote-Monitoring",
+        "thumbnail_url": "https://projects.ce.pdn.ac.lk/data/categories/co227/thumbnail.jpg",
+        "api_url": "https://api.ce.pdn.ac.lk/projects/v1/co227/E18/Development-of-an-Image-Capturing-Unit-for-Remote-Monitoring/"
+    },
+    {
+        "title": "Number Plate Recognition system",
+        "category": {
+            "code": "co543",
+            "title": "Image Processing Projects (CO543)",
+            "api_url": "https://api.ce.pdn.ac.lk/projects/v1/co543/"
+        },
+        "project_url": "https://projects.ce.pdn.ac.lk/co543/e17/Number-Plate-Recognition-system/",
+        "repo_url": "https://github.com/cepdnaclk/e17-co543-Number-Plate-Recognition-system",
+        "page_url": "https://cepdnaclk.github.io/e17-co543-Number-Plate-Recognition-system",
+        "thumbnail_url": "https://projects.ce.pdn.ac.lk/data/categories/co543/thumbnail.jpg",
+        "api_url": "https://api.ce.pdn.ac.lk/projects/v1/co543/E17/Number-Plate-Recognition-system/"
+    },
+    {
+        "title": "SL Number Plate Detection Group A",
+        "category": {
+            "code": "co543",
+            "title": "Image Processing Projects (CO543)",
+            "api_url": "https://api.ce.pdn.ac.lk/projects/v1/co543/"
+        },
+        "project_url": "https://projects.ce.pdn.ac.lk/co543/e17/SL-Number-Plate-Detection-Group-A/",
+        "repo_url": "https://github.com/cepdnaclk/e17-co543-SL-Number-Plate-Detection-Group-A",
+        "page_url": "https://cepdnaclk.github.io/e17-co543-SL-Number-Plate-Detection-Group-A",
+        "thumbnail_url": "https://projects.ce.pdn.ac.lk/data/categories/co543/thumbnail.jpg",
+        "api_url": "https://api.ce.pdn.ac.lk/projects/v1/co543/E17/SL-Number-Plate-Detection-Group-A/"
     }
 ]
