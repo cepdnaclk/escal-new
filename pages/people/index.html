@@ -46,11 +46,13 @@ permalink: /people/
 				<h2 class="mb-2">Students</h2>
 			</div>
 		</div>
-		<!-- <div class="row">
-			{% assign people = site.data.people %}
-			{% for person in people %}
-			{% include card_people.html person=person %}
+		<div class="row">
+			{% assign student = site.data.student %}
+			{% for student in student %}
+			{% include card_student.html card_student=card_student %}
 			{% endfor %}
-		</div> -->
+
+
+		</div>
 	</div>
 </section>
