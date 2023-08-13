@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Prof. Roshan G. Ragel",
+        "designation": "Professor",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/roshan-ragel.jpg",
+        "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/"
+    },
+    {
+        "name": "Dr. Isuru Nawinne",
+        "designation": "Senior Lecturer",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/isuru-nawinne.png",
+        "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/isuru-nawinne/"
+    },
+    {
+        "name": "Dr. Swarnalatha Radhakrishnan",
+        "designation": "Senior Lecturer",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/swarnalatha-radhakrishnan.jpg",
+        "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/swarnalatha-radhakrishnan/"
+    }
+]
