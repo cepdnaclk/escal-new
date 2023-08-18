@@ -48,7 +48,7 @@ if __name__ == '__main__':
     api_url = "https://api.ce.pdn.ac.lk/projects/v1/filter/tags/"
     output_directory = r"_data"
     os.makedirs(output_directory, exist_ok=True)  # Create the output directory if it doesn't exist
-    output_filename = os.path.join(output_directory, "output.json")
+    output_filename = os.path.join(output_directory, "project.json")
 
     embedded_system_projects = get_embedded_system_projects(api_url)
 
