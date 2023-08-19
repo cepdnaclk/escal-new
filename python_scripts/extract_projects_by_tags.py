@@ -2,6 +2,7 @@ import requests
 import json
 import os
 
+tags = ["Embedded Systems","FPGA", "Computer Architecture"]
 def get_embedded_system_projects(api_url):
     try:
         response = requests.get(api_url)
@@ -10,8 +11,9 @@ def get_embedded_system_projects(api_url):
             embedded_system_projects = {}
 
             for category, projects in projects_data.items():
-                if "Embedded Systems" in category:
-                    embedded_system_projects[category] = projects
+                for tag in tags:    
+                    if tag in category:
+                        embedded_system_projects[category] = projects
 
             return embedded_system_projects
         else:
@@ -29,7 +31,10 @@ def append_to_json_file(data, output_filename):
         else:
             existing_data = []
 
-        existing_data.extend(data)
+        # Check if each project is already in the existing data
+        for project in data:
+            if project not in existing_data:
+                existing_data.append(project)
 
         with open(output_filename, 'w') as json_file:
             json.dump(existing_data, json_file, indent=4)
@@ -38,11 +43,12 @@ def append_to_json_file(data, output_filename):
     except Exception as e:
         print(f"An error occurred: {e}")
 
+
 if __name__ == '__main__':
     api_url = "https://api.ce.pdn.ac.lk/projects/v1/filter/tags/"
-    output_directory = r"D:\ESCAL\escal-new\_data"
+    output_directory = r"_data"
     os.makedirs(output_directory, exist_ok=True)  # Create the output directory if it doesn't exist
-    output_filename = os.path.join(output_directory, "output.json")
+    output_filename = os.path.join(output_directory, "project.json")
 
     embedded_system_projects = get_embedded_system_projects(api_url)
 
@@ -50,8 +56,7 @@ if __name__ == '__main__':
         projects_list = []
         for projects in embedded_system_projects.values():
             for project in projects:
-                if "3yp" not in project.get("category", {}).get("code", "").lower():
-                    projects_list.append(project)
+                projects_list.append(project)
 
         append_to_json_file(projects_list, output_filename)
     else:
