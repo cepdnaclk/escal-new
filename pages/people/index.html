@@ -46,13 +46,100 @@ permalink: /people/
 				<h2 class="mb-2">Students</h2>
 			</div>
 		</div>
-		<div class="row">
-			{% assign student = site.data.student %}
-			{% for student in student %}
-			{% include card_student.html card_student=card_student %}
+
+		<div class="row" id="studentContainer">
+			{% assign students = site.data.student %}
+			{% for student in students %}
+				{% include card_student.html student=student %}
 			{% endfor %}
-
-
 		</div>
+		
+		<div class="pagination-container d-flex justify-content-center" id="paginationBox">
+			<div class="pagination" id="pagination">
+				<div class="page-numbers block-27 d-flex justify-content-center"></div>
+			</div>
+		</div>
+		
+		<style>
+			#paginationBox {
+				display: flex;
+				justify-content: center; /* Center the pagination container horizontally */
+				width: 100%;
+				box-sizing: border-box;
+				margin-top: 20px; /* Add some top margin for spacing */
+			}
+		
+			#pagination {
+				width: auto; /* Let the pagination width adjust automatically */
+				overflow-x: auto;
+				white-space: nowrap;
+			}
+		
+			.page-numbers {
+				display: flex;
+				gap: 5px;
+				align-items: center; /* Center the pagination numbers vertically */
+			}
+		
+			.page-numbers span {
+				cursor: pointer;
+				padding: 6px 10px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+			}
+		
+			.page-numbers span.active {
+				background-color: #007bff;
+				color: white;
+				border-color: #007bff;
+			}
+		</style>
+		
+		<script>
+			// Number of items per page and initial page
+			const itemsPerPage = 36;  
+			let currentPage = 1;
+		
+			// Selectors
+			const studentContainer = document.getElementById('studentContainer');
+			const pagination = document.getElementById('pagination');
+			const pageNumbersContainer = pagination.querySelector('.page-numbers');
+		
+			function showPage(page) {
+				const startIndex = (page - 1) * itemsPerPage;
+				const endIndex = startIndex + itemsPerPage;
+		
+				const students = document.querySelectorAll('.student-card');
+				students.forEach((student, index) => {
+					student.style.display = (index >= startIndex && index < endIndex) ? 'block' : 'none';
+				});
+			}
+		
+			function updatePageNumbers() {
+				pageNumbersContainer.innerHTML = '';
+				const totalPages = Math.ceil(studentContainer.childElementCount / itemsPerPage);
+				for (let i = 1; i <= totalPages; i++) {
+					const pageNumber = document.createElement('span');
+					pageNumber.textContent = i;
+					pageNumber.addEventListener('click', () => {
+						currentPage = i;
+						showPage(currentPage);
+						updatePageNumbers();
+					});
+					if (i === currentPage) {
+						pageNumber.classList.add('active');
+					}
+					pageNumber.classList.add('block-27', 'd-flex', 'justify-content-center');
+					pageNumbersContainer.appendChild(pageNumber);
+				}
+			}
+		
+			// Initial setup
+			showPage(currentPage);
+			updatePageNumbers();
+		</script>
+		
+
+
 	</div>
 </section>
