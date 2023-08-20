@@ -1,0 +1,30 @@
+<div class="col-lg-4 col-md-4 col-sm-6 mb-5 ftco-animate">
+    <a href="{{student.profile_url}}">
+
+        <div style="border-radius: 20px; border:2px solid transparent;"
+            onmouseover="this.style.border='2px solid #90E4EE';"
+            onmouseout="this.style.border='2px solid transparent';">
+
+            <!-- image size : 250px, "object-fit: cover;" used because of different image sizes -->
+            <img class="card-img-top" src="{{student.profile_image}}" alt="Student Profile Image"
+                style="height: 250px; object-fit: cover; border-top-left-radius: 18px; border-top-right-radius: 18px;" />
+
+
+            <div class="card-body text-center bg-white"
+                style="border-bottom-left-radius: 18px; border-bottom-right-radius: 18px;">
+                <h5 class="card-text "> {{student.name}} </h5>
+                <h6 class="card-text "> {{student.batch}} </h6>
+            </div>
+
+
+            <!-- <div class="d-flex mb-4">
+                <div class="img" style="background-image: url('{{student.profile_image}}');">
+                </div>
+                <div class="info ml-4">
+                    <h5> {{student.name}} </h5>
+                </div>
+            </div> -->
+
+        </div>
+    </a>
+</div>

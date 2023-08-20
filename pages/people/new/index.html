@@ -1,0 +1,92 @@
+---
+layout: default
+title: "People"
+permalink: /people/new
+---
+
+<section class="home-slider owl-carousel">
+	<div class="slider-item bread-item" style="background-image: url('{{ 'assets/images/img4.jpg' | relative_url }}');"
+		data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container" data-scrollax-parent="true">
+			<div class="row slider-text align-items-end">
+				<div class="col-md-7 col-sm-12 ftco-animate mb-5">
+					<p class="breadcrumbs" data-scrollax=" properties: { translateY: '70%', opacity: 1.6}"><span
+							class="mr-2"><a href="{{ site.url }}{{ site.baseurl }}">Home</a></span>/ <span>People</span>
+					</p>
+					<h1 class="mb-3 font-weight-bold" data-scrollax=" properties: { translateY: '70%', opacity: .9}">
+						Faculty and Staff Profiles
+					</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="ftco-section bg-light">
+    <div class="container">
+        <div class="row">
+			<div class="col-md-8">
+				<section class="pt-5 bg-light"> <!-- class="ftco-section bg-light" -->
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-md-7 heading-section ftco-animate text-center">
+								<h2 class="mb-2">Staff</h2>
+							</div>
+						</div>
+						<div class="row">
+							{% assign staff = site.data.staff %}
+							{% for staff in staff %}
+							{% include card_staff_new.html staff=staff %}
+							{% endfor %}
+						</div>
+					</div>
+				</section>
+
+				<section class=" bg-light py-5">
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-md-7 heading-section ftco-animate text-center">
+								<h2 class="mb-2">Students</h2>
+							</div>
+						</div>
+						<div class="row">
+							{% assign student = site.data.student %}
+							{% for student in student %}
+							{% include card_student_new.html card_student=card_student %}
+							{% endfor %}
+
+
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="col-md-4 sidebar ftco-animate pt-5">
+                <div class="sidebar-box bg-light">
+                    <form  class="search-form">
+                        <div class="form-group">
+                            <span class="icon fa fa-search"></span>
+                            <input type="text" class="form-control" placeholder="Search Name" id="search-input" style="background-color: transparent !important;">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="sidebar-box ftco-animate bg-light">
+                    <h3>Tag Cloud</h3>
+                    <div class="tagcloud">
+                        <a href="#" class="tag-cloud-link">Staff</a>
+                        <a href="#" class="tag-cloud-link">E18</a>
+                        <a href="#" class="tag-cloud-link">E17</a>
+                        <a href="#" class="tag-cloud-link">E16</a>
+                        <a href="#" class="tag-cloud-link">E15</a>
+                        <a href="#" class="tag-cloud-link">E14</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-box ftco-animate bg-light">
+                    <span>Last Updated: {{ site.time | date: '%B %d, %Y' }}</span>
+                </div>
+            </div>
+		</div>
+	</div>
+</section>
