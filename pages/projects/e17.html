@@ -47,7 +47,7 @@ permalink: /projects/e17
                     {% assign project = projects[_project] %}
                     <div class="col-lg-6 ftco-animate project-card" data-id='{{ _project }}'
                         data-category='{ project[1].category.title }' data-description='{{ project.description }}'
-                        data-title='{{ project.title }}' data-category-code="{{ project[1].category.code }}">
+                        data-title='{{ project.title }}' data-category-code="{{ project.category.code }}">
                         <div class="blog-entry">
                             {% assign proj_img = project.category.code | prepend: "assets/images/thumb_" | append:
                             ".jpg" %}
@@ -257,16 +257,14 @@ permalink: /projects/e17
                 <div class="sidebar-box ftco-animate">
                     <h3>Tag Cloud</h3>
                     <div class="tagcloud">
-                        <!-- <a href="#" class="tag-cloud-link">Embedded</a>
-                        <a href="#" class="tag-cloud-link">Embedded-Systems</a>
-                        <a href="#" class="tag-cloud-link">Biomed</a>
-                        <a href="#" class="tag-cloud-link">GPU-Computing</a>
-                        <a href="#" class="tag-cloud-link">Bio-Medical</a>
-                        <a href="#" class="tag-cloud-link">3YP</a>
-                        <a href="#" class="tag-cloud-link">Research-Project</a>
-                        <a href="#" class="tag-cloud-link">CUDA</a> -->
                         <a href="#" class="tag-cloud-link" data-category-code="all">ALL</a>
-                        <a href="#" class="tag-cloud-link" data-category-code="4yp">4YP</a>
+                        <a href="#" class="tag-cloud-link" data-category-code="embedded">Embedded</a>
+                        <a href="#" class="tag-cloud-link" data-category-code="embedded systems">Embedded-Systems</a>
+                        <a href="#" class="tag-cloud-link" data-category-code="biomed">Biomed</a>
+                        <a href="#" class="tag-cloud-link" data-category-code="gpu computing">GPU-Computing</a>
+                        <a href="#" class="tag-cloud-link" data-category-code="bio medical">Bio-Medical</a>
+                        <a href="#" class="tag-cloud-link" data-category-code="research project">Research-Project</a>
+                        <a href="#" class="tag-cloud-link" data-category-code="cuda">CUDA</a>
                         <a href="#" class="tag-cloud-link" data-category-code="3yp">3YP</a>
                         <a href="#" class="tag-cloud-link" data-category-code="co326">CO326</a>
                         <a href="#" class="tag-cloud-link" data-category-code="co543">CO543</a>

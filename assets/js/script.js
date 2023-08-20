@@ -237,11 +237,17 @@ var filterByTags = function() {
                 var selectedCategoryCode = tagCloudLink.getAttribute('data-category-code');
 
                 projectCards.forEach(function (projectCard) {
-                    if (selectedCategoryCode === 'all' || projectCard.getAttribute('data-category-code') === selectedCategoryCode) {
-                        projectCard.style.display = 'block';
-                    } else {
-                        projectCard.style.display = 'none';
+                    // filter by category, category.title, title
+                    var projectCategory = projectCard.getAttribute('data-category').toLowerCase();
+                    var projectCategorycode = projectCard.getAttribute('data-category-code').toLowerCase();
+                    var projectTitle = projectCard.getAttribute('data-title').toLowerCase();
+                    var shouldDisplay = selectedCategoryCode === 'all';
+
+                    if (shouldDisplay || projectCategory.includes(selectedCategoryCode) || projectCategorycode.includes(selectedCategoryCode) || projectTitle.includes(selectedCategoryCode)) {
+                        shouldDisplay = true;
                     }
+
+                    projectCard.style.display = shouldDisplay ? 'block' : 'none';
                 });
 
                 paginationControls.style.display = (selectedCategoryCode === 'all') ? 'block' : 'none';
