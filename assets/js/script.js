@@ -223,3 +223,35 @@ var search = function() {
     });
 }
 search();
+
+var filterByTags = function() {
+    document.addEventListener('DOMContentLoaded', function () {
+        var tagCloudLinks = document.querySelectorAll('.tag-cloud-link');
+        var projectCards = document.querySelectorAll('.project-card');
+        var pageButtons = document.querySelectorAll('.page-button');
+        var paginationControls = document.getElementById('pagination-controls');
+
+        tagCloudLinks.forEach(function (tagCloudLink) {
+            tagCloudLink.addEventListener('click', function (e) {
+                e.preventDefault();
+                var selectedCategoryCode = tagCloudLink.getAttribute('data-category-code');
+
+                projectCards.forEach(function (projectCard) {
+                    if (selectedCategoryCode === 'all' || projectCard.getAttribute('data-category-code') === selectedCategoryCode) {
+                        projectCard.style.display = 'block';
+                    } else {
+                        projectCard.style.display = 'none';
+                    }
+                });
+
+                paginationControls.style.display = (selectedCategoryCode === 'all') ? 'block' : 'none';
+
+                // Trigger a click on the first page button
+                if (selectedCategoryCode === 'all') {
+                    pageButtons[0].click();
+                }
+            });
+        });
+    });
+}
+filterByTags();

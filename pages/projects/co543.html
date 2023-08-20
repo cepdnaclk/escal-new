@@ -14,7 +14,9 @@ permalink: /projects/co543
             <div class="row slider-text align-items-end">
                 <div class="col-md-7 col-sm-12 ftco-animate mb-5">
                     <p class="breadcrumbs" data-scrollax=" properties: { translateY: '70%', opacity: 1.6}"><span
-                            class="mr-2"><a href="{{ site.url }}{{ site.baseurl }}">Home</a></span>/ <span><a href="{{ site.url }}{{ site.baseurl }}/{{ page.parent_name }}">{{ page.parent_name }}</a></span> / <span>{{ page.cat_code }}</span></p>
+                            class="mr-2"><a href="{{ site.url }}{{ site.baseurl }}">Home</a></span>/ <span><a
+                                href="{{ site.url }}{{ site.baseurl }}/{{ page.parent_name }}">{{ page.parent_name
+                                }}</a></span> / <span>{{ page.cat_code }}</span></p>
                     <h1 class="mb-3 font-weight-bold" data-scrollax=" properties: { translateY: '70%', opacity: .9}">
                         ESCAL Related Projects
                     </h1>
@@ -35,49 +37,57 @@ permalink: /projects/co543
                     </div>
                 </div>
                 <div class="row">
-                    <img id="no-results" src="{{ 'assets/images/no_result.gif' | relative_url }}" alt="" style="display: none;" />
+                    <img id="no-results" src="{{ 'assets/images/no_result.gif' | relative_url }}" alt=""
+                        style="display: none;" />
                 </div>
                 <div class="row" id='projects-layout' data-current-page='1'>
                     {% assign projects = site.data.projects %}
-                    {% assign category_projects = site.data.project_categories['Image Processing Projects (CO543)'].projects %}
+                    {% assign category_projects = site.data.project_categories['Image Processing Projects
+                    (CO543)'].projects %}
                     {% for _project in category_projects %}
-                        {% assign project = projects[_project] %}
-                        <div class="col-lg-6 ftco-animate project-card" data-id='{{ _project }}' data-category='{ project[1].category.title }'
-                                data-description='{{ project.description }}' data-title='{{ project.title }}'>
-                            <div class="blog-entry">
-                                {% assign proj_img = project.category.code | prepend: "assets/images/thumb_" | append: ".jpg" %}
-                                <a href="{{ project.page_url }}" class="block-20" target="_blank"
-                                    style="background-image: url('{{ proj_img | relative_url }}'); border-radius: 10px;">
-                                </a>
-                                <div class="text d-flex py-4">
-                                    <div class="">
-                                        <h3 class="heading"><a href="{{ project.page_url }}" target="_blank">{{ project.title }}</a></h3>
-                                        {% assign size = project.team.size %}
-                                        {% if size > 0 %}
-                                            <div class='d-flex flex-wrap' style="max-width: 350px;">
-                                                <span class="icon-person" style="line-height: 1.8;">{{ size }}</span>
-                                                {% for member in project.team %}
-                                                    {% assign names = member[1].name | split: ' ' %}
-                                                    {% comment %}
-                                                    *
-                                                    *    Change the following URL if the domain is changed.
-                                                    *
-                                                    {% endcomment %}
-                                                    {% assign people_page_url = "https://cepdnaclk.github.io/people.ce.pdn.ac.lk" %}
-                                                    {% assign member_url = member[1].api_url | split: '/' | slice: -3, 3 %}
-                                                    <a href="{{ people_page_url }}/{{ member_url[0] }}/{{ member_url[1] | downcase }}/{{ member_url[2] }}" 
-                                                        class="px-2" target="_blank" data-toggle="tooltip" data-placement="bottom" title="{{ member[1].name }}">{{ names[0] }}</a>
-                                                {% endfor %}
-                                            </div>
-                                        {% endif %}
-                                        <span class="icon-calendar" style="line-height: 1.8;"> {{ project.updated_at | date: '%b %d, %Y' }}</span>
-                                        <p class="project-description">{{ project.description | truncatewords: 30 }}</p>
-                                        <p><a href="{{ project.project_url }}" class="btn btn-primary btn-outline-primary">Read
-                                                more</a></p>
+                    {% assign project = projects[_project] %}
+                    <div class="col-lg-6 ftco-animate project-card" data-id='{{ _project }}'
+                        data-category='{ project[1].category.title }' data-description='{{ project.description }}'
+                        data-title='{{ project.title }}' data-category-code="{{ project[1].category.code }}">
+                        <div class="blog-entry">
+                            {% assign proj_img = project.category.code | prepend: "assets/images/thumb_" | append:
+                            ".jpg" %}
+                            <a href="{{ project.page_url }}" class="block-20" target="_blank"
+                                style="background-image: url('{{ proj_img | relative_url }}'); border-radius: 10px;">
+                            </a>
+                            <div class="text d-flex py-4">
+                                <div class="">
+                                    <h3 class="heading"><a href="{{ project.page_url }}" target="_blank">{{
+                                            project.title }}</a></h3>
+                                    {% assign size = project.team.size %}
+                                    {% if size > 0 %}
+                                    <div class='d-flex flex-wrap' style="max-width: 350px;">
+                                        <span class="icon-person" style="line-height: 1.8;">{{ size }}</span>
+                                        {% for member in project.team %}
+                                        {% assign names = member[1].name | split: ' ' %}
+                                        {% comment %}
+                                        *
+                                        * Change the following URL if the domain is changed.
+                                        *
+                                        {% endcomment %}
+                                        {% assign people_page_url = "https://cepdnaclk.github.io/people.ce.pdn.ac.lk" %}
+                                        {% assign member_url = member[1].api_url | split: '/' | slice: -3, 3 %}
+                                        <a href="{{ people_page_url }}/{{ member_url[0] }}/{{ member_url[1] | downcase }}/{{ member_url[2] }}"
+                                            class="px-2" target="_blank" data-toggle="tooltip" data-placement="bottom"
+                                            title="{{ member[1].name }}">{{ names[0] }}</a>
+                                        {% endfor %}
                                     </div>
+                                    {% endif %}
+                                    <span class="icon-calendar" style="line-height: 1.8;"> {{ project.updated_at | date:
+                                        '%b %d, %Y' }}</span>
+                                    <p class="project-description">{{ project.description | truncatewords: 30 }}</p>
+                                    <p><a href="{{ project.project_url }}"
+                                            class="btn btn-primary btn-outline-primary">Read
+                                            more</a></p>
                                 </div>
                             </div>
                         </div>
+                    </div>
                     {% endfor %}
                 </div>
                 <div class="row mt-5" id="pagination-controls">
@@ -88,7 +98,7 @@ permalink: /projects/co543
                                 <li><span id='prev-button'>&lt;</span></li>
                                 <li><span class="page-button" data-page='1'>1</span></li>
                                 {% for i in (2..pages) %}
-                                    <li><span class="page-button" data-page='{{ i }}'>{{ i }}</span></li>
+                                <li><span class="page-button" data-page='{{ i }}'>{{ i }}</span></li>
                                 {% endfor %}
                                 <li><span id='next-button'>&gt;</span></li>
                             </ul>
@@ -109,39 +119,49 @@ permalink: /projects/co543
                     <div class="categories">
                         <div id="accordion">
                             <div class="card">
-                              <div class="card-header" id="headingOne" onmouseover="this.style.cursor='pointer'">
-                                  <a  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <div class="card-header" id="headingOne" onmouseover="this.style.cursor='pointer'">
+                                    <a data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
                                         <h5 class="headingOne">
                                             Categories
                                         </h5>
-                                  </a>
-                              </div>
-                          
-                              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                                <div class="card-body">
-                                    {% for category in site.data.project_categories limit: 5 %}
-                                    <li><a href="{{ site.url }}{{ site.baseurl }}{{ category[1].parent }}/{{ category[1].code }}" data-toggle="tooltip" data-placement="bottom" title="{{ category[0] }}">{{ category[0] | truncate:37 }} <span>({{ category[1].count }})</span></a></li>
-                                    {% endfor %}
+                                    </a>
                                 </div>
-                              </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        {% for category in site.data.project_categories limit: 5 %}
+                                        <li><a href="{{ site.url }}{{ site.baseurl }}{{ category[1].parent }}/{{ category[1].code }}"
+                                                data-toggle="tooltip" data-placement="bottom"
+                                                title="{{ category[0] }}">{{ category[0] | truncate:37 }} <span>({{
+                                                    category[1].count }})</span></a></li>
+                                        {% endfor %}
+                                    </div>
+                                </div>
                             </div>
                             <div class="card">
-                              <div class="card-header" id="headingTwo" onmouseover="this.style.cursor='pointer'">
-                                <a  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                    <h5 class="card-title">
-                                        Batchwise Projects
-                                    </h5>
-                                </a>
-                              </div>
-                              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                <div class="card-body">
-                                    {% for category in site.data.project_categories offset: 5 %}
-                                    <li><a href="{{ site.url }}{{ site.baseurl }}{{ category[1].parent }}/{{ category[1].code }}" data-toggle="tooltip" data-placement="bottom" title="{{ category[0] }}">{{ category[0] | truncate:37 }} <span>({{ category[1].count }})</span></a></li>
-                                    {% endfor %}
+                                <div class="card-header" id="headingTwo" onmouseover="this.style.cursor='pointer'">
+                                    <a data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                                        aria-controls="collapseTwo">
+                                        <h5 class="card-title">
+                                            Batchwise Projects
+                                        </h5>
+                                    </a>
                                 </div>
-                              </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        {% for category in site.data.project_categories offset: 5 %}
+                                        <li><a href="{{ site.url }}{{ site.baseurl }}{{ category[1].parent }}/{{ category[1].code }}"
+                                                data-toggle="tooltip" data-placement="bottom"
+                                                title="{{ category[0] }}">{{ category[0] | truncate:37 }} <span>({{
+                                                    category[1].count }})</span></a></li>
+                                        {% endfor %}
+                                    </div>
+                                </div>
                             </div>
-                          </div>
+                        </div>
                     </div>
                 </div>
 
@@ -150,96 +170,108 @@ permalink: /projects/co543
                     {% assign first_proj = nil %}
                     {% assign first_recent = '0000-0-0T00:00:00Z' %}
                     {% for _project in category_projects %}
-                        {% assign project = projects[_project] %}
-                        {% if project.updated_at > first_recent %}
-                            {% assign first_recent = project.updated_at %}
-                            {% assign first_proj = project %}
-                        {% endif %}
+                    {% assign project = projects[_project] %}
+                    {% if project.updated_at > first_recent %}
+                    {% assign first_recent = project.updated_at %}
+                    {% assign first_proj = project %}
+                    {% endif %}
                     {% endfor %}
                     {% assign proj_img = first_proj.category.code | prepend: "assets/images/thumb_" | append: ".jpg" %}
                     {% if first_proj %}
-                        <div class="block-21 mb-4 d-flex">
-                            <a class="blog-img mr-4" style="background-image: url('{{ proj_img | relative_url }}'); border-radius: 5px;"></a>
-                            <div class="text">
-                                <h3 class="heading"><a href="{{ first_proj.project_url }}">{{ first_proj.title }}</a></h3>
-                                <div class="meta">
-                                    <div><span class="icon-calendar"></span> {{ first_proj.updated_at | date: '%B %d, %Y' }}</div>
-                                    {% if first_proj.team.size > 0 %}
-                                        <div><span class="icon-person"></span> {{first_proj.team.size}}</div>
-                                    {% endif %}
-                                    <div><span class="icon-star"></span> {{first_proj.stars}}</div>
+                    <div class="block-21 mb-4 d-flex">
+                        <a class="blog-img mr-4"
+                            style="background-image: url('{{ proj_img | relative_url }}'); border-radius: 5px;"></a>
+                        <div class="text">
+                            <h3 class="heading"><a href="{{ first_proj.project_url }}">{{ first_proj.title }}</a></h3>
+                            <div class="meta">
+                                <div><span class="icon-calendar"></span> {{ first_proj.updated_at | date: '%B %d, %Y' }}
                                 </div>
+                                {% if first_proj.team.size > 0 %}
+                                <div><span class="icon-person"></span> {{first_proj.team.size}}</div>
+                                {% endif %}
+                                <div><span class="icon-star"></span> {{first_proj.stars}}</div>
                             </div>
                         </div>
+                    </div>
                     {% endif %}
 
                     {% assign second_proj = nil %}
                     {% assign second_recent = '0000-0-0T00:00:00Z' %}
                     {% if first_proj %}
-                        {% for _project in category_projects %}
-                            {% assign project = projects[_project] %}
-                            {% if first_recent > project.updated_at and project.updated_at > second_recent %}
-                                {% assign second_recent = project.updated_at %}
-                                {% assign second_proj = project %}
-                            {% endif %}
-                        {% endfor %}
-                        {% assign proj_img = second_proj.category.code | prepend: "assets/images/thumb_" | append: ".jpg" %}
+                    {% for _project in category_projects %}
+                    {% assign project = projects[_project] %}
+                    {% if first_recent > project.updated_at and project.updated_at > second_recent %}
+                    {% assign second_recent = project.updated_at %}
+                    {% assign second_proj = project %}
+                    {% endif %}
+                    {% endfor %}
+                    {% assign proj_img = second_proj.category.code | prepend: "assets/images/thumb_" | append: ".jpg" %}
                     {% endif %}
 
                     {% assign third_proj = nil %}
                     {% assign third_recent = '0000-0-0T00:00:00Z' %}
                     {% if second_proj %}
-                        <div class="block-21 mb-4 d-flex">
-                            <a class="blog-img mr-4" style="background-image: url('{{ proj_img | relative_url }}'); border-radius: 5px;"></a>
-                            <div class="text">
-                                <h3 class="heading"><a href="{{ second_proj.project_url }}">{{ second_proj.title }}</a></h3>
-                                <div class="meta">
-                                    <div><span class="icon-calendar"></span> {{ second_proj.updated_at | date: '%B %d, %Y' }}</div>
-                                    {% if second_proj.team.size > 0 %}
-                                        <div><span class="icon-person"></span> {{second_proj.team.size}}</div>
-                                    {% endif %}
-                                    <div><span class="icon-star"></span> {{second_proj.stars}}</div>
-                                </div>
+                    <div class="block-21 mb-4 d-flex">
+                        <a class="blog-img mr-4"
+                            style="background-image: url('{{ proj_img | relative_url }}'); border-radius: 5px;"></a>
+                        <div class="text">
+                            <h3 class="heading"><a href="{{ second_proj.project_url }}">{{ second_proj.title }}</a></h3>
+                            <div class="meta">
+                                <div><span class="icon-calendar"></span> {{ second_proj.updated_at | date: '%B %d, %Y'
+                                    }}</div>
+                                {% if second_proj.team.size > 0 %}
+                                <div><span class="icon-person"></span> {{second_proj.team.size}}</div>
+                                {% endif %}
+                                <div><span class="icon-star"></span> {{second_proj.stars}}</div>
                             </div>
                         </div>
-                        {% for _project in category_projects %}
-                            {% assign project = projects[_project] %}
-                            {% if second_recent > project.updated_at and project.updated_at > third_recent %}
-                                {% assign third_recent = project.updated_at %}
-                                {% assign third_proj = project %}
-                            {% endif %}
-                        {% endfor %}
-                        {% assign proj_img = third_proj.category.code | prepend: "assets/images/thumb_" | append: ".jpg" %}
+                    </div>
+                    {% for _project in category_projects %}
+                    {% assign project = projects[_project] %}
+                    {% if second_recent > project.updated_at and project.updated_at > third_recent %}
+                    {% assign third_recent = project.updated_at %}
+                    {% assign third_proj = project %}
+                    {% endif %}
+                    {% endfor %}
+                    {% assign proj_img = third_proj.category.code | prepend: "assets/images/thumb_" | append: ".jpg" %}
                     {% endif %}
 
                     {% if third_proj %}
-                        <div class="block-21 mb-4 d-flex">
-                            <a class="blog-img mr-4" style="background-image: url('{{ proj_img | relative_url }}'); border-radius: 5px;"></a>
-                            <div class="text">
-                                <h3 class="heading"><a href="{{ third_proj.project_url }}">{{ third_proj.title }}</a></h3>
-                                <div class="meta">
-                                    <div><span class="icon-calendar"></span> {{ third_proj.updated_at | date: '%B %d, %Y' }}</div>
-                                    {% if third_proj.team.size > 0 %}
-                                        <div><span class="icon-person"></span> {{third_proj.team.size}}</div>
-                                    {% endif %}
-                                    <div><span class="icon-star"></span> {{third_proj.stars}}</div>
+                    <div class="block-21 mb-4 d-flex">
+                        <a class="blog-img mr-4"
+                            style="background-image: url('{{ proj_img | relative_url }}'); border-radius: 5px;"></a>
+                        <div class="text">
+                            <h3 class="heading"><a href="{{ third_proj.project_url }}">{{ third_proj.title }}</a></h3>
+                            <div class="meta">
+                                <div><span class="icon-calendar"></span> {{ third_proj.updated_at | date: '%B %d, %Y' }}
                                 </div>
+                                {% if third_proj.team.size > 0 %}
+                                <div><span class="icon-person"></span> {{third_proj.team.size}}</div>
+                                {% endif %}
+                                <div><span class="icon-star"></span> {{third_proj.stars}}</div>
                             </div>
                         </div>
+                    </div>
                     {% endif %}
                 </div>
 
                 <div class="sidebar-box ftco-animate">
                     <h3>Tag Cloud</h3>
                     <div class="tagcloud">
-                        <a href="#" class="tag-cloud-link">Embedded</a>
+                        <!-- <a href="#" class="tag-cloud-link">Embedded</a>
                         <a href="#" class="tag-cloud-link">Embedded-Systems</a>
                         <a href="#" class="tag-cloud-link">Biomed</a>
                         <a href="#" class="tag-cloud-link">GPU-Computing</a>
                         <a href="#" class="tag-cloud-link">Bio-Medical</a>
                         <a href="#" class="tag-cloud-link">3YP</a>
                         <a href="#" class="tag-cloud-link">Research-Project</a>
-                        <a href="#" class="tag-cloud-link">CUDA</a>
+                        <a href="#" class="tag-cloud-link">CUDA</a> -->
+                        <a href="#" class="tag-cloud-link" data-category-code="all">ALL</a>
+                        <a href="#" class="tag-cloud-link" data-category-code="4yp">4YP</a>
+                        <a href="#" class="tag-cloud-link" data-category-code="3yp">3YP</a>
+                        <a href="#" class="tag-cloud-link" data-category-code="co326">CO326</a>
+                        <a href="#" class="tag-cloud-link" data-category-code="co543">CO543</a>
+                        <a href="#" class="tag-cloud-link" data-category-code="co502">CO502</a>
                     </div>
                 </div>
 
@@ -250,4 +282,3 @@ permalink: /projects/co543
         </div>
     </div>
 </section>
-        
