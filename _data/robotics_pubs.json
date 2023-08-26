@@ -1,0 +1,349 @@
+[
+    {
+        "title": "Personalized and adaptive user interface framework for mobile application",
+        "venue": "2013 International Conference on Advances in Computing, Communications and Informatics (ICACCI)",
+        "year": "2013",
+        "abstract": "User interfaces in mobile applications are complex since they need to provide sufficient features to variety of users in a restricted space where a small number of components are available. When user acquires expertise in the system they expect user interfaces which satisfy their unique needs. Therefore, user interfaces in mobile applications should be adapted to different users. Since this problem exists in various applications a general solution is required to make user interfaces adaptive using user context history. In this paper, we introduce a conceptual prototype framework for mobile applications to make the user interfaces adaptive to the user. This identifies a suitable experience level to a user by learning his/her history of interactions with applications and then displays adaptive user interfaces. A proof of concept application is implemented to inspect the behavior of framework. Further, a user study was conducted on the developed proof of concept application and user context data was stored. This data was used as the training data for the Inference engine. This framework introduces an abstract solution which can be used to adapt various user interfaces based on human computer interactions. We believe the suggested framework can be used in related adaptation for Web applications, desktop applications and other mobile platforms.",
+        "authors": [
+            "Mahasivam Nivethika",
+            "Ilanthalaisingam Vithiya",
+            "Sebastiankularatnam Anntharshika",
+            "Sampath Deegalla"
+        ],
+        "author_info": [
+            {
+                "name": "Mahasivam Nivethika",
+                "profile": "#",
+                "type": "OUTSIDER",
+                "id": "",
+                "email": "",
+                "profile_image": "#",
+                "profile_url": "#"
+            },
+            {
+                "name": "Ilanthalaisingam Vithiya",
+                "profile": "#",
+                "type": "OUTSIDER",
+                "id": "",
+                "email": "",
+                "profile_image": "#",
+                "profile_url": "#"
+            },
+            {
+                "name": "Sebastiankularatnam Anntharshika",
+                "profile": "#",
+                "type": "OUTSIDER",
+                "id": "",
+                "email": "",
+                "profile_image": "#",
+                "profile_url": "#"
+            },
+            {
+                "name": "Sampath Deegalla",
+                "profile": "https://people.ce.pdn.ac.lk/staff/academic/sampath-deegalla/",
+                "type": "STAFF",
+                "id": "sampath",
+                "email": "sampath@eng.pdn.ac.lk",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/sampath-deegalla.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/sampath-deegalla/"
+            }
+        ],
+        "doi": "https://doi.org/10.1109/ICACCI.2013.6637474",
+        "is_dept_affiliated": true,
+        "preprint": "#",
+        "pdf": "#",
+        "presentation": "#",
+        "project": "#",
+        "codebase": "#",
+        "researchgroups": [],
+        "funding": "",
+        "tags": [
+            "User interfaces",
+            "Engines",
+            "Mobile communication",
+            "Context",
+            "Rendering (computer graphics)",
+            "Androids",
+            "Humanoid robots"
+        ],
+        "api_url": "https://api.ce.pdn.ac.lk/publications/v1/10.1109/ICACCI.2013.6637474/",
+        "edit_url": "https://github.com/cepdnaclk/api.ce.pdn.ac.lk/blob/main/publications/v1/10.1109/ICACCI.2013.6637474/index.json"
+    },
+    {
+        "title": "A Programming Framework for Robot Swarms",
+        "venue": "2020 Moratuwa Engineering Research Conference (MERCon)",
+        "year": "2020",
+        "abstract": "Swarm robotics is a well-evolved research area over the past couple of decades. In this paper, we introduce a framework for programming swarm robots in a novel approach based on behaviour categorization, pheromone communication, and state representation. The framework is packaged with a set of well defined and tested behaviours that are structured based on the level of interactions between robots. These behaviours can be combined and integrated into the user code when implementing new behaviours. Robots function in a user-defined state and perform actions attributed to that state. We have used a behaviour- based bottom-up design approach for designing these behaviours which eventually alleviate the debugging and implementation process. The efficacy of our work is validated using results obtained from a custom-built simulation platform. These results include tests involving an random movement behaviour, an object finding behaviour, and implementation of an aggregation behaviour.",
+        "authors": [
+            "Mahendra Dassanayaka",
+            "Tharuka Bandara",
+            "Nadun Adikari",
+            "Isuru Nawinne",
+            "Roshan Ragel"
+        ],
+        "author_info": [
+            {
+                "name": "Mahendra Dassanayaka",
+                "profile": "https://people.ce.pdn.ac.lk/students/e14/065/",
+                "type": "STUDENT",
+                "id": "E/14/065",
+                "email": "e14065@ce.pdn.ac.lk",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/students/e14/e14065.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/students/e14/065/"
+            },
+            {
+                "name": "Tharuka Bandara",
+                "profile": "https://people.ce.pdn.ac.lk/students/e14/028/",
+                "type": "STUDENT",
+                "id": "E/14/028",
+                "email": "e14028@ce.pdn.ac.lk",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/students/e14/e14028.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/students/e14/028/"
+            },
+            {
+                "name": "Nadun Adikari",
+                "profile": "https://people.ce.pdn.ac.lk/students/e14/010/",
+                "type": "STUDENT",
+                "id": "E/14/010",
+                "email": "e14010@ce.pdn.ac.lk",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/students/e14/e14010.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/students/e14/010/"
+            },
+            {
+                "name": "Isuru Nawinne",
+                "profile": "https://people.ce.pdn.ac.lk/staff/academic/isuru-nawinne/",
+                "type": "STAFF",
+                "id": "isurunawinne",
+                "email": "isurunawinne@eng.pdn.ac.lk",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/isuru-nawinne.png",
+                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/isuru-nawinne/"
+            },
+            {
+                "name": "Roshan Ragel",
+                "profile": "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/",
+                "type": "STAFF",
+                "id": "roshanr",
+                "email": "roshanr@eng.pdn.ac.lk",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/roshan-ragel.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/"
+            }
+        ],
+        "doi": "https://doi.org/10.1109/MERCon50084.2020.9185206",
+        "is_dept_affiliated": true,
+        "preprint": "#",
+        "pdf": "#",
+        "presentation": "#",
+        "project": "#",
+        "codebase": "#",
+        "researchgroups": [
+            "ESCAL: Computer Systems (Embedded Systems / Robotics )"
+        ],
+        "funding": "",
+        "tags": [
+            "Programming",
+            "Robot kinematics",
+            "Robot sensing systems",
+            "Hardware",
+            "Libraries",
+            "Debugging"
+        ],
+        "api_url": "https://api.ce.pdn.ac.lk/publications/v1/10.1109/MERCon50084.2020.9185206/",
+        "edit_url": "https://github.com/cepdnaclk/api.ce.pdn.ac.lk/blob/main/publications/v1/10.1109/MERCon50084.2020.9185206/index.json"
+    },
+    {
+        "title": "An automatic answering system with template matching for natural language questions",
+        "venue": "2010 Fifth International Conference on Information and Automation for Sustainability",
+        "year": "2010",
+        "abstract": "Using computers to answer natural language questions is an interesting and challenging problem. Generally such problems are handled under two categories: open domain problems and close domain problems. This paper presents a system that attempts to solve close domain problems. Typically, in a close domain, answers to questions are not available in the public domain and therefore they cannot be searched using a search engine. Hence answers have to be stored in a database by a domain expert. Then, the challenge is to understand the natural language question so that the solution could be matched to the respective answer in the database. We use a template matching technique to perform this matching. In addition, given that our target is to use this system with non-native English speakers, we developed a method to overcome the mismatches we might encounter due to spelling mistakes. The system is developed such that the questions can be asked using short messages from a mobile phone and therefore the system is designed to understand SMS language in addition to English. One of the main contributions of this paper is the outcome presented of a deployment of this system in a real environment.",
+        "authors": [
+            "Tilani Gunawardena",
+            "Medhavi Lokuhetti",
+            "Nishara Pathirana",
+            "Roshan Ragel",
+            "Sampath Deegalla"
+        ],
+        "author_info": [
+            {
+                "name": "Tilani Gunawardena",
+                "profile": "#",
+                "type": "OUTSIDER",
+                "id": "",
+                "email": "",
+                "profile_image": "#",
+                "profile_url": "#"
+            },
+            {
+                "name": "Medhavi Lokuhetti",
+                "profile": "#",
+                "type": "OUTSIDER",
+                "id": "",
+                "email": "",
+                "profile_image": "#",
+                "profile_url": "#"
+            },
+            {
+                "name": "Nishara Pathirana",
+                "profile": "#",
+                "type": "OUTSIDER",
+                "id": "",
+                "email": "",
+                "profile_image": "#",
+                "profile_url": "#"
+            },
+            {
+                "name": "Roshan Ragel",
+                "profile": "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/",
+                "type": "STAFF",
+                "id": "roshanr",
+                "email": "roshanr@eng.pdn.ac.lk",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/roshan-ragel.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/"
+            },
+            {
+                "name": "Sampath Deegalla",
+                "profile": "https://people.ce.pdn.ac.lk/staff/academic/sampath-deegalla/",
+                "type": "STAFF",
+                "id": "sampath",
+                "email": "sampath@eng.pdn.ac.lk",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/sampath-deegalla.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/sampath-deegalla/"
+            }
+        ],
+        "doi": "https://doi.org/10.1109/ICIAFS.2010.5715686",
+        "is_dept_affiliated": true,
+        "preprint": "https://www.academia.edu/download/48742704/17.pdf",
+        "pdf": "#",
+        "presentation": "https://d1wqtxts1xzle7.cloudfront.net/48742704/17-libre.pdf?1473576218=&response-content-disposition=inline%3B+filename%3DAn_automatic_answering_system_with_templ.pdf&Expires=1663963105&Signature=f8AFZyE5hptWxajcAxQa-2whpQldQ4N75IcTG6sAuwMRWr8n0owYhyMGVzl~nyMC5I0NBcy8NOT46ftIow83kqV7Bt96R03KrQ211dRMFy3IY74dlMFZHmldzNQt9nUpwFKqqV4yBf3mL16VwQTioS63YL9dx6lMkQqWpCYVzu2Xgy87MBNZ5YMUG10kDsFFeGuqdf8uBJIsWci6P0v5HwHyQFO1EJ4buHsy6TG4NAfD4nXi7LA-ISPrqwrY-03JVOx3bHl9ThEiK-VWqoI1tuYDT0KZtatvQXT8XiMD9ACmlJcQ59sQmRfAgxMKdGknnEk-yf~qSXRndgEGjbVYLg__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA",
+        "project": "#",
+        "codebase": "#",
+        "researchgroups": [],
+        "funding": "",
+        "tags": [
+            "Databases",
+            "Syntactics",
+            "Natural languages",
+            "Computers",
+            "Artificial intelligence",
+            "Mobile handsets",
+            "Robots"
+        ],
+        "api_url": "https://api.ce.pdn.ac.lk/publications/v1/10.1109/ICIAFS.2010.5715686/",
+        "edit_url": "https://github.com/cepdnaclk/api.ce.pdn.ac.lk/blob/main/publications/v1/10.1109/ICIAFS.2010.5715686/index.json"
+    },
+    {
+        "title": "IMPRES: integrated monitoring for processor reliability and security",
+        "venue": "Proceedings of the 43rd annual Design Automation Conference",
+        "year": "2006",
+        "abstract": "Security and reliability in processor based systems are concernsrequiring adroit solutions.Securityis often compromised by code injection attacks, jeopardizing even `trusted software'.Reliabilityis of concern where unintended code is executed in modern processors with ever smaller feature sizes and low voltage swings causing bit flips. Countermeasures by software-only approaches increasecodesize by large amounts and therefore significantly reduce performance. Hardware assisted approaches add extensive amountsofhardware monitors and thus incur unacceptably highhardware cost. This paper presents a novel hardware/softwaretechniqueat the granularity of micro-instructions to reduce overheads considerably. Experiments show thatour technique incurs an additional hardware overhead of 0.91% and clock period increase of 0.06%. Average clock cycle and code size overheads are just 11.9% and 10.6% forfive industrystandard application benchmarks. These overheads are far smaller than have been previously encountered.",
+        "authors": [
+            "Roshan G Ragel",
+            "Sri Parameswaran"
+        ],
+        "author_info": [
+            {
+                "name": "Roshan G Ragel",
+                "profile": "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/",
+                "type": "STAFF",
+                "id": "roshanr",
+                "email": "roshanr@eng.pdn.ac.lk",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/roshan-ragel.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/"
+            },
+            {
+                "name": "Sri Parameswaran",
+                "profile": "#",
+                "type": "OUTSIDER",
+                "id": "",
+                "email": "",
+                "profile_image": "#",
+                "profile_url": "#"
+            }
+        ],
+        "doi": "https://doi.org/10.1145/1146909.1147041",
+        "is_dept_affiliated": false,
+        "preprint": "https://www.researchgate.net/profile/Roshan-Ragel/publication/261279320_IMPRES_integrated_monitoring_for_processor_reliability_and_security/links/5738bc7708ae9f741b2bd424/IMPRES-integrated-monitoring-for-processor-reliability-and-security.pdf",
+        "pdf": "#",
+        "presentation": "#",
+        "project": "#",
+        "codebase": "#",
+        "researchgroups": [],
+        "funding": "",
+        "tags": [
+            "Hardware",
+            "Hardware test",
+            "Robustness"
+        ],
+        "api_url": "https://api.ce.pdn.ac.lk/publications/v1/10.1145/1146909.1147041/",
+        "edit_url": "https://github.com/cepdnaclk/api.ce.pdn.ac.lk/blob/main/publications/v1/10.1145/1146909.1147041/index.json"
+    },
+    {
+        "title": "Visual Design Platform for Wireless Sensor Network",
+        "venue": "2018 Moratuwa Engineering Research Conference (MERCon)",
+        "year": "2018",
+        "abstract": "Wireless Sensor Networks (WSN) are being widely used for sensing physical parameters in a broad geographical area. The person who needs WSN will have a pictorial idea of the sensor network. The problem in the traditional method is that the person who needs the WSN should explain the pictorial view of the sensor network to a commercial vendor and buy it from them or they should design it from the scratch. What we proposed in our solution is to develop a platform so that the person who needs the WSN can directly draw the pictorial view on a canvas and then it can automatically generate all the required firmware for the microcontrollers and wiring diagrams. The user is then required only to follow a few instructions to complete the real world implementation of WSNs. This paper is about developing a visual platform to design WSNs. The WSN designing platform was built as a web application, so it can manage a large number of supported sensors and microcontrollers. This means that if one user adds the device driver for any sensor or a microcontroller the other users can directly use it from the WSN design platform without worrying about hardware programming. Further, if anyone needs a new sensor or microcontroller to be supported by this visual design platform, this design tool will have interfaces to directly add new sensors and microcontrollers. The proposed method is affordable for developing custom wireless sensor networks.",
+        "authors": [
+            "Rosen Silva",
+            "Asela Dasanayaka",
+            "Roshan Ragel",
+            "Asitha Bandaranayake"
+        ],
+        "author_info": [
+            {
+                "name": "Rosen Silva",
+                "profile": "#",
+                "type": "OUTSIDER",
+                "id": "",
+                "email": "",
+                "profile_image": "#",
+                "profile_url": "#"
+            },
+            {
+                "name": "Asela Dasanayaka",
+                "profile": "#",
+                "type": "OUTSIDER",
+                "id": "",
+                "email": "",
+                "profile_image": "#",
+                "profile_url": "#"
+            },
+            {
+                "name": "Roshan Ragel",
+                "profile": "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/",
+                "type": "STAFF",
+                "id": "roshanr",
+                "email": "roshanr@eng.pdn.ac.lk",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/roshan-ragel.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/"
+            },
+            {
+                "name": "Asitha Bandaranayake",
+                "profile": "https://people.ce.pdn.ac.lk/staff/academic/asitha-bandaranayake/",
+                "type": "STAFF",
+                "id": "asithab",
+                "email": "asithab@eng.pdn.ac.lk",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/asitha-bandaranayake.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/asitha-bandaranayake/"
+            }
+        ],
+        "doi": "https://doi.org/10.1109/MERCon.2018.8421896",
+        "is_dept_affiliated": true,
+        "preprint": "https://www.researchgate.net/profile/Asitha-Bandaranayake-3/publication/327517623_Visual_Design_Platform_for_Wireless_Sensor_Network/links/5f98da03458515b7cfa4013c/Visual-Design-Platform-for-Wireless-Sensor-Network.pdf",
+        "pdf": "#",
+        "presentation": "#",
+        "project": "#",
+        "codebase": "#",
+        "researchgroups": [],
+        "funding": "",
+        "tags": [
+            "Wireless sensor networks",
+            "Microcontrollers",
+            "Databases",
+            "Skeleton",
+            "Visualization",
+            "Hardware",
+            "Programming"
+        ],
+        "api_url": "https://api.ce.pdn.ac.lk/publications/v1/10.1109/MERCon.2018.8421896/",
+        "edit_url": "https://github.com/cepdnaclk/api.ce.pdn.ac.lk/blob/main/publications/v1/10.1109/MERCon.2018.8421896/index.json"
+    }
+]

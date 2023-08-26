@@ -1,0 +1,649 @@
+[
+    {
+        "title": "A structured hardware software architecture for peptide based diagnosis \u00e2\u0080\u0094 Sub-string matching problem with limited tolerance",
+        "venue": "2014 7th International Conference on Information and Automation for Sustainability",
+        "year": "2014",
+        "abstract": "The problem of inferring proteins from complex peptide samples in shotgun proteomic workflow sets extreme demands on computational resources in respect of the required very high processing throughputs, rapid processing rates and reliability of results. This is exacerbated by the fact that, in general, a given protein cannot be defined by a fixed sequence of amino acids due to the existence of splice variants and isoforms of that protein. Therefore, the problem of protein inference could be considered as one of identifying sequences of amino acids with some limited tolerance. Two problems arise from this: a) due to these (permitted) variations, the applicability of exact string matching methodologies could be questioned and b) the difficulty of defining a reference (peptide/amino acid) sequence for a particular set of proteins that are functionally indistinguishable, but with some variation in features. This paper presents a model-based hardware acceleration of a structured and practical inference approach that is developed and validated to solve the inference problem in a mass spectrometry experiment of realistic size. Our approach starts from an examination of the known set of splice variants and isoforms of a target protein to identify the Greatest Common Stable Substring (GCSS) of amino acids and the Substrings Subjects to Limited Variation (SSLV) and their respective locations on the GCSS. The hypothesis made here is that these latter substrings (SSLV) appear inside complete peptides and not cutting across peptide boundaries. Then we define and solve the Sub-string Matching Problem with Limited Tolerance (SMPLT) using the Bit-Split Aho Corasick Algorithm with Limited Tolerance (BSACLT) that we define and automate. This approach is validated on identified peptides in a labelled and clustered data set from UNIPROT. A model-based hardware software co-design strategy is used to accelerate the computational workflow of above described protein inference problem. Identification of Baylisascaris Procyonis infection was used as an application instance. This workflow can be generalised to any inexact multiple pattern matching application by replacing the patterns in a clustered and distributed environment which permits a distance between member strings to account for permitted deviations such as substitutions, insertions and deletions. The co-designed workflow achieved up to 70 times maximum speed-up compared to a similar workflow purely run on the processor used for co-design.",
+        "authors": [
+            "Sugandima M. Vidanagamachchi",
+            "S. Devapriya Dewasurendra",
+            "Roshan G. Ragel",
+            "Mahesan Niranjan"
+        ],
+        "author_info": [
+            {
+                "name": "Sugandima M. Vidanagamachchi",
+                "profile": "#",
+                "type": "OUTSIDER",
+                "id": "",
+                "email": "",
+                "profile_image": "#",
+                "profile_url": "#"
+            },
+            {
+                "name": "S. Devapriya Dewasurendra",
+                "profile": "https://people.ce.pdn.ac.lk/staff/academic/shirley-dewasurendra/",
+                "type": "STAFF",
+                "id": "dewasuren",
+                "email": "dewasuren@gmail.com",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/shirley-dewasurendra.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/shirley-dewasurendra/"
+            },
+            {
+                "name": "Roshan G. Ragel",
+                "profile": "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/",
+                "type": "STAFF",
+                "id": "roshanr",
+                "email": "roshanr@eng.pdn.ac.lk",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/roshan-ragel.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/"
+            },
+            {
+                "name": "Mahesan Niranjan",
+                "profile": "#",
+                "type": "OUTSIDER",
+                "id": "",
+                "email": "",
+                "profile_image": "#",
+                "profile_url": "#"
+            }
+        ],
+        "doi": "https://doi.org/10.1109/ICIAFS.2014.7069624",
+        "is_dept_affiliated": true,
+        "preprint": "https://arxiv.org/pdf/1412.7811",
+        "pdf": "https://arxiv.org/pdf/1412.7811",
+        "presentation": "#",
+        "project": "#",
+        "codebase": "#",
+        "researchgroups": [],
+        "funding": "",
+        "tags": [
+            "Proteins",
+            "Peptides",
+            "Hardware",
+            "Amino acids",
+            "Software",
+            "Automata",
+            "Databases"
+        ],
+        "api_url": "https://api.ce.pdn.ac.lk/publications/v1/10.1109/ICIAFS.2014.7069624/",
+        "edit_url": "https://github.com/cepdnaclk/api.ce.pdn.ac.lk/blob/main/publications/v1/10.1109/ICIAFS.2014.7069624/index.json"
+    },
+    {
+        "title": "miRNAFinder: A pre-microRNA classifier for plants and analysis of feature impact",
+        "venue": "2020 IEEE Conference on Computational Intelligence in Bioinformatics and Computational Biology (CIBCB)",
+        "year": "2020",
+        "abstract": "MicroRNAs (miRNAs) are endogenous small noncoding RNAs that play an important role in post-transcriptional gene regulation. Several machine learning-based studies have been conducted for miRNA identification with the use of miRNA features. It is difficult to classify real and pseudo-pre-miRNAs in plant species than that in animals since plant pre-miRNAs are more diverse than the animal pre-miRNAs. Therefore, this study is focused on classifying real and pseudo precursor miRNAs (pre-miRNAs) in plants. We have introduced a machine learning model based on a 280 feature set including compositional, sequence-based, and thermodynamic features. Classification performance is tested and compared, considering different feature sets and four different classifiers. Random forest classifier results in the best classification performance with all 280 features with a 97% accuracy for the testing dataset.",
+        "authors": [
+            "Puwasuru Ihalagedara",
+            "Sandali Lokuge",
+            "Shyaman Jayasundara",
+            "Damayanthi Herath",
+            "Indika Kahanda"
+        ],
+        "author_info": [
+            {
+                "name": "Puwasuru Ihalagedara",
+                "profile": "#",
+                "type": "OUTSIDER",
+                "id": "",
+                "email": "",
+                "profile_image": "#",
+                "profile_url": "#"
+            },
+            {
+                "name": "Sandali Lokuge",
+                "profile": "#",
+                "type": "OUTSIDER",
+                "id": "",
+                "email": "",
+                "profile_image": "#",
+                "profile_url": "#"
+            },
+            {
+                "name": "Shyaman Jayasundara",
+                "profile": "#",
+                "type": "OUTSIDER",
+                "id": "",
+                "email": "",
+                "profile_image": "#",
+                "profile_url": "#"
+            },
+            {
+                "name": "Damayanthi Herath",
+                "profile": "https://people.ce.pdn.ac.lk/staff/academic/damayanthi-herath/",
+                "type": "STAFF",
+                "id": "damayanthiherath",
+                "email": "damayanthiherath@eng.pdn.ac.lk",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/damayanthi-herath.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/damayanthi-herath/"
+            },
+            {
+                "name": "Indika Kahanda",
+                "profile": "#",
+                "type": "OUTSIDER",
+                "id": "",
+                "email": "",
+                "profile_image": "#",
+                "profile_url": "#"
+            }
+        ],
+        "doi": "https://doi.org/10.1109/CIBCB48159.2020.9277723",
+        "is_dept_affiliated": true,
+        "preprint": "#",
+        "pdf": "#",
+        "presentation": "#",
+        "project": "#",
+        "codebase": "#",
+        "researchgroups": [
+            "Computational BioEngineering"
+        ],
+        "funding": "",
+        "tags": [
+            "Feature extraction",
+            "RNA",
+            "Support vector machines",
+            "Testing",
+            "Animals",
+            "Vegetation",
+            "Random forests"
+        ],
+        "api_url": "https://api.ce.pdn.ac.lk/publications/v1/10.1109/CIBCB48159.2020.9277723/",
+        "edit_url": "https://github.com/cepdnaclk/api.ce.pdn.ac.lk/blob/main/publications/v1/10.1109/CIBCB48159.2020.9277723/index.json"
+    },
+    {
+        "title": "An optimized Parallel Failure-less Aho-Corasick algorithm for DNA sequence matching",
+        "venue": "2016 IEEE International Conference on Information and Automation for Sustainability (ICIAfS)",
+        "year": "2016",
+        "abstract": "The Aho-Corasick algorithm is a multiple patterns searching algorithm running sequentially in various applications like network intrusion detection and bioinformatics for finding several input strings within a given large input string. The parallel version of the Aho-Corasick algorithm is called as Parallel Failure-less Aho-Corasick algorithm because it doesnt need failure links like in the original Aho-Corasick algorithm. In this research, we implemented an application specific parallel failureless Aho-Corasick algorithm on the general purpose graphic processing unit by applying several cache optimization techniques for matching DNA sequences. Our parallel Aho-Corasick algorithm shows better performance than the available parallel Aho-Corasick algorithm library due to its simplicity and optimized cache memory usage of graphic processing units for matching DNA sequences.",
+        "authors": [
+            "DRVLB Thambawita",
+            "Roshan G Ragel",
+            "Dhammike Elkaduwe"
+        ],
+        "author_info": [
+            {
+                "name": "DRVLB Thambawita",
+                "profile": "#",
+                "type": "OUTSIDER",
+                "id": "",
+                "email": "",
+                "profile_image": "#",
+                "profile_url": "#"
+            },
+            {
+                "name": "Roshan G Ragel",
+                "profile": "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/",
+                "type": "STAFF",
+                "id": "roshanr",
+                "email": "roshanr@eng.pdn.ac.lk",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/roshan-ragel.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/"
+            },
+            {
+                "name": "Dhammike Elkaduwe",
+                "profile": "https://people.ce.pdn.ac.lk/staff/academic/dhammika-elkaduwe/",
+                "type": "STAFF",
+                "id": "dhammika",
+                "email": "dhammika@eng.pdn.ac.lk",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/dhammika-elkaduwe.png",
+                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/dhammika-elkaduwe/"
+            }
+        ],
+        "doi": "https://doi.org/10.1109/ICIAFS.2016.7946533",
+        "is_dept_affiliated": true,
+        "preprint": "https://arxiv.org/pdf/1811.10498.pdf",
+        "pdf": "#",
+        "presentation": "#",
+        "project": "#",
+        "codebase": "#",
+        "researchgroups": [],
+        "funding": "",
+        "tags": [
+            "Pattern matching",
+            "DNA",
+            "Algorithm design and analysis",
+            "Kernel",
+            "Bioinformatics",
+            "Intrusion detection",
+            "Graphics processing units"
+        ],
+        "api_url": "https://api.ce.pdn.ac.lk/publications/v1/10.1109/ICIAFS.2016.7946533/",
+        "edit_url": "https://github.com/cepdnaclk/api.ce.pdn.ac.lk/blob/main/publications/v1/10.1109/ICIAFS.2016.7946533/index.json"
+    },
+    {
+        "title": "A Data Driven Binning Method to Recover More Nucleotide Sequences of Species in a Metagenome",
+        "venue": "2020 Moratuwa Engineering Research Conference (MERCon)",
+        "year": "2020",
+        "abstract": "Metagenomics accelerated the process of studying different species and their dynamics in multiple environments. A key step in a metagenomic study is to group nucleotide sequences belonging to an individual or closely related species which is often termed binning. Multiple machine learning techniques have been adopted in binning metagenomic sequences. Specifically, unsupervised learning is being used in most of the recent binning methods. This work considers data-driven methods for binning metagenomic sequences and discusses such approaches in detail. Furthermore, it explores on increasing the amount of metagenomic sequences binned while maintaining a reasonable binning accuracy. Consequently, a dissimilarity-based approach is proposed to improve the number of contigs binned by an existing binning method. It is shown to result in a 10% increase in the number of contigs binned compared to the original approach. Accordingly, this work suggests that the effective use of observed data which may be discarded as outliers otherwise, may result in improved performance in binning.",
+        "authors": [
+            "Kasun Vimukthi",
+            "Geeth Wimalasiri",
+            "Prabhath Bandara",
+            "Damayanthi Herath"
+        ],
+        "author_info": [
+            {
+                "name": "Kasun Vimukthi",
+                "profile": "#",
+                "type": "OUTSIDER",
+                "id": "",
+                "email": "",
+                "profile_image": "#",
+                "profile_url": "#"
+            },
+            {
+                "name": "Geeth Wimalasiri",
+                "profile": "#",
+                "type": "OUTSIDER",
+                "id": "",
+                "email": "",
+                "profile_image": "#",
+                "profile_url": "#"
+            },
+            {
+                "name": "Prabhath Bandara",
+                "profile": "#",
+                "type": "OUTSIDER",
+                "id": "",
+                "email": "",
+                "profile_image": "#",
+                "profile_url": "#"
+            },
+            {
+                "name": "Damayanthi Herath",
+                "profile": "https://people.ce.pdn.ac.lk/staff/academic/damayanthi-herath/",
+                "type": "STAFF",
+                "id": "damayanthiherath",
+                "email": "damayanthiherath@eng.pdn.ac.lk",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/damayanthi-herath.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/damayanthi-herath/"
+            }
+        ],
+        "doi": "https://doi.org/10.1109/MERCon50084.2020.9185388",
+        "is_dept_affiliated": true,
+        "preprint": "#",
+        "pdf": "#",
+        "presentation": "#",
+        "project": "#",
+        "codebase": "#",
+        "researchgroups": [
+            "Computational BioEngineering"
+        ],
+        "funding": "",
+        "tags": [
+            "Genomics",
+            "DNA",
+            "Sequential analysis",
+            "Bioinformatics",
+            "Taxonomy",
+            "Clustering algorithms",
+            "Benchmark testing"
+        ],
+        "api_url": "https://api.ce.pdn.ac.lk/publications/v1/10.1109/MERCon50084.2020.9185388/",
+        "edit_url": "https://github.com/cepdnaclk/api.ce.pdn.ac.lk/blob/main/publications/v1/10.1109/MERCon50084.2020.9185388/index.json"
+    },
+    {
+        "title": "Autonomic trust management in cloud-based and highly dynamic IoT applications",
+        "venue": "2015 ITU Kaleidoscope: Trust in the Information Society (K-2015)",
+        "year": "2015",
+        "abstract": "In this paper, we propose an autonomic trust management framework for cloud based and highly dynamic Internet of Things (IoT) applications and services. IoT is creating a world where physical objects are seamlessly integrated in order to provide advanced and intelligent services for human-beings in their day-to-day life style. Therefore, trust on IoT devices plays an important role in IoT based services and applications. Cloud computing has been changing the way how provides are looking into these issues. Many studies have proposed different techniques to address trust management although non of them addresses autonomic trust management in cloud based highly dynamic IoT systems. To our understanding, IoT cloud ecosystems help to solve many of these issues while enhancing robustness and scalability. On this basis, we came up with an autonomic trust management framework based on MAPE-Kfeedback control loop to evaluate the level of trust. Finally, we presents the results that verify the effectiveness of this framework.",
+        "authors": [
+            "Suneth Namal",
+            "Hasindu Gamaarachchi",
+            "Gyu MyoungLee",
+            "Tai-Won Um"
+        ],
+        "author_info": [
+            {
+                "name": "Suneth Namal",
+                "profile": "https://people.ce.pdn.ac.lk/staff/academic/suneth-namal-karunarathna/",
+                "type": "STAFF",
+                "id": "namal",
+                "email": "namal@eng.pdn.ac.lk",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/suneth-namal-karunarathna.png",
+                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/suneth-namal-karunarathna/"
+            },
+            {
+                "name": "Hasindu Gamaarachchi",
+                "profile": "https://people.ce.pdn.ac.lk/students/e10/102/",
+                "type": "STUDENT",
+                "id": "E/10/102",
+                "email": "hasindu@unsw.edu.au",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/students/e10/e10102.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/students/e10/102/"
+            },
+            {
+                "name": "Gyu MyoungLee",
+                "profile": "#",
+                "type": "OUTSIDER",
+                "id": "",
+                "email": "",
+                "profile_image": "#",
+                "profile_url": "#"
+            },
+            {
+                "name": "Tai-Won Um",
+                "profile": "#",
+                "type": "OUTSIDER",
+                "id": "",
+                "email": "",
+                "profile_image": "#",
+                "profile_url": "#"
+            }
+        ],
+        "doi": "https://doi.org/10.1109/Kaleidoscope.2015.7383635",
+        "is_dept_affiliated": true,
+        "preprint": "#",
+        "pdf": "https://researchonline.ljmu.ac.uk/id/eprint/2150/1/1570197625.pdf",
+        "presentation": "#",
+        "project": "#",
+        "codebase": "#",
+        "researchgroups": [],
+        "funding": "",
+        "tags": [
+            "Cloud computing",
+            "Security",
+            "Biological system modeling",
+            "Monitoring",
+            "Internet of things",
+            "Ecosystems",
+            "Scalability"
+        ],
+        "api_url": "https://api.ce.pdn.ac.lk/publications/v1/10.1109/Kaleidoscope.2015.7383635/",
+        "edit_url": "https://github.com/cepdnaclk/api.ce.pdn.ac.lk/blob/main/publications/v1/10.1109/Kaleidoscope.2015.7383635/index.json"
+    },
+    {
+        "title": "Chronic kidney disease prediction using machine learning methods",
+        "venue": "2020 Moratuwa Engineering Research Conference (MERCon) - IEEE",
+        "year": "2020",
+        "abstract": "Chronic Kidney Disease (CKD) or chronic renal disease has become a major issue with a steady growth rate. A person can only survive without kidneys for an average time of 18 days, which makes a huge demand for a kidney transplant and Dialysis. It is important to have effective methods for early prediction of CKD. Machine learning methods are effective in CKD prediction. This work proposes a workflow to predict CKD status based on clinical data, incorporating data prepossessing, a missing value handling method with collaborative filtering and attributes selection. Out of the 11 machine learning methods considered, the extra tree classifier and random forest classifier are shown to result in the highest accuracy and minimal bias to the attributes. The research also considers the practical aspects of data collection and highlights the importance of incorporating domain knowledge when using machine learning for CKD status prediction.",
+        "authors": [
+            "Imesh Udara Ekanayake",
+            "Damayanthi Herath"
+        ],
+        "author_info": [
+            {
+                "name": "Imesh Udara Ekanayake",
+                "profile": "https://people.ce.pdn.ac.lk/students/e15/092/",
+                "type": "STUDENT",
+                "id": "E/15/092",
+                "email": "imeshuek@eng.pdn.ac.lk",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/students/e15/e15092.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/students/e15/092/"
+            },
+            {
+                "name": "Damayanthi Herath",
+                "profile": "https://people.ce.pdn.ac.lk/staff/academic/damayanthi-herath/",
+                "type": "STAFF",
+                "id": "damayanthiherath",
+                "email": "damayanthiherath@eng.pdn.ac.lk",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/damayanthi-herath.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/damayanthi-herath/"
+            }
+        ],
+        "doi": "https://doi.org/10.1109/MERCon50084.2020.9185249",
+        "is_dept_affiliated": true,
+        "preprint": "#",
+        "pdf": "https://www.researchgate.net/profile/Imesh-Ekanayake/publication/344319206_Chronic_Kidney_Disease_Prediction_Using_Machine_Learning_Methods/links/5f672571458515b7cf418d5b/Chronic-Kidney-Disease-Prediction-Using-Machine-Learning-Methods.pdf",
+        "presentation": "#",
+        "project": "#",
+        "codebase": "#",
+        "researchgroups": [
+            "Machine Learning and Data Mining"
+        ],
+        "funding": "",
+        "tags": [
+            "Kidney",
+            "Diseases",
+            "Machine learning",
+            "Red blood cells",
+            "Hypertension"
+        ],
+        "api_url": "https://api.ce.pdn.ac.lk/publications/v1/10.1109/MERCon50084.2020.9185249/",
+        "edit_url": "https://github.com/cepdnaclk/api.ce.pdn.ac.lk/blob/main/publications/v1/10.1109/MERCon50084.2020.9185249/index.json"
+    },
+    {
+        "title": "Tile optimization for area in FPGA based hardware acceleration of peptide identification",
+        "venue": "2011 6th International Conference on Industrial and Information Systems (ICIIS)",
+        "year": "2011",
+        "abstract": "Advances in life sciences over the last few decades have lead to the generation of a huge amount of biological data. Computing research has become a vital part in driving biological discovery where analysis and categorization of biological data are involved. String matching algorithms can be applied for protein/gene sequence matching and with the phenomenal increase in the size of string databases to be analyzed, software implementations of these algorithms seems to have hit a hard limit and hardware acceleration is increasingly being sought. Several hardware platforms such as Field Programmable Gate Arrays (FPGA), Graphics Processing Units (GPU) and Chip Multi Processors (CMP) are being explored as hardware platforms. In this paper, we give a comprehensive overview of the literature on hardware acceleration of string matching algorithms, we take an FPGA hardware exploration and expedite the design time by a design automation technique. Further, our design automation is also optimized for better hardware utilization through optimizing the number of peptides that can be represented in an FPGA tile. The results indicate significant improvements in design time and hardware utilization which are reported in this paper.",
+        "authors": [
+            "SM Vidanagamachchi",
+            "SD Dewasurendra",
+            "Roshan G Ragel",
+            "M Niranjan"
+        ],
+        "author_info": [
+            {
+                "name": "SM Vidanagamachchi",
+                "profile": "#",
+                "type": "OUTSIDER",
+                "id": "",
+                "email": "",
+                "profile_image": "#",
+                "profile_url": "#"
+            },
+            {
+                "name": "SD Dewasurendra",
+                "profile": "https://people.ce.pdn.ac.lk/staff/academic/shirley-dewasurendra/",
+                "type": "STAFF",
+                "id": "dewasuren",
+                "email": "dewasuren@gmail.com",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/shirley-dewasurendra.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/shirley-dewasurendra/"
+            },
+            {
+                "name": "Roshan G Ragel",
+                "profile": "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/",
+                "type": "STAFF",
+                "id": "roshanr",
+                "email": "roshanr@eng.pdn.ac.lk",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/roshan-ragel.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/"
+            },
+            {
+                "name": "M Niranjan",
+                "profile": "#",
+                "type": "OUTSIDER",
+                "id": "",
+                "email": "",
+                "profile_image": "#",
+                "profile_url": "#"
+            }
+        ],
+        "doi": "https://doi.org/10.1109/ICIINFS.2011.6038056",
+        "is_dept_affiliated": true,
+        "preprint": "https://arxiv.org/ftp/arxiv/papers/1403/1403.7296.pdf",
+        "pdf": "#",
+        "presentation": "#",
+        "project": "#",
+        "codebase": "#",
+        "researchgroups": [],
+        "funding": "",
+        "tags": [
+            "Peptides",
+            "Field programmable gate arrays",
+            "Tiles",
+            "Hardware",
+            "Software algorithms",
+            "Proteins",
+            "Software"
+        ],
+        "api_url": "https://api.ce.pdn.ac.lk/publications/v1/10.1109/ICIINFS.2011.6038056/",
+        "edit_url": "https://github.com/cepdnaclk/api.ce.pdn.ac.lk/blob/main/publications/v1/10.1109/ICIINFS.2011.6038056/index.json"
+    },
+    {
+        "title": "Hardware software co-design of the Aho-Corasick algorithm: Scalable for protein identification?",
+        "venue": "2013 IEEE 8th International Conference on Industrial and Information Systems",
+        "year": "2013",
+        "abstract": "Pattern matching is commonly required in many application areas and bioinformatics is a major area of interest that requires both exact and approximate pattern matching. Much work has been done in this area, yet there is still a significant space for improvement in efficiency, flexibility, and throughput. This paper presents a hardware software co-design of Aho-Corasick algorithm in Nios II soft-processor and a study on its scalability for a pattern matching application. A software only approach is used to compare the throughput and the scalability of the hardware software co-design approach. According to the results we obtained, we conclude that the hardware software co-design implementation shows a maximum of 10 times speed up for pattern size of 1200 peptides compared to the software only implementation. The results also show that the hardware software co-design approach scales well for increasing data size compared to the software only approach.",
+        "authors": [
+            "S.M. Vidanagamachchi",
+            "S.D. Dewasurendra",
+            "R.G. Ragel"
+        ],
+        "author_info": [
+            {
+                "name": "S.M. Vidanagamachchi",
+                "profile": "#",
+                "type": "OUTSIDER",
+                "id": "",
+                "email": "",
+                "profile_image": "#",
+                "profile_url": "#"
+            },
+            {
+                "name": "S.D. Dewasurendra",
+                "profile": "https://people.ce.pdn.ac.lk/staff/academic/shirley-dewasurendra/",
+                "type": "STAFF",
+                "id": "dewasuren",
+                "email": "dewasuren@gmail.com",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/shirley-dewasurendra.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/shirley-dewasurendra/"
+            },
+            {
+                "name": "R.G. Ragel",
+                "profile": "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/",
+                "type": "STAFF",
+                "id": "roshanr",
+                "email": "roshanr@eng.pdn.ac.lk",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/roshan-ragel.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/"
+            }
+        ],
+        "doi": "https://doi.org/10.1109/ICIInfS.2013.6732003",
+        "is_dept_affiliated": true,
+        "preprint": "https://arxiv.org/ftp/arxiv/papers/1403/1403.1317.pdf",
+        "pdf": "#",
+        "presentation": "#",
+        "project": "#",
+        "codebase": "#",
+        "researchgroups": [
+            "ESCAL: Computer Systems (Embedded Systems / Robotics )"
+        ],
+        "funding": "",
+        "tags": [
+            "Hardware",
+            "Proteins",
+            "Peptides",
+            "Software algorithms",
+            "Program processors",
+            "Algorithm design and analysis"
+        ],
+        "api_url": "https://api.ce.pdn.ac.lk/publications/v1/10.1109/ICIInfS.2013.6732003/",
+        "edit_url": "https://github.com/cepdnaclk/api.ce.pdn.ac.lk/blob/main/publications/v1/10.1109/ICIInfS.2013.6732003/index.json"
+    },
+    {
+        "title": "Hardware accelerated protein inference framework",
+        "venue": "2013 IEEE 8th International Conference on Industrial and Information Systems",
+        "year": "2013",
+        "abstract": "Protein inference plays a vital role in the proteomics study. Two major approaches could be used to handle the problem of protein inference; top-down and bottom-up. This paper presents a framework for protein inference, which uses hardware accelerated protein inference framework for handling the most important step in a bottom-up approach, viz. peptide identification during the assembling process. In our framework, identified peptides and their probabilities are used to predict the most suitable reference protein cluster for a given input amino acid sequence with the probability of identified peptides. The framework is developed on an FPGA where hardware software co-design techniques are used to accelerate the computationally intensive parts of the protein inference process. In the paper we have measured, compared and reported the time taken for the protein inference process in our framework against a pure software implementation.",
+        "authors": [
+            "S. M. Vidanagamachchi",
+            "S. D. Dewasurendra",
+            "R. G. Ragel"
+        ],
+        "author_info": [
+            {
+                "name": "S. M. Vidanagamachchi",
+                "profile": "#",
+                "type": "OUTSIDER",
+                "id": "",
+                "email": "",
+                "profile_image": "#",
+                "profile_url": "#"
+            },
+            {
+                "name": "S. D. Dewasurendra",
+                "profile": "https://people.ce.pdn.ac.lk/staff/academic/shirley-dewasurendra/",
+                "type": "STAFF",
+                "id": "dewasuren",
+                "email": "dewasuren@gmail.com",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/shirley-dewasurendra.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/shirley-dewasurendra/"
+            },
+            {
+                "name": "R. G. Ragel",
+                "profile": "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/",
+                "type": "STAFF",
+                "id": "roshanr",
+                "email": "roshanr@eng.pdn.ac.lk",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/roshan-ragel.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/"
+            }
+        ],
+        "doi": "https://doi.org/10.1109/ICIInfS.2013.6732061",
+        "is_dept_affiliated": true,
+        "preprint": "https://arxiv.org/pdf/1403.1319",
+        "pdf": "#",
+        "presentation": "#",
+        "project": "#",
+        "codebase": "#",
+        "researchgroups": [
+            "ESCAL: Computer Systems (Embedded Systems / Robotics )"
+        ],
+        "funding": "",
+        "tags": [
+            "Proteins",
+            "Peptides",
+            "Hardware",
+            "Tiles",
+            "Software",
+            "Field programmable gate arrays",
+            "Acceleration"
+        ],
+        "api_url": "https://api.ce.pdn.ac.lk/publications/v1/10.1109/ICIInfS.2013.6732061/",
+        "edit_url": "https://github.com/cepdnaclk/api.ce.pdn.ac.lk/blob/main/publications/v1/10.1109/ICIInfS.2013.6732061/index.json"
+    },
+    {
+        "title": "A Novel FPGA Architecture of Commentz-Walter Algorithm using Bit-Split String-Matching Engines",
+        "venue": "2021 21st International Conference on Advances in ICT for Emerging Regions (ICter)",
+        "year": "2021",
+        "abstract": "This paper describes a reconfigurable hardware implementation of CommentzWalter algorithm with bit-split string matching engines to match multiple protein sequences. It is reported that multiple pattern matching using the most widely used Aho-Corasick algorithm for different applications has been carried out on graphics processing units and field programmable gate arrays to accelerate the matching process. Commentz-Walter algorithm, is a multiple pattern matching algorithm and more complex than Aho-Corasick. There are no reports of it being directly implemented in any hardware platform except as software implementations on general purpose processors. In this work, a specific architecture for our target application using CommentzWalter algorithm has been developed and tested with a simulator for hardware description languages. This architecture can match multiple patterns of proteins efficiently when implemented on a Field Programmable Gate Array. Finally, we compare a previously developed hardware architecture of bit-split Aho-Corasick with our bit-split Commentz-Walter architecture. Using the Intel Stratix IV GX EP4SGX230KF40C2 FPGA chip as the target device, the compilation results with Quartus II show that the synthesis logic utilization is 5% with 2203 total number of registers, 64896 FPGA block memory bits and 4 DSP block 18-bit elements. The simulation and practical experimental results show that the proposed architecture can effectively improve the performance of the Commentz-Walter algorithm.",
+        "authors": [
+            "Sugandima M. Vidanagamachchi",
+            "Shirley D. Dewasurendra"
+        ],
+        "author_info": [
+            {
+                "name": "Sugandima M. Vidanagamachchi",
+                "profile": "#",
+                "type": "OUTSIDER",
+                "id": "",
+                "email": "",
+                "profile_image": "#",
+                "profile_url": "#"
+            },
+            {
+                "name": "Shirley D. Dewasurendra",
+                "profile": "https://people.ce.pdn.ac.lk/staff/academic/shirley-dewasurendra/",
+                "type": "STAFF",
+                "id": "dewasuren",
+                "email": "dewasuren@gmail.com",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/shirley-dewasurendra.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/shirley-dewasurendra/"
+            }
+        ],
+        "doi": "https://doi.org/10.1109/ICter53630.2021.9774805",
+        "is_dept_affiliated": true,
+        "preprint": "#",
+        "pdf": "#",
+        "presentation": "#",
+        "project": "#",
+        "codebase": "#",
+        "researchgroups": [],
+        "funding": "",
+        "tags": [
+            "Proteins",
+            "Software algorithms",
+            "Computer architecture",
+            "Logic gates",
+            "Hardware",
+            "Software",
+            "Registers"
+        ],
+        "api_url": "https://api.ce.pdn.ac.lk/publications/v1/10.1109/ICter53630.2021.9774805/",
+        "edit_url": "https://github.com/cepdnaclk/api.ce.pdn.ac.lk/blob/main/publications/v1/10.1109/ICter53630.2021.9774805/index.json"
+    }
+]
