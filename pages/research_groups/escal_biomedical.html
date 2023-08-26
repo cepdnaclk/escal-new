@@ -46,58 +46,38 @@ permalink: /research/biomedical/
             </div>
         </div>
         <div class="row justify-content-center ftco-animate mb-5 pb-5">
-            <!-- <div class="col-md-10  publication-template">
-                <div class="publication-thumbnail">
-                    <a href="../../media/publications/Froehlich_TheFutureOfGlobalScaleSpatialDataCollectionAndAnalysesOnUrbanInAccessibilityForPeopleWithDisabilities_SPATIALDATASCIENCESYMPOSIUM2021.pdf"
-                        class="publication-thumbnail-link">
-                        <img src="https://makeabilitylab.cs.washington.edu/media/publications/images/Froehlich_TheFutureOfGlobalScaleSpatialDataCollectionAndAnalysesOnUrbanInAccessibilityForPeopleWithDisabilities_SPATIALDATASCIENCESYMPOSIUM2021.jpg.300x0_q85_detail.jpg"
-                            class="publication-thumbnail-image img-responsive">
-                    </a>
-
+            {% for publication in site.data.biomed_pubs %}
+                <div class="col-md-10 publication-template">
+                    <div class="publication-thumbnail">
+                        <a href="{{ publication.doi }}" class="publication-thumbnail-link">
+                            <img src="../../assets/images/pdf-green.png" class="publication-thumbnail-image img-responsive">
+                        </a>
+                    </div>
+                    <div class="publication-info">
+                        <p class="publication-title">{{ publication.title }}</p>
+                        <p style="font-size: smaller;">
+                            {% for author in publication.author_info %}
+                                <a href="{{ author.profile }}">{{ author.name }}</a>{% if forloop.last %}{% else %}, {% endif %}
+                            {% endfor %}
+                        </p>
+                        <p class="publication-stats">
+                            <span class="publication-venue">{{ publication.venue }}</span>
+                        </p>
+                        <p class="publication-keywords hidden-xs">
+                            keywords:
+                            <span class="publication-keyword">
+                                <span class="publication-keyword-text">
+                                    {{ publication.tags | join: ', ' }}
+                                </span>
+                            </span>
+                        </p>
+                        <p class="pub-download-links">
+                            <a href="{{ publication.pdf }}">PDF</a>
+                            • <a href="{{ publication.doi }}">DOI</a>
+                        </p>
+                    </div>
                 </div>
-                <div class="publication-info">
-                    <p class="publication-title">The Future of Swarm Robotics</p>
-                    <p style="font-size: smaller;">
-                        <a href="#">Prof. Roshan G. Ragel</a>,
-                        <a href="#">Dr. Isuru Nawinne</a>,
-                        <a href="#">Mr. Nuwan Jaliaygoda</a>
-
-                    </p>
-                    <p class="publication-stats">
-                        <span class="publication-venue">
-                            ACES Symposium 2021
-                        </span>
-
-
-                    </p>
-                    <p class="publication-keywords hidden-xs">
-                        keywords:
-                        <span class="publication-keyword"><span class="publication-keyword-text">
-                                Swarm robotics,
-                                Embedded systems,
-                                Human-Robot Interaction
-                            </span></span>
-                    </p>
-
-
-                    <p class="pub-download-links">
-                        <a
-                            href="../../media/publications/Froehlich_TheFutureOfGlobalScaleSpatialDataCollectionAndAnalysesOnUrbanInAccessibilityForPeopleWithDisabilities_SPATIALDATASCIENCESYMPOSIUM2021.pdf">PDF</a>
-                        <span class="citation-link">|
-                            <a class="publication-citation-link" data-toggle="popover" data-html="true" title="Citation"
-                                data-trigger="manual" tabindex="0">Citation</a>
-                        </span>
-                        • <a href="#">Lorem</a>
-                        • <a href="#">Ipsum</a>
-                        • <a href="#">Lorem</a>
-                        • <a href="#">dolor</a>
-                        • <a href="#">sit</a>
-                        • <a href="#">consectetur</a>
-                    </p>
-
-                </div>
-            </div> -->
-            <!-- TODO: Add publications -->
+            {% endfor %}
         </div>
     </div>
 </section>

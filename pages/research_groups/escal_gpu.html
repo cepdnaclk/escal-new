@@ -3,3 +3,130 @@ layout: research_group
 title: "ESCAL GPU"
 permalink: /research/gpu/
 ---
+
+<section class="ftco-section ftco-services bg-light">
+    <div class="container">
+        <div class="row justify-content-center mb-2">
+            <div class="col-md-7 text-center heading-section ftco-animate">
+                <h2 class="mb-2">About</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center ftco-animate mb-5 pb-5">
+            <h5 class="col-md-10" style=" text-align: justify;">
+                Research Date : Jan. 1, 2015 - Present
+            </h5>
+            <p class="col-md-10" style="text-indent: 60px; text-align: justify;">
+                At ESCAL Bio-Medical, we are dedicated to the convergence of technology and healthcare, 
+                with a strong emphasis on the application of Embedded Systems and Computer Architecture. 
+                Our mission is to revolutionize the biomedical field by developing cutting-edge hardware 
+                and software solutions that address real-world medical challenges.
+            </p>
+            <p class="col-md-10" style="text-indent: 60px; text-align: justify;">
+                Our team of passionate researchers and experts collaborates tirelessly to create groundbreaking 
+                systems that have the potential to reshape the future of healthcare. By focusing on areas such 
+                as medical imaging, telemedicine, bioinformatics, and personalized medicine, we strive to 
+                enhance patient care and contribute to the well-being of individuals worldwide.
+            </p>
+            <p class="col-md-10" style="text-indent: 60px; text-align: justify;">
+                Through hands-on labs and immersive workshops, we are committed to nurturing the next generation 
+                of biomedical engineers and enthusiasts. We provide an enriching environment where creativity 
+                flourishes, and innovation knows no bounds.
+            </p>
+            <p class="col-md-10" style="text-indent: 60px; text-align: justify;">
+                Join us at ESCAL Bio-Medical as we bridge the gap between technology and healthcare, paving the 
+                way for a healthier and brighter tomorrow.
+            </p>
+</section>
+
+<section class="ftco-section ftco-services">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-7 text-center heading-section ftco-animate">
+                <h2 class="mb-2">Publications</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center ftco-animate mb-5 pb-5">
+            {% for publication in site.data.gpu_pubs %}
+                <div class="col-md-10 publication-template">
+                    <div class="publication-thumbnail">
+                        <a href="{{ publication.doi }}" class="publication-thumbnail-link">
+                            <img src="../../assets/images/pdf-red.png" class="publication-thumbnail-image img-responsive">
+                        </a>
+                    </div>
+                    <div class="publication-info">
+                        <p class="publication-title">{{ publication.title }}</p>
+                        <p style="font-size: smaller;">
+                            {% for author in publication.author_info %}
+                                <a href="{{ author.profile }}">{{ author.name }}</a>{% if forloop.last %}{% else %}, {% endif %}
+                            {% endfor %}
+                        </p>
+                        <p class="publication-stats">
+                            <span class="publication-venue">{{ publication.venue }}</span>
+                        </p>
+                        <p class="publication-keywords hidden-xs">
+                            keywords:
+                            <span class="publication-keyword">
+                                <span class="publication-keyword-text">
+                                    {{ publication.tags | join: ', ' }}
+                                </span>
+                            </span>
+                        </p>
+                        <p class="pub-download-links">
+                            <a href="{{ publication.pdf }}">PDF</a>
+                            • <a href="{{ publication.doi }}">DOI</a>
+                        </p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="ftco-section testimony-section bg-light">
+    <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+            <div class="col-md-7 text-center heading-section ftco-animate">
+                <h2 class="mb-2">Current Members</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center ftco-animate">
+            <div class="col-md-8">
+                <div class="carousel-testimony owl-carousel ftco-owl">
+                    <div class="item">
+                        <div class="testimony-wrap p-4 pb-5">
+                            <div class="user-img mb-5"
+                                style="background-image: url(/escal-new/assets//images/roshanr.png)">
+                                <span class="quote d-flex align-items-center justify-content-center">
+                                    <i class="icon-quote-left"></i>
+                                </span>
+                            </div>
+                            <div class="text text-center">
+                                <p class="mb-5">Even the all-powerful Pointing has no control about the blind texts
+                                    it is an almost unorthographic life One day however a small line of blind text
+                                    by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                                <p class="name">Prof. Roshan G. Ragel</p>
+                                <span class="position">Supervisor</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimony-wrap p-4 pb-5">
+                            <div class="user-img mb-5"
+                                style="background-image: url(/escal-new/assets//images/Dr_Isuru.jpg)">
+                                <span class="quote d-flex align-items-center justify-content-center">
+                                    <i class="icon-quote-left"></i>
+                                </span>
+                            </div>
+                            <div class="text text-center">
+                                <p class="mb-5">Far far away, behind the word mountains, far from the countries
+                                    Vokalia and Consonantia, there live the blind texts.</p>
+                                <p class="name">Dr. Isuru Nawinne</p>
+                                <span class="position">Supervisor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
