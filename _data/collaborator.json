@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Dr. Hasindu Gamaarachchi",
+        "profile_image": "../assets/images/people/hasindu-gamaarachchi.jpg"
+    },
+    {
+        "name": "Dr. Vajira Thambawita",
+        "profile_image": "../assets/images/people/vajira-thambawita.jpg"
+    },
+    {
+        "name": "Dr. Titus Jayarathna",
+        "profile_image": "../assets/images/people/titus-nandakumara.jpg"
+    },
+    {
+        "name": "Nuwan Jaliyagoda",
+        "profile_image": "../assets/images/people/nuwan.jpg"
+    },
+    {
+        "name": "Keshara Weerasinghe",
+        "profile_image": "../assets/images/people/keshara.jpg"
+    }
+]
