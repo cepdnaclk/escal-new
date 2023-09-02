@@ -2,7 +2,7 @@ import requests
 import json
 import os
 
-tags = ["Embedded Systems","FPGA", "Computer Architecture"]
+tags = ["Embedded Systems", "FPGA", "Computer Architecture"]
 def get_embedded_system_projects(api_url):
     try:
         response = requests.get(api_url)
@@ -23,18 +23,40 @@ def get_embedded_system_projects(api_url):
         print(f"An error occurred: {e}")
         return None
 
-def append_to_json_file(data, output_filename):
+def add_to_json_file(data, output_filename):
+    #print(type(data))
+    
+    #print(page_api)
     try:
         if os.path.exists(output_filename):
             with open(output_filename, 'r') as json_file:
                 existing_data = json.load(json_file)
+                
         else:
-            existing_data = []
+            existing_data = {}
 
         # Check if each project is already in the existing data
         for project in data:
             if project not in existing_data:
-                existing_data.append(project)
+                key =  project
+                value = data[project]
+                page_api = value["api_url"]
+                # print(page_api)  
+                response_page = requests.get(page_api)
+                if response_page.status_code == 200:
+                    project_data = response_page.json()
+                    team_members = {}
+                    
+                    for e_nmumber, values in project_data['team'].items():
+                        student = project_data['team'][e_nmumber]
+                        name = student["name"]
+                        student_url = student["api_url"]
+                        team_member_details = {"name":name,
+                                               "api_url":student_url}
+                        team_members[e_nmumber] = team_member_details
+                    value["team"] = team_members
+                existing_data.update({key:value})
+                #print(project)
 
         with open(output_filename, 'w') as json_file:
             json.dump(existing_data, json_file, indent=4)
@@ -48,16 +70,20 @@ if __name__ == '__main__':
     api_url = "https://api.ce.pdn.ac.lk/projects/v1/filter/tags/"
     output_directory = r"_data"
     os.makedirs(output_directory, exist_ok=True)  # Create the output directory if it doesn't exist
-    output_filename = os.path.join(output_directory, "project.json")
+    output_filename = os.path.join(output_directory, "test.json")
 
     embedded_system_projects = get_embedded_system_projects(api_url)
+    #print(embedded_system_projects)
 
     if embedded_system_projects:
-        projects_list = []
+        projects_list = {}
         for projects in embedded_system_projects.values():
             for project in projects:
-                projects_list.append(project)
-
-        append_to_json_file(projects_list, output_filename)
+                key = project['title']
+                projects_list.update({key:project})
+                #print(projects_list)
+                
+        print()
+        add_to_json_file(projects_list, output_filename)
     else:
         print("No embedded system projects found.")
