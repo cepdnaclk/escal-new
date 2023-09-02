@@ -26,5 +26,5 @@ generate_category_pages(f'{DATA_PATH}/project_categories.json', f'{PAGES_PATH}/p
 staffTags = ["roshanr", "isurunawinne", "swarnar"]
 createStaffDictionary(staffTags)
 
-#Create student.json file with staff Details
-createStudentJSONFile("3yp")
+# Create student.json file with staff Details
+# createStudentJSONFile("3yp")
