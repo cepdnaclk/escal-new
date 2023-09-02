@@ -41,7 +41,22 @@ def add_to_json_file(data, output_filename):
                 key =  project
                 value = data[project]
                 page_api = value["api_url"]
-                # print(page_api)  
+                repo_url = value["repo_url"]
+                # Split the URL by "https://github.com/cepdnaclk/"
+                parts = repo_url.split("https://github.com/cepdnaclk/")
+
+                # Check if the URL matches the expected format
+                if len(parts) == 2:
+                    desired_part = parts[1]
+                    github_url = "https://api.github.com/repos/cepdnaclk/" + desired_part
+                    response_github = requests.get(github_url)
+                    if response_github.status_code == 200:
+                        github_data = response_github.json()
+                        value['stargazers_count'] = github_data['stargazers_count']
+                        value['updated_at'] = github_data['updated_at']
+                else:
+                    print("URL format is not as expected.")
+                # print(page_api)
                 response_page = requests.get(page_api)
                 if response_page.status_code == 200:
                     project_data = response_page.json()
@@ -55,6 +70,7 @@ def add_to_json_file(data, output_filename):
                                                "api_url":student_url}
                         team_members[e_nmumber] = team_member_details
                     value["team"] = team_members
+
                 existing_data.update({key:value})
                 #print(project)
 
