@@ -44,14 +44,20 @@ def add_to_json_file(data, output_filename):
                 repo_url = value["repo_url"]
                 # Split the URL by "https://github.com/cepdnaclk/"
                 parts = repo_url.split("https://github.com/cepdnaclk/")
+                # print(repo_url)
+
 
                 # Check if the URL matches the expected format
+                # print(len(parts))
                 if len(parts) == 2:
                     desired_part = parts[1]
+                    #print(desired_part)
                     github_url = "https://api.github.com/repos/cepdnaclk/" + desired_part
                     response_github = requests.get(github_url)
+                    print(response_github.status_code)
                     if response_github.status_code == 200:
                         github_data = response_github.json()
+                        #print(github_data)
                         value['stargazers_count'] = github_data['stargazers_count']
                         value['updated_at'] = github_data['updated_at']
                 else:
@@ -86,7 +92,7 @@ if __name__ == '__main__':
     api_url = "https://api.ce.pdn.ac.lk/projects/v1/filter/tags/"
     output_directory = r"_data"
     os.makedirs(output_directory, exist_ok=True)  # Create the output directory if it doesn't exist
-    output_filename = os.path.join(output_directory, "test.json")
+    output_filename = os.path.join(output_directory, "project.json")
 
     embedded_system_projects = get_embedded_system_projects(api_url)
     #print(embedded_system_projects)
