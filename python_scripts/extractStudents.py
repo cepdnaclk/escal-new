@@ -1,43 +1,16 @@
 import requests
 import json
 
-file_path = "../_data/students.json"
-
-#Extract projects based on tag ex: 3yp
-def takeProjectDetailsBasedOnTag(tag):
-    API_URL = f"https://api.ce.pdn.ac.lk/projects/v1/{tag}/"
-    response = requests.get(API_URL)
-    if response.status_code == 200:
-
-        # Parse the JSON response
-        data = response.json()
-
-        #Take the dictionary containing batches
-        batchesDictionary = data["batches"]
-
-        #Take the batches(E14,E15,...) to a list
-        batches = list( batchesDictionary.keys() )
-        batches.reverse()
-
-        batchProjectsURL = []
-        for batch in batches:
-            batchProjectsURL.append( batchesDictionary[batch]["api_url"] ) 
-            
-        return batchProjectsURL
-    
-    else:
-        return None
-
-def takeDataFromCategoryBatchProject(category, project, batch):
-     API_URL = f"https://api.ce.pdn.ac.lk/projects/v1/{category}/{batch}/{project}/"
+def takeDataFromCategoryBatchProject(category, title, batch):
+     API_URL = f"https://api.ce.pdn.ac.lk/projects/v1/{category}/{batch}/{title}/"
      response = requests.get(API_URL)
      if response.status_code == 200:
          data = response.json()
          
          if "team" in data:
-             projectTeams = list(data["team"].keys() )
+             projectTeams = list(data["team"].keys() )  # There are projects, with no team details
          else:
-             projectTeams = []
+             projectTeams = []# If team details are not present, return []
                  
          return projectTeams
      else:
@@ -74,42 +47,48 @@ def takeStudentDetails(eNumber):
         
     else:
         return None
-      
-def createStudentJSONFile(tag):
-    APIlist = takeProjectDetailsBasedOnTag(tag)  #ex: "https://api.ce.pdn.ac.lk/projects/v1/3yp/E18/
 
-    projectNames = [] #To hold project names -> ex: e18-3yp-Automated-Mini-Greenhouse-Monitoring-And-Control-System
+# Main Code
+# Projects json file location 
+input_file_path = '../_data/projects.json'
+output_file_path = "../_data/student.json"
+allStudentDetails = []
+teamlist = []
 
-    for api in APIlist:
-     response = requests.get(api) #Ex: Take data from"https://api.ce.pdn.ac.lk/projects/v1/3yp/E18/" URL
-     if response.status_code == 200:
-         data = response.json()
-         projectNames.append( list( data.keys() ) )  #Extract the Keys. ex: e18-3yp-Automated-Mini-Greenhouse-Monitoring-And-Control-System
+# Open the JSON file in read mode
+with open(input_file_path, 'r') as json_file:
+    data = json.load(json_file)
 
-    extracted_parts = [] #To hold --> ex: ("E18","3yp","Automated-Mini-Greenhouse-Monitoring-And-Control-System")
-
-    for year_list in projectNames:
-        for project in year_list:
-            parts = project.split('-')
-            if len(parts) >= 3 and parts[1] == tag :
-                year = parts[0].capitalize()
-                t3yp = parts[1]
-                project_name = '-'.join(parts[2:])
-                extracted_parts.append((year, t3yp, project_name))
-
-    file_path = "../_data/student.json"
-
-    allStudentDetails = [] #File To write all student details
+for project_key, project_info in data.items():
+    code = project_info['category']['code']
     
-    for project in extracted_parts:
-        teamlist = takeDataFromCategoryBatchProject(project[1], project[2], project[0])  # Take team list as ["E/YY/XXX,"E/YY/XXX","E/YY/XXX}]
-        for member in teamlist:
-            if takeStudentDetails(member) == None:
-                print("SKIP")
-            else:
-                allStudentDetails.append( takeStudentDetails(member) )
-      
-    with open(file_path, "w") as json_file:
-        json.dump(allStudentDetails, json_file, indent=4)
-    print("Done ") 
+    if code != '3yp':
+        components = project_key.split('-')
+        batch = components[0].capitalize()  # Exx
+        category = components[1]               
+        title = '-'.join(components[2:])
+        
+        data = takeDataFromCategoryBatchProject(category, title, batch)
+        if data == []:
+            continue   # Skip details when team details are not present
+        else:
+            for enumber in data:
+                teamlist.append(enumber)
+
+teamlist.reverse()        
+
+# Remove duplicates
+unique_list = list(set(teamlist))
+
+# Convert the set back to a list to maintain the order
+unique_list = sorted(unique_list, key=teamlist.index)
+
+print(unique_list)
+
+for member in unique_list:
+    allStudentDetails.append( takeStudentDetails(member) )
+
+with open(output_file_path, "w") as json_file:
+    json.dump(allStudentDetails, json_file, indent=4)
+
 
