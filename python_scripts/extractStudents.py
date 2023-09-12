@@ -1,8 +1,7 @@
 import requests
 import json
 
-def takeDataFromCategoryBatchProject(category, title, batch):
-     API_URL = f"https://api.ce.pdn.ac.lk/projects/v1/{category}/{batch}/{title}/"
+def takeDataFromAPIURL(API_URL):
      response = requests.get(API_URL)
      if response.status_code == 200:
          data = response.json()
@@ -48,47 +47,49 @@ def takeStudentDetails(eNumber):
     else:
         return None
 
-# Main Code
-# Projects json file location 
-input_file_path = '../_data/projects.json'
-output_file_path = "../_data/student.json"
-allStudentDetails = []
-teamlist = []
+#Sort based on E number
+def custom_sort(item):
+    parts = item.split('/')
+    return int(parts[1]), int(parts[2]) 
 
-# Open the JSON file in read mode
-with open(input_file_path, 'r') as json_file:
-    data = json.load(json_file)
 
-for project_key, project_info in data.items():
-    code = project_info['category']['code']
+# ~~~~~~ Main Code ~~~~~~~~~
+
+def generateJSONfile(input_file_path, output_file_path):
+     allStudentDetails = []
+     teamlist = []
+     
+     # Open the JSON file in read mode
+     with open(input_file_path, 'r') as json_file:
+         data = json.load(json_file)
+
+     for project_key, project_info in data.items():
+         code = project_info['category']['code']
     
-    if code != '3yp':
-        components = project_key.split('-')
-        batch = components[0].capitalize()  # Exx
-        category = components[1]               
-        title = '-'.join(components[2:])
+         if code != '3yp':
+             API_URL = project_info['api_url']
+             data = takeDataFromAPIURL( API_URL )
         
-        data = takeDataFromCategoryBatchProject(category, title, batch)
-        if data == []:
-            continue   # Skip details when team details are not present
-        else:
-            for enumber in data:
-                teamlist.append(enumber)
+             if data == []:
+                 continue   # Skip details when team details are not present
+             else:
+                 for enumber in data:
+                     teamlist.append(enumber)
 
-teamlist.reverse()        
+    
+     # Remove duplicates
+     unique_list = list(set(teamlist))
 
-# Remove duplicates
-unique_list = list(set(teamlist))
+     # Convert the set back to a list to maintain the order
+     sorted_data = sorted(unique_list, key=custom_sort)
+     sorted_data.reverse()
+     print(sorted_data)
 
-# Convert the set back to a list to maintain the order
-unique_list = sorted(unique_list, key=teamlist.index)
+     for member in sorted_data:
+         allStudentDetails.append( takeStudentDetails(member) )
 
-print(unique_list)
+     with open(output_file_path, "w") as json_file:
+         json.dump(allStudentDetails, json_file, indent=4)
 
-for member in unique_list:
-    allStudentDetails.append( takeStudentDetails(member) )
-
-with open(output_file_path, "w") as json_file:
-    json.dump(allStudentDetails, json_file, indent=4)
-
+#generateJSONfile('../_data/projects.json','../_data/student.json')
 

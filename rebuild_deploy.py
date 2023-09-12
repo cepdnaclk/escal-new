@@ -2,7 +2,7 @@ import os
 from python_scripts.extract_projects import *
 from python_scripts.generate_subpages import *
 from python_scripts.extractStaff import *
-from python_scripts.extractStudents import *
+from python_scripts.ExtractStudents import *
 
 filters = ['co328', '2yp', 'co542', 'co226', 'co227']
 key_tags = ['embedded', '3yp', 'embedded-systems', 'embedded-system', 'iot', 'arduino', 'fpga', 'raspberry', 'robot', 'robotics', 'gpu', 'bio-medical', 'swarm', 'nvidia']
@@ -27,4 +27,4 @@ staffTags = ["roshanr", "isurunawinne", "swarnar"]
 createStaffDictionary(staffTags)
 
 # Create student.json file with staff Details
-# createStudentJSONFile("3yp")
+generateJSONfile('./_data/projects.json','./_data/student.json')
