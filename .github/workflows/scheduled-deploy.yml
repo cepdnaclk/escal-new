@@ -3,7 +3,7 @@ name: Reuild and Deploy
 on:
   schedule:
     # # At 18:30 UTC on Sunday (12.00 mid night in Sri Lanka)
-     - cron: "30 18 * * 0"
+    # - cron: "30 18 * * 0"
 
     # At minute 0 past every two hours
     # - cron: "0 */2 * * *"
