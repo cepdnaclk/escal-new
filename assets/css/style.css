@@ -9691,7 +9691,8 @@ h5,
   left: 0;
   top: 0;
   margin-top: -130px;
-  background: #fff !important;
+  background: #d9d9d9 !important;
+  border-bottom: 2px solid #aaa;
   -webkit-box-shadow:
   0px 1.9px 3.6px rgba(0, 0, 0, 0.021),
   0px 5.1px 10px rgba(0, 0, 0, 0.03),
