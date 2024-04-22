@@ -9554,9 +9554,9 @@ h5,
 }
 
 .ftco-navbar-light {
-  background: transparent !important;
+  background: rgba(0, 0, 0, 0.6) !important;
   position: absolute;
-  top: 20px;
+  top: 00px;
   left: 0;
   right: 0;
   z-index: 3;
@@ -9591,11 +9591,11 @@ h5,
   }
 }
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-  font-size: 15px;
+  font-size: 18px;
   padding-top: 0.9rem;
   padding-bottom: 0.9rem;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 10px;
   font-weight: 400;
   color: #fff;
   opacity: 1 !important;
@@ -9611,8 +9611,9 @@ h5,
   }
 }
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: #167ce9;
 }
+
 .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu {
   border: none;
   background: #fff;
@@ -9674,7 +9675,7 @@ h5,
   border-color: #2f89fc;
 }
 .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-  color: rgba(255, 255, 255, 0.5);
+  color: #167ce9;
 }
 .ftco-navbar-light .navbar-toggler {
   border: none;
@@ -9685,13 +9686,14 @@ h5,
   font-size: 16px;
   letter-spacing: 0.1em;
 }
+
 .ftco-navbar-light.scrolled {
   position: fixed;
   right: 0;
   left: 0;
   top: 0;
   margin-top: -130px;
-  background: #d9d9d9 !important;
+  background: rgba(255, 255, 255, 0.85) !important;
   border-bottom: 2px solid #aaa;
   -webkit-box-shadow:
   0px 1.9px 3.6px rgba(0, 0, 0, 0.021),
@@ -9766,10 +9768,15 @@ h5,
 .ftco-navbar-light.scrolled .nav-link {
   padding-top: 0.9rem !important;
   padding-bottom: 0.9rem !important;
-  color: #000 !important;
+  color: #222 !important;
 }
+
+.ftco-navbar-light.scrolled .nav-link:hover {
+  color: #167ce9 !important;
+}
+
 .ftco-navbar-light.scrolled .nav-link.active {
-  color: #2f89fc !important;
+  color: #167ce9 !important;
 }
 .ftco-navbar-light.scrolled.awake {
   margin-top: 0px;
