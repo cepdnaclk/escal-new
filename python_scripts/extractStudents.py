@@ -66,7 +66,7 @@ def generateJSONfile(input_file_path, output_file_path):
      for project_key, project_info in data.items():
          code = project_info['category']['code']
     
-         if code != '3yp':
+         if code == '3yp':
              API_URL = project_info['api_url']
              data = takeDataFromAPIURL( API_URL )
         
@@ -91,5 +91,5 @@ def generateJSONfile(input_file_path, output_file_path):
      with open(output_file_path, "w") as json_file:
          json.dump(allStudentDetails, json_file, indent=4)
 
-#generateJSONfile('../_data/projects.json','../_data/student.json')
+generateJSONfile('../_data/projects.json','../_data/student.json')
 
