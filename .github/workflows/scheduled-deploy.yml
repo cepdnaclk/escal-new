@@ -5,6 +5,8 @@ on:
     # At 18:30 UTC on Sunday (12:00 midnight in Sri Lanka)
     #- cron: "30 18 * * 0"
     # At minute 0 past every two hours
+    # - cron: "0 */2 * * *"
+    # At minute 0 past every 1 hour
     - cron: "0 */2 * * *"
     # At 18:30 UTC every day (12:00 midnight in Sri Lanka)
     #- cron: "30 18 * * *"
@@ -17,12 +19,12 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
-    - name: Set up Python 3.6
-      uses: actions/setup-python@v2
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v4
       with:
-        python-version: '3.6'
+        python-version: '3.8'
 
     - name: Install Python Dependencies
       run: |
