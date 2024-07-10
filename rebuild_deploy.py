@@ -8,7 +8,7 @@ from python_scripts.extractStudents import createStudentsDictionary
 staff_json_file_path = '_data/staff.json'
 projects_json_file_path = '_data/projects.json'
 students_json_file_path = '_data/student.json'
-'''
+
 # 1. Extract Staff Data
 staffTags = ["roshanr", "isurunawinne", "swarnar"]
 staff_data = createStaffDictionary(staffTags)
@@ -28,7 +28,7 @@ projects_data = createProjectsDictionary(projectTags)
 with open(projects_json_file_path, "w") as json_file:
     json.dump(projects_data, json_file, indent=4)
 print("\t Projects JSON file generated \n")
-'''
+
 # 3. Extract Students
 print("Generating Students Data............")
 
