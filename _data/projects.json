@@ -501,7 +501,63 @@
         "repo_url": "https://github.com/cepdnaclk/e19-3yp-Pera-Swarm-Modular-Robots",
         "page_url": "https://cepdnaclk.github.io/e19-3yp-Pera-Swarm-Modular-Robots",
         "api_url": "https://api.ce.pdn.ac.lk/projects/v1/3yp/E19/Pera-Swarm-Modular-Robots/",
-        "team": null
+        "team": {
+            "E/19/170": {
+                "name": "K.N.N. Jayawardhana",
+                "email": "e19170@eng.pdn.ac.lk",
+                "website": "",
+                "github": "",
+                "linkedin": "",
+                "researchgate": "",
+                "api_url": "https://api.ce.pdn.ac.lk/people/v1/students/E19/170",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/students/e19/e19170.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/students/e19/170/"
+            },
+            "E/19/275": {
+                "name": "M.S. Peeris",
+                "email": "e19275@eng.pdn.ac.lk",
+                "website": "",
+                "github": "https://github.com/sanka-p",
+                "linkedin": "",
+                "researchgate": "",
+                "api_url": "https://api.ce.pdn.ac.lk/people/v1/students/E19/275",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/students/e19/e19275.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/students/e19/275/"
+            },
+            "E/19/366": {
+                "name": "W.A.M.P. Senevirathne",
+                "email": "e19366@eng.pdn.ac.lk",
+                "website": "",
+                "github": "",
+                "linkedin": "",
+                "researchgate": "",
+                "api_url": "https://api.ce.pdn.ac.lk/people/v1/students/E19/366",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/students/e19/e19366.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/students/e19/366/"
+            },
+            "E/19/436": {
+                "name": "G.T.G. Wickramasinghe",
+                "email": "e19436@eng.pdn.ac.lk",
+                "website": "",
+                "github": "",
+                "linkedin": "",
+                "researchgate": "",
+                "api_url": "https://api.ce.pdn.ac.lk/people/v1/students/E19/436",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/students/e19/e19436.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/students/e19/436/"
+            },
+            "E/19/446": {
+                "name": "I.M.K.D.I. Wijerathna",
+                "email": "e19446@eng.pdn.ac.lk",
+                "website": "https://kalinduwijerathna.github.io/",
+                "github": "https://github.com/KalinduWijerathna/",
+                "linkedin": "https://www.linkedin.com/in/kalindu-wijerathna/",
+                "researchgate": "",
+                "api_url": "https://api.ce.pdn.ac.lk/people/v1/students/E19/446",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/students/e19/e19446.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/students/e19/446/"
+            }
+        }
     },
     "e19-3yp-Project-Smart-Water-Tank": {
         "title": "Project Smart Water Tank",
